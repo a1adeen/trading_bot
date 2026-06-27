@@ -1,1 +1,4 @@
-print("Trading bot setup working!")
+print("Trading bot setup working")
+
+
+
