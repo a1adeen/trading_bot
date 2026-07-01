@@ -18,13 +18,8 @@ MARKET_OPEN   = "09:15"
 MARKET_CLOSE  = "15:15"
 PAPER_TRADE   = True    # True = signals only | False = real orders
 
-WATCHLIST = {
-    "RELIANCE"  : "NSE_EQ|INE002A01018",
-    "TCS"       : "NSE_EQ|INE467B01029",
-    "INFY"      : "NSE_EQ|INE009A01021",
-    "HDFCBANK"  : "NSE_EQ|INE040A01034",
-    "ICICIBANK" : "NSE_EQ|INE090A01021"
-}
+from nifty100_token import NIFTY100
+WATCHLIST = NIFTY100
 
 # ─── LOGGING ──────────────────────────────────────────
 logging.basicConfig(
@@ -52,6 +47,32 @@ MAX_DAILY_LOSS = 2000  # kill switch
 
 # ─── FETCH LIVE 15MIN CANDLES ─────────────────────────
 def fetch_candles(symbol, token):
+    """Fetch today's 15min candles."""
+    try:
+        from datetime import date
+        today = date.today().strftime("%Y-%m-%d")
+
+        data = history_api.get_intraday_candle_data(
+            token,
+            "15minute",
+            "2.0"
+        )
+        candles = data.data.candles
+        if not candles:
+            log(f"  ⚠️ No candles yet for {symbol}")
+            return None
+
+        df = pd.DataFrame(candles, columns=[
+            "date","open","high","low","close","volume","oi"
+        ])
+        df["date"] = pd.to_datetime(df["date"])
+        df = df.sort_values("date").reset_index(drop=True)
+        log(f"  📊 {symbol} — {len(df)} candles fetched")
+        return df
+
+    except Exception as e:
+        log(f"  ❌ Fetch failed {symbol}: {e}")
+        return None
     """Fetch today's 15min candles."""
     try:
         from datetime import date
@@ -338,4 +359,4 @@ if __name__ == "__main__":
     log("\n  Bot running — press Ctrl+C to stop")
     while True:
         schedule.run_pending()
-        time.sleep(30)
+        time.sleep(0.3)
