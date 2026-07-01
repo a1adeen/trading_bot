@@ -1,188 +1,154 @@
 # strategy.py
-# Momentum strategy with DOM confirmation
-# Fixed SL = 35 points | Fixed Target = 75 points
-# R:R = 1:2.1
+# VWAP + RSI Crossover + Volume Buildup + DOM strategy
 
 import upstox_client
 import pandas as pd
 from config import ACCESS_TOKEN
 
 # ─── CONFIG ───────────────────────────────────────────
-SL_POINTS     = 35   # stop loss points below entry
-TARGET_POINTS = 75   # target points above entry
-RISK_PCT      = 0.01 # risk 1% of capital per trade
+SL_POINTS     = 35
+TARGET_POINTS = 75
+RISK_PCT      = 0.01
 
-# ─── CONNECT TO UPSTOX ────────────────────────────────
+# ─── CONNECT ──────────────────────────────────────────
 configuration = upstox_client.Configuration()
 configuration.access_token = ACCESS_TOKEN
 api_client    = upstox_client.ApiClient(configuration)
 market_api    = upstox_client.MarketQuoteApi(api_client)
 
-# ─── DOM CONFIRMATION ─────────────────────────────────
-def check_dom(instrument_token):
-    """
-    Check Depth of Market.
-    BUY confirmed only if BID volume >= 1.5x ASK volume.
-    Top 5 levels on each side are checked.
-    """
-    try:
-        depth = market_api.get_full_market_quote(
-            instrument_token,
-            "2.0"
-        )
+# ─── ADD VWAP ─────────────────────────────────────────
+def add_vwap(df):
+    df = df.copy()
+    df["date_only"]  = pd.to_datetime(df["date"]).dt.date
+    df["tp"]         = (df["high"] + df["low"] + df["close"]) / 3
+    df["tp_vol"]     = df["tp"] * df["volume"]
+    df["cum_tp_vol"] = df.groupby("date_only")["tp_vol"].cumsum()
+    df["cum_vol"]    = df.groupby("date_only")["volume"].cumsum()
+    df["vwap"]       = df["cum_tp_vol"] / df["cum_vol"]
+    return df
 
+# ─── ADD RSI ──────────────────────────────────────────
+def add_rsi(df, period=14):
+    df       = df.copy()
+    delta    = df["close"].diff()
+    gain     = delta.clip(lower=0)
+    loss     = -delta.clip(upper=0)
+    avg_gain = gain.ewm(com=period - 1, adjust=False).mean()
+    avg_loss = loss.ewm(com=period - 1, adjust=False).mean()
+    rs       = avg_gain / avg_loss
+    df["rsi"] = 100 - (100 / (1 + rs))
+    return df
+
+# ─── VOLUME BUILDUP ───────────────────────────────────
+def volume_building_up(df, i):
+    if i < 2:
+        return False, False
+    candles   = [df.iloc[i - 1], df.iloc[i]]
+    buy_vols  = [c["volume"] if c["close"] > c["open"] else 0 for c in candles]
+    sell_vols = [c["volume"] if c["close"] < c["open"] else 0 for c in candles]
+    buy_up    = buy_vols[1]  > buy_vols[0]  and buy_vols[0]  > 0
+    sell_up   = sell_vols[1] > sell_vols[0] and sell_vols[0] > 0
+    return buy_up, sell_up
+
+# ─── RSI CROSSOVER ────────────────────────────────────
+def rsi_crossover(df, i):
+    if i < 1:
+        return False, False
+    prev_rsi   = df["rsi"].iloc[i - 1]
+    curr_rsi   = df["rsi"].iloc[i]
+    cross_up   = prev_rsi < 50 and curr_rsi > 50
+    cross_down = prev_rsi > 50 and curr_rsi < 50
+    return cross_up, cross_down
+
+# ─── DOM CHECK ────────────────────────────────────────
+def check_dom(instrument_token):
+    try:
+        depth    = market_api.get_full_market_quote(instrument_token, "2.0")
         key      = list(depth.data.keys())[0]
         dom_data = depth.data[key].depth
-
-        # Sum top 5 BID volumes
-        bid_volume = sum(
-            level.quantity
-            for level in dom_data.buy[:5]
-            if level.quantity
-        )
-
-        # Sum top 5 ASK volumes
-        ask_volume = sum(
-            level.quantity
-            for level in dom_data.sell[:5]
-            if level.quantity
-        )
-
-        ratio = bid_volume / ask_volume if ask_volume > 0 else 0
-
-        print(f"    DOM — BID: {bid_volume:,} | ASK: {ask_volume:,} | Ratio: {ratio:.2f}x")
-
-        # BUY confirmed if BID is 1.5x greater than ASK
-        return ratio >= 1.5, bid_volume, ask_volume, ratio
-
+        bid_vol  = sum(l.quantity for l in dom_data.buy[:5]  if l.quantity)
+        ask_vol  = sum(l.quantity for l in dom_data.sell[:5] if l.quantity)
+        ratio    = bid_vol / ask_vol if ask_vol > 0 else 0
+        print(f"    DOM — BID: {bid_vol:,} | ASK: {ask_vol:,} | Ratio: {ratio:.2f}x")
+        return ratio >= 1.5, ratio <= 0.67, ratio
     except Exception as e:
-        print(f"    DOM check failed: {e}")
-        return False, 0, 0, 0
+        print(f"    DOM failed: {e}")
+        return False, False, 0
 
-# ─── SIGNAL ENGINE ────────────────────────────────────
-def check_signal(df):
-    """
-    Check latest candle for BUY or SELL signal.
-    Returns signal type and reason.
-    """
-    if len(df) < 51:
-        return "NONE", "Not enough data"
-
-    latest = df.iloc[-1]
-    prev   = df.iloc[-2]
-
-    # ── BUY CONDITIONS ──
-    ema_cross_up     = latest["ema_20"] > latest["ema_50"]
-    ema_was_below    = prev["ema_20"] <= prev["ema_50"]  # fresh crossover
-    rsi_healthy      = 50 < latest["rsi"] < 70
-    volume_spike     = latest["volume"] > 1.5 * latest["volume_ma"]
-    price_above_ema  = latest["close"] > latest["ema_20"]
-
-    # ── SELL CONDITIONS ──
-    ema_cross_down   = latest["ema_20"] < latest["ema_50"]
-    rsi_overbought   = latest["rsi"] > 75
-    rsi_oversold     = latest["rsi"] < 30
-
-    # ── SIGNAL LOGIC ──
-    if ema_cross_up and rsi_healthy and volume_spike and price_above_ema:
-        reason = (
-            f"EMA20({latest['ema_20']:.1f}) > EMA50({latest['ema_50']:.1f}) | "
-            f"RSI({latest['rsi']:.1f}) | "
-            f"Vol spike({latest['volume']/latest['volume_ma']:.1f}x)"
-        )
-        return "BUY", reason
-
-    elif ema_cross_down or rsi_overbought:
-        reason = (
-            f"EMA cross down" if ema_cross_down
-            else f"RSI overbought({latest['rsi']:.1f})"
-        )
-        return "SELL", reason
-
-    return "NONE", "No signal"
-
-# ─── POSITION SIZING ──────────────────────────────────
-def calculate_position(capital, entry_price):
-    """
-    Calculate quantity based on 1% capital risk.
-    SL is fixed 35 points below entry.
-    """
-    risk_amount = capital * RISK_PCT      # e.g. ₹1000 on ₹1,00,000
-    qty         = int(risk_amount / SL_POINTS)  # shares to buy
-
-    stop_loss   = entry_price - SL_POINTS
-    target      = entry_price + TARGET_POINTS
-
+# ─── POSITION SIZE ────────────────────────────────────
+def calculate_position(capital, entry_price, atr=None):
+    sl_pts  = atr   if atr   else SL_POINTS
+    tgt_pts = atr * 2 if atr else TARGET_POINTS
+    risk    = capital * RISK_PCT
+    qty     = max(1, int(risk / sl_pts))
     return {
-        "qty"        : qty,
-        "entry"      : entry_price,
-        "stop_loss"  : stop_loss,
-        "target"     : target,
-        "risk"       : qty * SL_POINTS,
-        "reward"     : qty * TARGET_POINTS,
-        "rr_ratio"   : f"1:{TARGET_POINTS/SL_POINTS:.1f}"
+        "qty"       : qty,
+        "entry"     : entry_price,
+        "stop_loss" : round(entry_price - sl_pts,  2),
+        "target"    : round(entry_price + tgt_pts, 2),
+        "risk"      : round(qty * sl_pts,  2),
+        "reward"    : round(qty * tgt_pts, 2),
+        "rr_ratio"  : "1:2.0"
     }
 
-# ─── FULL SIGNAL CHECK WITH DOM ───────────────────────
-def get_trade_signal(symbol, instrument_token, df, capital=100000):
-    """
-    Full signal check:
-    1. Check technical signal (EMA + RSI + Volume)
-    2. If BUY signal — confirm with DOM
-    3. Calculate position size
-    4. Return complete trade details
-    """
-    print(f"\n{'─'*45}")
-    print(f"  Checking {symbol}...")
+# ─── FULL SIGNAL CHECK ────────────────────────────────
+def get_trade_signal(symbol, instrument_token, df, capital=50000):
+    print(f"\n{'─'*50}")
+    print(f"  Scanning {symbol}...")
 
-    # Step 1 — technical signal
-    signal, reason = check_signal(df)
-    latest_price   = df["close"].iloc[-1]
+    df     = add_vwap(df)
+    df     = add_rsi(df)
+    i      = len(df) - 1
+    latest = df.iloc[i]
+    price  = latest["close"]
+    vwap   = latest["vwap"]
+    rsi    = latest["rsi"]
+    atr    = latest.get("atr", None)
 
-    print(f"  Signal    : {signal}")
-    print(f"  Reason    : {reason}")
-    print(f"  Price     : ₹{latest_price:.2f}")
+    print(f"  Price : ₹{price:.2f}")
+    print(f"  VWAP  : ₹{vwap:.2f}")
+    print(f"  RSI   : {rsi:.1f}")
 
-    if signal == "BUY":
-        # Step 2 — DOM confirmation
-        print(f"  Checking DOM...")
-        dom_confirmed, bid_vol, ask_vol, ratio = check_dom(instrument_token)
+    rsi_up,  rsi_down = rsi_crossover(df, i)
+    buy_vol, sell_vol = volume_building_up(df, i)
 
-        if dom_confirmed:
-            # Step 3 — position sizing
-            position = calculate_position(capital, latest_price)
+    buy_signal  = price > vwap and rsi_up  and buy_vol
+    sell_signal = price < vwap and rsi_down and sell_vol
 
-            print(f"  DOM       : ✅ CONFIRMED (BID {ratio:.2f}x ASK)")
-            print(f"  Entry     : ₹{position['entry']:.2f}")
-            print(f"  Stop Loss : ₹{position['stop_loss']:.2f} (-{SL_POINTS} pts)")
-            print(f"  Target    : ₹{position['target']:.2f} (+{TARGET_POINTS} pts)")
-            print(f"  Qty       : {position['qty']} shares")
-            print(f"  Risk      : ₹{position['risk']}")
-            print(f"  Reward    : ₹{position['reward']}")
-            print(f"  R:R       : {position['rr_ratio']}")
-            print(f"  ACTION    : 🟢 PLACE BUY ORDER")
-
-            return {
-                "symbol"   : symbol,
-                "signal"   : "BUY",
-                "token"    : instrument_token,
-                **position
-            }
+    if buy_signal:
+        print(f"  Tech  : ✅ BUY signal")
+        dom_buy, _, ratio = check_dom(instrument_token)
+        if dom_buy:
+            pos = calculate_position(capital, price, atr)
+            print(f"  DOM   : ✅ CONFIRMED ({ratio:.2f}x)")
+            print(f"  Entry : ₹{pos['entry']} | SL: ₹{pos['stop_loss']} | TGT: ₹{pos['target']}")
+            print(f"  Qty   : {pos['qty']} | Risk: ₹{pos['risk']} | Reward: ₹{pos['reward']}")
+            print(f"  ➡️  ACTION: 🟢 BUY")
+            return {"symbol": symbol, "signal": "BUY", **pos}
         else:
-            print(f"  DOM       : ❌ NOT CONFIRMED (BID {ratio:.2f}x ASK — need 1.5x)")
-            print(f"  ACTION    : ⏸️  SKIP — wait for DOM confirmation")
+            print(f"  DOM   : ❌ weak ({ratio:.2f}x) — SKIP")
             return {"symbol": symbol, "signal": "SKIP_DOM"}
 
-    elif signal == "SELL":
-        print(f"  ACTION    : 🔴 CLOSE POSITION")
-        return {"symbol": symbol, "signal": "SELL", "price": latest_price}
+    elif sell_signal:
+        print(f"  Tech  : ✅ SELL signal")
+        _, dom_sell, ratio = check_dom(instrument_token)
+        if dom_sell:
+            print(f"  DOM   : ✅ CONFIRMED — 🔴 SELL")
+            return {"symbol": symbol, "signal": "SELL", "price": price}
+        else:
+            print(f"  DOM   : ❌ weak — SKIP")
+            return {"symbol": symbol, "signal": "SKIP_DOM"}
 
     else:
-        print(f"  ACTION    : ⬜ NO TRADE")
+        reasons = []
+        if price <= vwap:          reasons.append(f"Price below VWAP")
+        if not rsi_up:             reasons.append(f"No RSI crossover (RSI={rsi:.1f})")
+        if not buy_vol:            reasons.append("No volume buildup")
+        print(f"  ➡️  NO SIGNAL — {' | '.join(reasons)}")
         return {"symbol": symbol, "signal": "NONE"}
 
 
-# ─── TEST RUN ─────────────────────────────────────────
+# ─── MAIN ─────────────────────────────────────────────
 if __name__ == "__main__":
     from data_pipeline import load_from_db
 
@@ -194,26 +160,24 @@ if __name__ == "__main__":
         "ICICIBANK" : "NSE_EQ|INE090A01021"
     }
 
-    print("=" * 45)
-    print("   STRATEGY SIGNAL SCANNER")
-    print("=" * 45)
+    print("=" * 50)
+    print("  VWAP + RSI + VOLUME + DOM SCANNER")
+    print("=" * 50)
 
     results = []
     for symbol, token in WATCHLIST.items():
         df     = load_from_db(symbol)
-        result = get_trade_signal(symbol, token, df, capital=100000)
+        result = get_trade_signal(symbol, token, df, capital=50000)
         results.append(result)
 
-    # Summary
-    print(f"\n{'='*45}")
-    print("   SUMMARY")
-    print(f"{'='*45}")
-    buy_signals = [r for r in results if r["signal"] == "BUY"]
-    print(f"  BUY signals  : {len(buy_signals)}")
-    print(f"  Stocks scanned: {len(results)}")
-    if buy_signals:
-        print(f"\n  Stocks to BUY:")
-        for r in buy_signals:
-            print(f"  → {r['symbol']} @ ₹{r['entry']:.2f} | SL: ₹{r['stop_loss']:.2f} | TGT: ₹{r['target']:.2f}")
+    buys  = [r for r in results if r["signal"] == "BUY"]
+    sells = [r for r in results if r["signal"] == "SELL"]
 
-            
+    print(f"\n{'='*50}")
+    print(f"  Scanned : {len(results)} stocks")
+    print(f"  BUY     : {len(buys)} 🟢")
+    print(f"  SELL    : {len(sells)} 🔴")
+    if buys:
+        print(f"\n  Stocks to BUY:")
+        for r in buys:
+            print(f"  → {r['symbol']} @ ₹{r['entry']} | SL: ₹{r['stop_loss']} | TGT: ₹{r['target']}")

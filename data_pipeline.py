@@ -38,7 +38,7 @@ def fetch_ohlcv(symbol, token, days=365):
     try:
         data = history_api.get_historical_candle_data1(
             token,
-            "day",
+            "30minute",
             to_date,
             from_date,
             "2.0"
@@ -131,7 +131,7 @@ if __name__ == "__main__":
 
     for symbol, token in WATCHLIST.items():
         # Fetch raw data
-        df = fetch_ohlcv(symbol, token, days=365)
+        df = fetch_ohlcv(symbol, token, days=60)
         if df is None:
             continue
 
