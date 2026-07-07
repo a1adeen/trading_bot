@@ -1,7 +1,7 @@
 # live_bot.py
-# Live intraday bot — VWAP + RSI + Volume + DOM
-# Runs every 5 mins | 1min candles | 9:15am to 3:25pm
-# PAPER_TRADE = True means signals only, no real orders
+# Live intraday bot using Market Quotes API
+# VWAP + RSI + DOM strategy
+# Seeds price history from yesterday for immediate RSI
 
 import upstox_client
 import pandas as pd
@@ -9,7 +9,7 @@ import schedule
 import time
 import logging
 import json
-from datetime import datetime
+from datetime import datetime, date, timedelta
 from config import ACCESS_TOKEN
 from nifty100_tokens import NIFTY100
 
@@ -20,16 +20,14 @@ MARKET_OPEN    = "09:15"
 MARKET_CLOSE   = "15:25"
 PAPER_TRADE    = True
 MAX_DAILY_LOSS = 2000
-
-WATCHLIST = NIFTY100
+WATCHLIST      = NIFTY100
 
 # ─── LOGGING ──────────────────────────────────────────
 logging.basicConfig(
-    filename = "bot_log.txt",
-    level    = logging.INFO,
-    format   = "%(asctime)s | %(message)s"
+    filename="bot_log.txt",
+    level=logging.INFO,
+    format="%(asctime)s | %(message)s"
 )
-
 def log(msg):
     print(msg)
     logging.info(msg)
@@ -37,201 +35,208 @@ def log(msg):
 # ─── CONNECT ──────────────────────────────────────────
 configuration = upstox_client.Configuration()
 configuration.access_token = ACCESS_TOKEN
-api_client  = upstox_client.ApiClient(configuration)
-history_api = upstox_client.HistoryApi(api_client)
-market_api  = upstox_client.MarketQuoteApi(api_client)
-order_api   = upstox_client.OrderApiV3(api_client)
+api_client   = upstox_client.ApiClient(configuration)
+market_api   = upstox_client.MarketQuoteApi(api_client)
+order_api    = upstox_client.OrderApiV3(api_client)
+history_api  = upstox_client.HistoryApi(api_client)
 
 # ─── STATE ────────────────────────────────────────────
-open_positions = {}
+price_history  = {}   # symbol -> list of close prices
+vwap_data      = {}   # symbol -> vwap components
+open_positions = {}   # symbol -> position details
 daily_pnl      = 0
 
-# ─── FETCH CANDLES ────────────────────────────────────
-def fetch_candles(symbol, token):
+# ─── GET LAST TRADING DAY ─────────────────────────────
+def get_last_trading_day():
+    """Get most recent past weekday."""
+    day = date.today()
+    for i in range(1, 8):
+        d = day - timedelta(days=i)
+        if d.weekday() < 5:
+            return d.strftime("%Y-%m-%d")
+    return (day - timedelta(days=1)).strftime("%Y-%m-%d")
+
+# ─── SEED PRICE HISTORY ───────────────────────────────
+def seed_price_history():
+    """
+    Fetch yesterday's 30min candles to seed RSI calculation.
+    Without this RSI defaults to 50 until enough live scans happen.
+    """
+    yesterday = get_last_trading_day()
+    log(f"\n  Seeding price history from {yesterday}...")
+    seeded = 0
+
+    for symbol, token in list(WATCHLIST.items()):
+        try:
+            data    = history_api.get_historical_candle_data1(
+                token, "30minute", yesterday, yesterday, "2.0"
+            )
+            candles = data.data.candles
+            if candles:
+                # Extract close prices
+                prices = [float(c[4]) for c in candles]
+                price_history[symbol] = prices[-20:]
+                seeded += 1
+        except:
+            pass
+        time.sleep(0.15)
+
+    log(f"  ✅ Seeded {seeded}/{len(WATCHLIST)} stocks")
+
+# ─── FETCH LIVE QUOTE ─────────────────────────────────
+def fetch_quote(symbol, token):
+    """Fetch live market quote."""
     try:
-        today = datetime.now().strftime("%Y-%m-%d")
-        data  = history_api.get_historical_candle_data1(
-            token,
-            "1minute",
-            today,
-            today,
-            "2.0"
-        )
-        candles = data.data.candles
-        if not candles:
-            return None
-
-        df = pd.DataFrame(candles, columns=[
-            "date","open","high","low","close","volume","oi"
-        ])
-        df["date"] = pd.to_datetime(df["date"])
-        df = df.sort_values("date").reset_index(drop=True)
-        return df
-
-    except Exception as e:
-        log(f"  ❌ Fetch failed {symbol}: {e}")
+        quote = market_api.get_full_market_quote(token, "2.0")
+        key   = list(quote.data.keys())[0]
+        data  = quote.data[key]
+        return {
+            "ltp"      : data.last_price,
+            "open"     : data.ohlc.open,
+            "high"     : data.ohlc.high,
+            "low"      : data.ohlc.low,
+            "close"    : data.ohlc.close,
+            "volume"   : data.volume,
+            "buy_qty"  : sum(l.quantity for l in data.depth.buy[:5]  if l.quantity),
+            "sell_qty" : sum(l.quantity for l in data.depth.sell[:5] if l.quantity),
+        }
+    except:
         return None
 
-# ─── COMPUTE INDICATORS ───────────────────────────────
-def compute_indicators(df):
-    df = df.copy()
+# ─── UPDATE PRICE HISTORY ─────────────────────────────
+def update_history(symbol, price):
+    """Append latest price and keep last 50."""
+    if symbol not in price_history:
+        price_history[symbol] = []
+    price_history[symbol].append(price)
+    if len(price_history[symbol]) > 50:
+        price_history[symbol] = price_history[symbol][-50:]
 
-    # VWAP — resets each day
-    df["tp"]     = (df["high"] + df["low"] + df["close"]) / 3
-    df["tp_vol"] = df["tp"] * df["volume"]
-    df["vwap"]   = df["tp_vol"].cumsum() / df["volume"].cumsum()
+# ─── COMPUTE RSI ──────────────────────────────────────
+def compute_rsi(prices, period=9):
+    """Compute RSI from price list. Returns 50 if not enough data."""
+    if len(prices) < period + 1:
+        return 50.0
+    s      = pd.Series(prices)
+    delta  = s.diff()
+    gain   = delta.clip(lower=0)
+    loss   = -delta.clip(upper=0)
+    avg_g  = gain.ewm(com=period - 1, adjust=False).mean()
+    avg_l  = loss.ewm(com=period - 1, adjust=False).mean()
+    rs     = avg_g / avg_l
+    rsi    = 100 - (100 / (1 + rs))
+    return round(float(rsi.iloc[-1]), 2)
 
-    # RSI 9 (faster for 1min)
-    delta    = df["close"].diff()
-    gain     = delta.clip(lower=0)
-    loss     = -delta.clip(upper=0)
-    avg_gain = gain.ewm(com=8, adjust=False).mean()
-    avg_loss = loss.ewm(com=8, adjust=False).mean()
-    rs       = avg_gain / avg_loss
-    df["rsi"] = 100 - (100 / (1 + rs))
+# ─── COMPUTE VWAP ─────────────────────────────────────
+def compute_vwap(symbol, quote):
+    """Running VWAP using typical price × volume."""
+    if symbol not in vwap_data:
+        vwap_data[symbol] = {"cum_tp_vol": 0.0, "cum_vol": 0.0}
 
-    # ATR 9
-    df["tr"] = pd.concat([
-        df["high"] - df["low"],
-        (df["high"] - df["close"].shift()).abs(),
-        (df["low"]  - df["close"].shift()).abs()
-    ], axis=1).max(axis=1)
-    df["atr"] = df["tr"].ewm(com=8, adjust=False).mean()
+    tp  = (quote["high"] + quote["low"] + quote["ltp"]) / 3
+    vol = quote["volume"]
 
-    return df
+    vwap_data[symbol]["cum_tp_vol"] = tp * vol
+    vwap_data[symbol]["cum_vol"]    = vol
+
+    if vol == 0:
+        return quote["ltp"]
+
+    return round(
+        vwap_data[symbol]["cum_tp_vol"] / vwap_data[symbol]["cum_vol"], 2
+    )
 
 # ─── CHECK SIGNAL ─────────────────────────────────────
-def check_signal(df):
-    if len(df) < 10:
-        return "NONE"
+def check_signal(symbol, quote, rsi, vwap):
+    """
+    BUY  : price > VWAP + RSI > 55 + DOM BID >= 1.5x ASK
+    SELL : price < VWAP + RSI < 45 + DOM ASK >= 1.5x BID
+    """
+    price     = quote["ltp"]
+    buy_qty   = quote["buy_qty"]
+    sell_qty  = quote["sell_qty"]
 
-    i    = len(df) - 1
-    curr = df.iloc[i]
-    prev = df.iloc[i - 1]
+    dom_ratio    = buy_qty / sell_qty if sell_qty > 0 else 0
+    dom_buy_ok   = dom_ratio >= 1.5
+    dom_sell_ok  = dom_ratio <= 0.67
 
-    price   = curr["close"]
-    vwap    = curr["vwap"]
-    rsi     = curr["rsi"]
-    vol     = curr["volume"]
-    avg_vol = df["volume"].iloc[-10:].mean()
+    above_vwap   = price > vwap
+    below_vwap   = price < vwap
 
-    # Core conditions
-    price_above_vwap = price > vwap
-    price_below_vwap = price < vwap
-    rsi_cross_up     = prev["rsi"] < 50 and rsi >= 50
-    rsi_cross_down   = prev["rsi"] > 50 and rsi <= 50
-    vol_ok           = vol > avg_vol * 0.8
+    # Get previous RSI for crossover detection
+    prices   = price_history.get(symbol, [])
+    prev_rsi = compute_rsi(prices[:-1]) if len(prices) > 2 else 50
 
-    # Volume buildup last 2 candles
-    buy_vol_prev  = prev["volume"] if prev["close"] > prev["open"] else 0
-    buy_vol_curr  = curr["volume"] if curr["close"] > curr["open"] else 0
-    sell_vol_prev = prev["volume"] if prev["close"] < prev["open"] else 0
-    sell_vol_curr = curr["volume"] if curr["close"] < curr["open"] else 0
+    rsi_cross_up   = prev_rsi < 50 and rsi >= 50
+    rsi_cross_down = prev_rsi > 50 and rsi <= 50
+    rsi_bullish    = rsi > 55
+    rsi_bearish    = rsi < 45
 
-    buy_building  = buy_vol_curr  > buy_vol_prev  and buy_vol_prev  > 0
-    sell_building = sell_vol_curr > sell_vol_prev and sell_vol_prev > 0
+    # BUY
+    if above_vwap and rsi_bullish and rsi < 75 and dom_buy_ok:
+        return "BUY", dom_ratio
 
-    if price_above_vwap and rsi_cross_up and (buy_building or vol_ok):
-        return "BUY"
-    elif price_below_vwap and rsi_cross_down and (sell_building or vol_ok):
-        return "SELL"
-    return "NONE"
+    # SELL
+    elif below_vwap and rsi_bearish and dom_sell_ok:
+        return "SELL", dom_ratio
 
-# ─── CHECK DOM ────────────────────────────────────────
-def check_dom(token):
-    try:
-        depth   = market_api.get_full_market_quote(token, "2.0")
-        key     = list(depth.data.keys())[0]
-        dom     = depth.data[key].depth
-        bid_vol = sum(l.quantity for l in dom.buy[:5]  if l.quantity)
-        ask_vol = sum(l.quantity for l in dom.sell[:5] if l.quantity)
-        ratio   = bid_vol / ask_vol if ask_vol > 0 else 0
-        return ratio >= 1.5, ratio <= 0.67, ratio
-    except:
-        return False, False, 0
+    return "NONE", dom_ratio
 
 # ─── PLACE ORDER ──────────────────────────────────────
-def place_order(symbol, token, qty, transaction_type):
+def place_order(symbol, token, qty, side):
     if PAPER_TRADE:
-        log(f"  📋 PAPER ORDER — {transaction_type} {qty} {symbol}")
+        log(f"  📋 PAPER — {side} {qty} {symbol}")
         return "PAPER_123"
     try:
         order = upstox_client.PlaceOrderV3Request(
-            quantity           = qty,
-            product            = "I",
-            validity           = "DAY",
-            price              = 0,
-            instrument_token   = token,
-            order_type         = "MARKET",
-            transaction_type   = transaction_type,
-            disclosed_quantity = 0,
-            trigger_price      = 0,
-            is_amo             = False,
-            slice              = True
+            quantity=qty, product="I", validity="DAY",
+            price=0, instrument_token=token,
+            order_type="MARKET", transaction_type=side,
+            disclosed_quantity=0, trigger_price=0,
+            is_amo=False, slice=True
         )
-        response = order_api.place_order(order)
-        log(f"  ✅ ORDER — {response.data.order_id}")
-        return response.data.order_id
+        r = order_api.place_order(order)
+        log(f"  ✅ ORDER placed — {r.data.order_id}")
+        return r.data.order_id
     except Exception as e:
         log(f"  ❌ Order failed: {e}")
         return None
 
-# ─── MONITOR POSITIONS ────────────────────────────────
+# ─── MONITOR OPEN POSITIONS ───────────────────────────
 def monitor_positions():
     global daily_pnl
     for symbol, pos in list(open_positions.items()):
-        try:
-            quote = market_api.get_full_market_quote(WATCHLIST[symbol], "2.0")
-            key   = list(quote.data.keys())[0]
-            price = quote.data[key].last_price
+        quote = fetch_quote(symbol, WATCHLIST[symbol])
+        if not quote:
+            continue
+        price = quote["ltp"]
 
-            if price <= pos["sl"]:
-                pnl = -pos["sl_pts"] * pos["qty"]
-                daily_pnl += pnl
-                log(f"  🔴 SL HIT — {symbol} @ ₹{price} | P&L: ₹{pnl:.0f}")
-                place_order(symbol, WATCHLIST[symbol], pos["qty"], "SELL")
-                del open_positions[symbol]
+        if price <= pos["sl"]:
+            pnl = -pos["sl_pts"] * pos["qty"]
+            daily_pnl += pnl
+            log(f"  🔴 SL HIT — {symbol} @ ₹{price} | P&L: ₹{pnl:.0f}")
+            place_order(symbol, WATCHLIST[symbol], pos["qty"], "SELL")
+            del open_positions[symbol]
 
-            elif price >= pos["target"]:
-                pnl = pos["tgt_pts"] * pos["qty"]
-                daily_pnl += pnl
-                log(f"  🟢 TARGET HIT — {symbol} @ ₹{price} | P&L: ₹{pnl:.0f}")
-                place_order(symbol, WATCHLIST[symbol], pos["qty"], "SELL")
-                del open_positions[symbol]
-
-        except Exception as e:
-            log(f"  ❌ Monitor error {symbol}: {e}")
-
-# ─── SAVE SIGNAL DATA FOR AI TRAINING ────────────────
-def save_signal(symbol, price, vwap, rsi, atr, signal):
-    data = {
-        "datetime"   : datetime.now().strftime("%Y-%m-%d %H:%M"),
-        "symbol"     : symbol,
-        "price"      : round(price, 2),
-        "vwap"       : round(vwap, 2),
-        "rsi"        : round(rsi, 2),
-        "atr"        : round(atr, 2),
-        "signal"     : signal,
-        "above_vwap" : int(price > vwap),
-        "rsi_val"    : round(rsi, 2),
-    }
-    with open("signal_log.json", "a") as f:
-        f.write(json.dumps(data) + "\n")
+        elif price >= pos["target"]:
+            pnl = pos["tgt_pts"] * pos["qty"]
+            daily_pnl += pnl
+            log(f"  🟢 TARGET HIT — {symbol} @ ₹{price} | P&L: ₹{pnl:.0f}")
+            place_order(symbol, WATCHLIST[symbol], pos["qty"], "SELL")
+            del open_positions[symbol]
 
 # ─── MAIN SCAN ────────────────────────────────────────
 def run_scan():
     global daily_pnl
 
     now = datetime.now().strftime("%H:%M")
-
     log(f"\n{'='*50}")
-    log(f"  SCAN at {now}")
-    log(f"  Daily P&L: ₹{daily_pnl:.0f} | Positions: {len(open_positions)}")
+    log(f"  SCAN at {now} | P&L: ₹{daily_pnl:.0f} | Positions: {len(open_positions)}")
     log(f"{'='*50}")
 
     # Kill switch
     if daily_pnl <= -MAX_DAILY_LOSS:
-        log(f"  🚨 KILL SWITCH — Max daily loss hit. Bot stopped.")
+        log(f"  🚨 KILL SWITCH — loss ₹{abs(daily_pnl):.0f} hit limit. Bot stopped.")
         return
 
     # Market hours check
@@ -239,77 +244,86 @@ def run_scan():
         log(f"  ⏸️  Market closed — waiting")
         return
 
-    # Monitor open positions first
-    if open_positions:
-        log(f"  Monitoring {len(open_positions)} open positions...")
-        monitor_positions()
-
-    # Square off at 3:25pm
+    # Square off all at 3:25pm
     if now >= "15:25":
-        log(f"\n  ⏰ 3:25pm — squaring off all positions")
+        log("  ⏰ 3:25pm — squaring off all positions")
         for symbol in list(open_positions.keys()):
             pos = open_positions[symbol]
             place_order(symbol, WATCHLIST[symbol], pos["qty"], "SELL")
-            pnl = (list(open_positions.values())[0]["entry"]) * pos["qty"]
             del open_positions[symbol]
-            log(f"  Squared off {symbol}")
         return
 
+    # Reset VWAP at market open
+    if now == "09:15":
+        vwap_data.clear()
+        log("  🔄 VWAP reset for new day")
+
+    # Monitor open positions first
+    if open_positions:
+        monitor_positions()
+
     # Scan all stocks
+    signals_found = 0
+
     for symbol, token in WATCHLIST.items():
 
         if symbol in open_positions:
             continue
 
-        df = fetch_candles(symbol, token)
-        if df is None or len(df) < 10:
+        # Fetch live quote
+        quote = fetch_quote(symbol, token)
+        if not quote:
             continue
 
-        df     = compute_indicators(df)
-        signal = check_signal(df)
+        price = quote["ltp"]
 
-        curr  = df.iloc[-1]
-        price = curr["close"]
-        vwap  = curr["vwap"]
-        rsi   = curr["rsi"]
-        atr   = curr["atr"]
+        # Update price history with latest price
+        update_history(symbol, price)
 
-        log(f"\n  {symbol} — ₹{price:.1f} | VWAP:{vwap:.1f} | RSI:{rsi:.1f}")
+        # Compute indicators
+        prices = price_history.get(symbol, [])
+        rsi    = compute_rsi(prices)
+        vwap   = compute_vwap(symbol, quote)
+        atr    = quote["high"] - quote["low"]
 
-        # Save for AI training
-        save_signal(symbol, price, vwap, rsi, atr, signal)
+        # Check signal
+        signal, dom_ratio = check_signal(symbol, quote, rsi, vwap)
 
+        # Save all data for AI training later
+        with open("signal_log.json", "a") as f:
+            f.write(json.dumps({
+                "time"       : now,
+                "symbol"     : symbol,
+                "price"      : price,
+                "vwap"       : vwap,
+                "rsi"        : rsi,
+                "signal"     : signal,
+                "dom_ratio"  : round(dom_ratio, 2),
+                "above_vwap" : int(price > vwap),
+                "volume"     : quote["volume"]
+            }) + "\n")
+
+        # Act on signal
         if signal == "BUY":
-            log(f"  📶 BUY signal")
-            dom_buy, _, ratio = check_dom(token)
+            sl_pts  = round(atr * 0.3, 2) if atr > 0 else 5
+            tgt_pts = round(atr * 0.6, 2) if atr > 0 else 10
+            risk    = CAPITAL * RISK_PCT
+            qty     = max(1, int(risk / sl_pts)) if sl_pts > 0 else 1
 
-            if dom_buy:
-                sl_pts  = round(atr * 1.0, 2)
-                tgt_pts = round(atr * 2.0, 2)
-                risk    = CAPITAL * RISK_PCT
-                qty     = max(1, int(risk / sl_pts)) if sl_pts > 0 else 1
+            log(f"\n  {symbol} — ₹{price} | VWAP:₹{vwap} | RSI:{rsi} | DOM:{dom_ratio:.2f}x")
+            log(f"  🟢 BUY | Entry:₹{price} SL:₹{round(price-sl_pts,2)} TGT:₹{round(price+tgt_pts,2)} Qty:{qty}")
 
-                log(f"  ✅ DOM confirmed ({ratio:.2f}x)")
-                log(f"  Entry  : ₹{price:.2f}")
-                log(f"  SL     : ₹{price - sl_pts:.2f} (-{sl_pts:.1f})")
-                log(f"  Target : ₹{price + tgt_pts:.2f} (+{tgt_pts:.1f})")
-                log(f"  Qty    : {qty} shares")
-                log(f"  Risk   : ₹{qty * sl_pts:.0f} | Reward: ₹{qty * tgt_pts:.0f}")
-
-                order_id = place_order(symbol, token, qty, "BUY")
-
-                if order_id:
-                    open_positions[symbol] = {
-                        "entry"   : price,
-                        "sl"      : round(price - sl_pts,  2),
-                        "target"  : round(price + tgt_pts, 2),
-                        "sl_pts"  : sl_pts,
-                        "tgt_pts" : tgt_pts,
-                        "qty"     : qty,
-                        "order_id": order_id
-                    }
-            else:
-                log(f"  ⏸️  DOM weak ({ratio:.2f}x) — skip")
+            order_id = place_order(symbol, token, qty, "BUY")
+            if order_id:
+                open_positions[symbol] = {
+                    "entry"   : price,
+                    "sl"      : round(price - sl_pts,  2),
+                    "target"  : round(price + tgt_pts, 2),
+                    "sl_pts"  : sl_pts,
+                    "tgt_pts" : tgt_pts,
+                    "qty"     : qty
+                }
+                signals_found += 1
 
         elif signal == "SELL" and symbol in open_positions:
             pos = open_positions[symbol]
@@ -317,25 +331,31 @@ def run_scan():
             daily_pnl += pnl
             place_order(symbol, token, pos["qty"], "SELL")
             del open_positions[symbol]
-            log(f"  🔴 Closed {symbol} | P&L: ₹{pnl:.0f}")
+            log(f"\n  🔴 SELL {symbol} @ ₹{price} | P&L: ₹{pnl:.0f}")
+            signals_found += 1
 
-        else:
-            log(f"  ⬜ No signal")
+        time.sleep(0.2)
 
-        time.sleep(0.3)  # avoid API rate limit
+    if signals_found == 0:
+        log(f"  ⬜ No signals this scan")
+    else:
+        log(f"  ✅ {signals_found} signal(s) acted on")
 
 # ─── START ────────────────────────────────────────────
 if __name__ == "__main__":
     log("=" * 50)
     log("  LIVE BOT STARTING")
     log(f"  Capital    : ₹{CAPITAL:,}")
-    log(f"  Mode       : {'PAPER TRADING' if PAPER_TRADE else 'LIVE TRADING'}")
-    log(f"  Interval   : 1 min candles | scan every 5 mins")
+    log(f"  Mode       : {'PAPER TRADING' if PAPER_TRADE else '🔴 LIVE TRADING'}")
+    log(f"  Scan every : 5 minutes")
     log(f"  Kill switch: ₹{MAX_DAILY_LOSS} daily loss")
-    log(f"  Stocks     : {len(WATCHLIST)} Nifty stocks")
+    log(f"  Stocks     : {len(WATCHLIST)} Nifty 100 stocks")
     log("=" * 50)
 
-    # Run once immediately
+    # Seed RSI with yesterday's data
+    seed_price_history()
+
+    # First scan immediately
     run_scan()
 
     # Then every 5 minutes

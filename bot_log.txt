@@ -2208,3 +2208,1296 @@ Reason: Bad Request
 HTTP response headers: HTTPHeaderDict({'Date': 'Fri, 03 Jul 2026 08:27:48 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': '3d5bf889-be67-48ae-b7cd-aac4cc9b64fc', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': '2cf725e8-872f-4797-a7ab-4264c9a9bbda', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=ISTwXEZjoHsVsZsbgzhwVUw1W5T10CevnAw_CNRKnCQ-1783067268.4861827-1.0.1.1-z8FluEQYTB.1bI4ekExWBFomTiJaBY_BKVENIY7zKXbeITQCEIC4lEMqwLvGM4lZ.bijblFirDhYQ_l2pHJTXy9tYSPt_gZdhx8YfV1fBwVzFheDmCUbG0YtNvXY55Q2; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Fri, 03 Jul 2026 08:57:48 GMT, _cfuvid=fCit4sMC59T9Is.nERmERnGqN6gD4GQp_9g4T_oIHtw-1783067268.4861827-1.0.1.1-2YkR1vi89FRU7U8fv1s0Q8ah42FaLzBSFuJ9ErZIJPk; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a154835c0faa564c-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
 HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
 
+2026-07-03 14:12:47,306 | 
+==================================================
+2026-07-03 14:12:47,322 |   SCAN at 14:12
+2026-07-03 14:12:47,340 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-03 14:12:47,340 | ==================================================
+2026-07-03 14:13:06,602 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/historical-candle/NSE_EQ%7CINE002A01018/15minute/2026-07-03/2026-07-03
+2026-07-03 14:13:07,056 |   \u274c Fetch failed RELIANCE: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Fri, 03 Jul 2026 08:43:08 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': '17712e99-175c-4969-acd6-0df5e7962342', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': '6a019cbf-63d2-4bec-8d2a-aba8793c569d', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=UZo7xv1nU6sqoUiZiRxrqu7nh4W6creDD_FEe1oYOJo-1783068188.2729595-1.0.1.1-F0DIrQGz1LiDbcDbFvM_OX3SSNIPpnKpjuGVqWvQ4QaK0mxyXt1ExIqYuUFGyzcVBTCID9AGIMa5B595Km.lX6u735Ac2qG2XYfOFJ.AUHxlbHncBd_dDYdO27EUaLUy; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Fri, 03 Jul 2026 09:13:08 GMT, _cfuvid=CS7wNSXPW._FwtlqjmcfIu2NzyAu6_s.DpycE464d8s-1783068188.2729595-1.0.1.1-QzKLMYtXup2Ni2qUJLe8HgRYes_7CteXYOyxsddiWNg; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15499d0bb761f8f-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-03 14:13:07,098 |   \u274c Fetch failed TCS: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Fri, 03 Jul 2026 08:43:08 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': '0314aa30-848c-42d3-ad0f-d081f0c8b2be', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': '6ffbbcd8-aaf7-447a-b0bd-db02083d1f79', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=LU9zdXjWB0bXqsfohPaHEETk_QX2d8VDKjYsPcEUGE8-1783068188.329549-1.0.1.1-0L2ksHJTJWMJuu0BgrhhV7vfsBBiC1ivWCy6sWecC3CcTyLx3SZ9hhggnFmVxfe9iF0uqUdHsLg1lP0nM1bX7F8KLoSI1jeiBcW2QpFWZ4O249qGX4yFi0hxauHXWeqU; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Fri, 03 Jul 2026 09:13:08 GMT, _cfuvid=FmsnhpwnVBMMsm6P5PdztyB3lY82u4wbu.pceMX3tr8-1783068188.329549-1.0.1.1-FcJiloTGZ53hL0ZSSOQhKejoe2W5sdaUVD5EQG9IEB0; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15499d10c181f8f-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-03 14:13:07,159 |   \u274c Fetch failed INFY: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Fri, 03 Jul 2026 08:43:08 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': '6f92354c-cdae-4956-84b5-705082752b79', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': '60b4a590-d501-4238-80c2-ec0b4fdfc772', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=TfeMq4jKBsNs3aTOfLMeq_TyBW00CbaTG8bW1CiaUVk-1783068188.3804157-1.0.1.1-OdtflHvXFLyF5a6rOcs4vl186d4dqglOFfzWr5stF9Hwb.B7By7g7XCgAGO4M_uh2upMUIVyvyBbC9duL3MqcjL8gw_cpIJYoSkAjW49Cu.9uL05LcoQ5P9AHxe1eFcn; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Fri, 03 Jul 2026 09:13:08 GMT, _cfuvid=e4TYOWSu7vCtWJn.JHO2gPowe.0fF1kLwBW0ePtT9ck-1783068188.3804157-1.0.1.1-XA3R_NxqGLRrlAgUoni7zstbTWpV2eEDKjKI_82hYCk; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15499d15cd91f8f-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-03 14:13:07,203 |   \u274c Fetch failed HDFCBANK: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Fri, 03 Jul 2026 08:43:08 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': 'babcb271-b57b-4d60-93ff-09e4381467e5', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': 'c642fa16-40ef-4138-a243-bca5d65f9628', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=9ItPP3ysvNVuIxbBnM98XLBOyBuRvKfuPalV314VCF8-1783068188.429361-1.0.1.1-OlaLeGBaQSctO0lb2jYLpx32AD8bWwGwKvKrlzk7Mx35smJVjiCmkflZuzinbegAxlc8A2F6t1bPCOr_DjPbbrAnjafp8RzTHLR8dsbSGoe0vGye43J_cDhU3HrzryX9; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Fri, 03 Jul 2026 09:13:08 GMT, _cfuvid=UaPONuJ9t2e6NOXkQPp0zRYTcslrKdrXIQ9aohREjI8-1783068188.429361-1.0.1.1-GXC9tZxlpd2bZ76a.6ZxnOzk_L1UnL6xY_iPdpe183s; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15499d1ad5c1f8f-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-03 14:13:07,252 |   \u274c Fetch failed ICICIBANK: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Fri, 03 Jul 2026 08:43:08 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': '6c99eeec-648c-42ca-bcad-ed8a9f022797', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': 'cb3d2a51-edbe-4aa3-8c70-534ef46334ec', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=22PvmSyaluaWcvfh.i7msJQHVkHFKriaa2qv6auFUL0-1783068188.4754992-1.0.1.1-gT0wFByjF.PVeWBXInHlTOigWxI8u95bYsyyLYUtGEK5wvVHjkwGSy.NUT_mn.2VHbgmz8xyoG_rLCYAmhsadIXw0yvptdI3FziprcyTJc4CYKWVJm.NcA5iNYWiRzz5; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Fri, 03 Jul 2026 09:13:08 GMT, _cfuvid=6wWFsXlE_0zJ1YoqT.I0jRGOgX2zBXTyRQtzmlS1lOc-1783068188.4754992-1.0.1.1-1WV9CMJrDijPYPbzEQXUhtP3LDddonkU9ArK1mM.l3g; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15499d1fdef1f8f-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-03 14:28:07,355 | 
+==================================================
+2026-07-03 14:28:07,362 |   SCAN at 14:28
+2026-07-03 14:28:07,371 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-03 14:28:07,371 | ==================================================
+2026-07-03 14:28:26,667 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/historical-candle/NSE_EQ%7CINE002A01018/15minute/2026-07-03/2026-07-03
+2026-07-03 14:28:27,390 |   \u274c Fetch failed RELIANCE: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Fri, 03 Jul 2026 08:58:28 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': '812468ce-4618-43ff-b3f9-5b82c31d163a', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': '770f896f-7837-49a4-b019-0d9c85aab1c2', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=jCF4PpcPcMcTFlJ4syYFd5uYnuGA1wGn3Zwibp7wrKM-1783069108.6077862-1.0.1.1-oCHEgSHZ1Ckag0d2UXmIcSgme1u1cf6Xt.rHQ42GavOA8vuJgC3yk9UZiPsB_1HPiOrVRqoWfySje9a.CGqHpfLweYy8K4eexurgi0DJeunieIMNHGmAKc8kHTfV7c6i; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Fri, 03 Jul 2026 09:28:28 GMT, _cfuvid=fPF8C58PaHWpZzvMGBySHTX3eBGL3UFkxYRrhoSp52E-1783069108.6077862-1.0.1.1-H6c_7wgyZ2OVC6lVwTz03oh8Y.UGe3xPCxiDmxA3YM4; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a154b048c80a68e2-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-03 14:28:27,441 |   \u274c Fetch failed TCS: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Fri, 03 Jul 2026 08:58:28 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': '0d178d87-c656-4d0e-8ae2-a32600c490eb', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': '7d3c5f45-a1d5-4208-90a4-aa0be89d71ad', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=WfZvGyeseF6ytI.P0g31xsQOGuL84gc1OE7bkrf6CJ4-1783069108.659448-1.0.1.1-j_RMIAcsBuw6.9haUnBfY451yb2Z_q.m8ZHae5N.D.OmeGunK7OhA82Ji_fHVcdk1._iyGW1J2VLM8FJAUrma4GoMCnMIFprYD9_BokpApVwUqtt0yH7_yf6ij5GWsvt; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Fri, 03 Jul 2026 09:28:28 GMT, _cfuvid=8rY7sCtQX17WuOHr4AkYCXqQCZVbKYkYGpwNWUVHMGk-1783069108.659448-1.0.1.1-mkn76YJ2eQ0Db7y3z9B.agtTB_bivBnqdc4ktmviAjA; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a154b049189868e2-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-03 14:28:27,488 |   \u274c Fetch failed INFY: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Fri, 03 Jul 2026 08:58:28 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': '95c97ea8-e593-4b00-927e-207af5ce268b', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': '63f6b8c9-5b68-4e38-b79f-e163a9398049', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=SQRYzy4nx_zJ7unvmjINfPm1YJ5KUbdnxAoSHZ6Rcq8-1783069108.7151752-1.0.1.1-_Xq3b.EEjovQm_NVcpr7WmaIgS5jechMdQ.7PrVElVP9L0CFeE8nrb8_dxtXG9iFgcKhVOpfARQ7GxBKvyoWlXUfbhXyMn89Cu0QgiUkahGa_LjCXmAzd3Qy.roWqre3; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Fri, 03 Jul 2026 09:28:28 GMT, _cfuvid=JhcAmwI2ir2EtwR5xf.wGjB5YqE1H4Cco.sdVrlmQ60-1783069108.7151752-1.0.1.1-WP07CoCUUjUvUTexlKE1U93hf1bfyBH3Zp30TPg3D4w; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a154b049793568e2-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-03 14:28:27,540 |   \u274c Fetch failed HDFCBANK: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Fri, 03 Jul 2026 08:58:28 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': 'e813d81b-b317-4db3-9ab3-f68352e63c49', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': 'bb7eedc8-2880-40ed-8267-4de8a8be7014', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=OMxP_B7BDVcC06te84TcnSkxYJeEcZy.i105IYNI6Wk-1783069108.759223-1.0.1.1-apFcpcvHw8IIFjACFLJAsoMhbkQ9rJXb6aI8CY2U0jEj27ZVwwWWh0DstTBnM05.KWYEXTY7W_tK65YyTQ9RlG_IrHZYRsHrfZ46mKMqJ2e6m1C5E0MYedsGRERB0u3c; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Fri, 03 Jul 2026 09:28:28 GMT, _cfuvid=eP_aLD3L3lyTjky0QO8bDFgctou7nvwv1QOJqhxRYCA-1783069108.759223-1.0.1.1-1QfxSyQ7GUZFAOotG5Iq.IxuO5sXOlY7fxhFc4pDf8U; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a154b049b9c868e2-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-03 14:28:27,592 |   \u274c Fetch failed ICICIBANK: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Fri, 03 Jul 2026 08:58:28 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': 'c5bf9e5b-9ad9-4e24-ac96-edecdcd6f185', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': '9885589c-800d-44de-b674-ba3c9a5e6b83', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=O6Nc0iNrr1bdlksXlH8qfiMTOSY.9ItpF6lnNm8jDXs-1783069108.812449-1.0.1.1-SB4RiAPUCoBf8LXdVDxUx4eekqHCi4qN7nhZFIaqz3JCp0StvSk2jmaLh5DYfrN72aCOy4ZloEq79uIDrCfECiizza51x8pleICbSx5FWxna2EgS9VIbftuH3E8qbR._; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Fri, 03 Jul 2026 09:28:28 GMT, _cfuvid=UsldHmyyATFTDTpCz_WiaR3tHbgFWVqR9mhLCdBCe4k-1783069108.812449-1.0.1.1-K4zAnUfXXxx54s4sDftk_qwxX8.ni.jPSIEZAyHbdfk; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a154b04a1a7668e2-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-03 14:43:27,665 | 
+==================================================
+2026-07-03 14:43:27,681 |   SCAN at 14:43
+2026-07-03 14:43:27,691 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-03 14:43:27,691 | ==================================================
+2026-07-03 14:43:46,992 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/historical-candle/NSE_EQ%7CINE002A01018/15minute/2026-07-03/2026-07-03
+2026-07-03 14:43:47,432 |   \u274c Fetch failed RELIANCE: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Fri, 03 Jul 2026 09:13:48 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': 'f7c5854f-495a-4f73-baba-f9a4dd0f53ce', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': '25f19cb4-9027-4dd3-ade5-e4beb8dc7b57', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=oiAuKXcZ1NLnCn5CAMxxsu2nfVayqgDtpjRFdBwEZ70-1783070028.6511633-1.0.1.1-T4_EhuoLBw4HTtIP_qe7SBpYvgs6Y1SHm1LwV_7q0U6HA26euB7qUdN01merrtVTFsE8VpU7PwKtts8a9CXckTZwAPTer43batot3ymemzsvH90NNhrxO6lhpsj_9mej; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Fri, 03 Jul 2026 09:43:48 GMT, _cfuvid=N3N36D8d0dqLzHUAJmwjJnQeNdeQskDwVqIfCdghgsE-1783070028.6511633-1.0.1.1-5ykT.mkfXf1.r.GqH.4TkgLZhe0CNn2YmFZUxFJ8_ZY; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a154c6bf19346068-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-03 14:43:47,485 |   \u274c Fetch failed TCS: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Fri, 03 Jul 2026 09:13:48 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': 'bb5a377e-720f-4be8-99e7-a35e40b91aff', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': '5a0e0802-1204-4605-9ddd-23e76da4667d', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=ktDv6lRjKoeu8TJXaZhjvOcznZQZN8xIKDronBKxofg-1783070028.7104998-1.0.1.1-b.SKUxNtQETDjCuh61a2xRRKMg0515VnFhHxRDqoQ9ZfgayNTNKNbhfZAt4zj2ARImwE.uCX_rMidaH5umy9IXafDAVkufvKGBVKue3zE3_IYX_dnK1Ap0nIMTXFjrIO; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Fri, 03 Jul 2026 09:43:48 GMT, _cfuvid=oBcA.X0qb6fqcSS4n9C5M0Gy5R9nPn.O7jE_WmE4xqs-1783070028.7104998-1.0.1.1-2sBrTMB03xkORpQAeRF5uOzuv4X508lNJrQP9f2u3vI; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a154c6bf6a0b6068-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-03 14:43:47,532 |   \u274c Fetch failed INFY: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Fri, 03 Jul 2026 09:13:48 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': '7b63887b-80b9-44b6-afa8-b3380d1e6fbd', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': '69b30d5a-3c3b-4bb6-92e2-20b758785093', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=KsVrbnb_x6V5.gy1L_wzKjg5b04It2JWuwRPaLhigAc-1783070028.758548-1.0.1.1-Fj5IAmpPwf5KsFHRLTM5DjntBx7q0WHh_O.YLq2fbEOHxeCeCG8XkY.WOBXRiBPMrTSovKbtLjNOzA3NERPCu1kDMV8OGtZQDgw9apsY4A_ZNXaMWpvUPQJiQ.2qb3Jr; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Fri, 03 Jul 2026 09:43:48 GMT, _cfuvid=OKrcQmfn4Vy9i_GtupYEHDmMeESJGy5kpiqHf._pRj4-1783070028.758548-1.0.1.1-_uKWozIh1LFFBIoF3FdwmBtVZtvz1N8C_.INE_0J1t4; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a154c6bfbaaf6068-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-03 14:43:47,611 |   \u274c Fetch failed HDFCBANK: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Fri, 03 Jul 2026 09:13:48 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': 'bb799b6d-ce21-459e-8e4c-74540fe421a4', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': '81f7b5a8-cc47-49cf-97df-f3acb1cc82ba', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=j7wWS._2JTk6vzzrmaHiOx3v6aL.bLLK5vs8wUBlOY8-1783070028.8029397-1.0.1.1-Z7KcU56ebfCN.MkdH6uQJUPm5t3STwDr3..V3HXvXEtaUOVVXf1qPikektoXPnorm6xViwZxxkcTU6x3MWu2yoT9TEphczUPzXvgpFr5PyaKw7FhlUStSlMnGuPD3wZJ; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Fri, 03 Jul 2026 09:43:48 GMT, _cfuvid=kJDEi_e5usHxcTGvXQWiX_Qi9WAn0_SN7FN0vGfTY9A-1783070028.8029397-1.0.1.1-dPsIEXb0FzHvco1KGJ2EIHVFuc_mrK7qbWq1KPv_vSw; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a154c6c00b666068-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-03 14:43:47,658 |   \u274c Fetch failed ICICIBANK: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Fri, 03 Jul 2026 09:13:48 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': '474487a1-1aea-4497-a6cb-a74421052659', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': '754e737b-3954-4cf7-b0cb-959e4ac5bdd2', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=Myhd9UItkFcv7VeegMysDzqFdxnN8Op0Jibuf2loU2Y-1783070028.8826597-1.0.1.1-_tfKLBbQnAwb3ZSzaweWTXpU0B7J1eRxkS8DI33IEMXk6KMtPxemJtOOlxmgKAXMh79takt.jJ3t8eCY7xpBsbJTsqz1uL443cmsk.JaaLLzc2xycNd2PgtAJoBfqIAY; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Fri, 03 Jul 2026 09:43:48 GMT, _cfuvid=ShbIQgbLh060uD6B9d4vBJjGi6fR8gC0LE2m4MJp5Uk-1783070028.8826597-1.0.1.1-YRGJ0WrxAS7L_RSJGja.9wA9pYGUWqcsT6v.HqbB0yc; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a154c6c08ccd6068-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-03 20:29:16,496 | 
+==================================================
+2026-07-03 20:29:16,501 |   SCAN at 20:29
+2026-07-03 20:29:16,503 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-03 20:29:16,506 | ==================================================
+2026-07-03 20:29:16,506 |   \u23f8\ufe0f  Market closed
+2026-07-03 20:44:16,569 | 
+==================================================
+2026-07-03 20:44:16,577 |   SCAN at 20:44
+2026-07-03 20:44:16,581 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-03 20:44:16,585 | ==================================================
+2026-07-03 20:44:16,585 |   \u23f8\ufe0f  Market closed
+2026-07-03 20:49:20,282 | ==================================================
+2026-07-03 20:49:20,285 |   LIVE BOT STARTING
+2026-07-03 20:49:20,285 |   Capital    : \u20b950,000
+2026-07-03 20:49:20,285 |   Mode       : PAPER TRADING
+2026-07-03 20:49:20,287 |   Kill switch: \u20b9200 daily loss
+2026-07-03 20:49:20,287 |   Stocks     : RELIANCE, TCS, HDFCBANK, BHARTIARTL, ICICIBANK, INFY, SBIN, HINDUNILVR, ITC, LT, KOTAKBANK, AXISBANK, BAJFINANCE, ASIANPAINT, MARUTI, SUNPHARMA, TATAMOTORS, WIPRO, TITAN, ONGC, NTPC, POWERGRID, TATASTEEL, ADANIENT, ADANIPORTS, HCLTECH, BAJAJFINSV, JSWSTEEL, COALINDIA, HINDALCO, GRASIM, DRREDDY, TECHM, DIVISLAB, BAJAJ-AUTO, EICHERMOT, HEROMOTOCO, CIPLA, TATACONSUM, BRITANNIA, APOLLOHOSP, BPCL, INDUSINDBK, M&M, SBILIFE, HDFCLIFE, SHREECEM, PIDILITIND, HAVELLS, DABUR, MARICO, COLPAL, GODREJCP, LUPIN, AUROPHARMA, TORNTPHARM, BOSCHLTD, VOLTAS, TATAPOWER, ADANIGREEN, TORNTPOWER, CONCOR, INDIGO, IRCTC, DLF, ZOMATO, PERSISTENT, LTIM, MPHASIS, COFORGE, OFSS, OBEROIRLTY, SIEMENS, CUMMINSIND, MUTHOOTFIN, PAGEIND, BERGEPAINT, ABBOTINDIA, ALKEM, BIOCON, IPCALAB, MCDOWELL-N, TATACOMM, CESC, POLICYBZR, NYKAA, DELHIVERY, ADANITRANS, GMRAIRPORT, UBL, WHIRLPOOL, NESTLEIND, GLAXO, PFIZER, INDIAMART, PAYTM
+2026-07-03 20:49:20,287 | ==================================================
+2026-07-03 20:49:20,287 | 
+==================================================
+2026-07-03 20:49:20,287 |   SCAN at 20:49
+2026-07-03 20:49:20,287 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-03 20:49:20,289 | ==================================================
+2026-07-03 20:49:20,289 |   \u23f8\ufe0f  Market closed
+2026-07-03 20:49:20,289 | 
+  Bot running — press Ctrl+C to stop
+2026-07-03 20:59:16,633 | 
+==================================================
+2026-07-03 20:59:16,642 |   SCAN at 20:59
+2026-07-03 20:59:16,647 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-03 20:59:16,650 | ==================================================
+2026-07-03 20:59:16,652 |   \u23f8\ufe0f  Market closed
+2026-07-03 21:14:16,729 | 
+==================================================
+2026-07-03 21:14:16,739 |   SCAN at 21:14
+2026-07-03 21:14:16,748 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-03 21:14:16,751 | ==================================================
+2026-07-03 21:14:16,753 |   \u23f8\ufe0f  Market closed
+2026-07-03 21:29:16,792 | 
+==================================================
+2026-07-03 21:29:16,798 |   SCAN at 21:29
+2026-07-03 21:29:16,798 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-03 21:29:16,799 | ==================================================
+2026-07-03 21:29:16,799 |   \u23f8\ufe0f  Market closed
+2026-07-03 21:44:16,826 | 
+==================================================
+2026-07-03 21:44:16,830 |   SCAN at 21:44
+2026-07-03 21:44:16,830 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-03 21:44:16,830 | ==================================================
+2026-07-03 21:44:16,830 |   \u23f8\ufe0f  Market closed
+2026-07-03 21:59:16,864 | 
+==================================================
+2026-07-03 21:59:16,864 |   SCAN at 21:59
+2026-07-03 21:59:16,864 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-03 21:59:16,864 | ==================================================
+2026-07-03 21:59:16,959 |   \u23f8\ufe0f  Market closed
+2026-07-03 22:14:17,006 | 
+==================================================
+2026-07-03 22:14:17,013 |   SCAN at 22:14
+2026-07-03 22:14:17,016 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-03 22:14:17,019 | ==================================================
+2026-07-03 22:14:17,019 |   \u23f8\ufe0f  Market closed
+2026-07-03 22:29:17,072 | 
+==================================================
+2026-07-03 22:29:17,078 |   SCAN at 22:29
+2026-07-03 22:29:17,078 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-03 22:29:17,086 | ==================================================
+2026-07-03 22:29:17,086 |   \u23f8\ufe0f  Market closed
+2026-07-04 12:48:30,521 | 
+==================================================
+2026-07-04 12:48:30,530 |   SCAN at 12:48
+2026-07-04 12:48:30,534 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-04 12:48:30,539 | ==================================================
+2026-07-04 12:48:49,918 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/historical-candle/NSE_EQ%7CINE002A01018/15minute/2026-07-04/2026-07-04
+2026-07-04 12:48:50,929 |   \u274c Fetch failed RELIANCE: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 07:18:51 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqId': 'b2f6b8c5-e326-46b8-9014-a8bf568b9548', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestId': '005a0c98-bc92-4e8f-90c7-62154a81b183', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'Strict-Transport-Security': 'max-age=0; includeSubDomains', 'X-Frame-Options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=FhhGVMISMBxzcimEpxQKL85qAmVrpnBBwPE6un2WfCA-1783149531.8676264-1.0.1.1-UKc3R_v6jjDKqyI4k1oVzCe_RY8vAAnBRGAE5l.eqoT7EHHtnO3i_mySvbAjIevZC6FbPSzvzH.go2BleMYTh7ZV0ci9wWF5HlUjkDdOxaHr0Jswtdqd3cmOFtKTh9Lk; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 07:48:51 GMT, _cfuvid=cSqnuMT9D0hA707lFx2Jd5.JSPVjaWSpWV1ee_.X7GY-1783149531.8676264-1.0.1.1-KLZ3DPxs_bQrXyVWcl.k3L8IdNln9HtLgVnW85gq.6c; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15c5bbe29d225a4-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 12:48:51,012 |   \u274c Fetch failed TCS: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 07:18:52 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqId': '8497e4a1-1aab-4dc5-89f6-db92740de221', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestId': '1d719043-6bcc-4cb9-9ab0-ff8c65c20830', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'Strict-Transport-Security': 'max-age=0; includeSubDomains', 'X-Frame-Options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=meMJXU37AjVqkhg2k2uygHTcW7yYe8uVVBRZHCfg9qs-1783149531.9767632-1.0.1.1-Rkkem5x4OfQS.h15S4aNQ3zFNHujGFrev2bemZhwqvpc6LejaiRDFfgiDFCi3LYufkJkgCF4sTSmKWoPIAMMQBTCAw3_2y3t7pz9QN6JEFvW9HQDtHbvS4c833NuNC5i; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 07:48:52 GMT, _cfuvid=eVgOxltusVO_YE2NihY8l18TZqoHqkqAdTpH9wcSo1k-1783149531.9767632-1.0.1.1-4VtEmc9aPms7F2PhyAi97Hq5e9cEh6p4A9bv_5ChdbQ; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15c5bbedb0625a4-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 12:48:51,080 |   \u274c Fetch failed INFY: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 07:18:52 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': 'bfd3d793-3441-4094-8fb5-660b75fe17d3', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': '6984660c-0fc5-4244-a14b-5cbd59312ec2', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=zjT4BFDfuI02q3mwA.9mN3swfn6B9HufRnSzFncN5kg-1783149532.039095-1.0.1.1-z8sO.jQCRqvNaMa8Dm8JnNTnP4f8MbYsq.TCtJH3sxR_VjdPfc.hKwZBGYzADbWaXiqIsW1_l6OdmK2smH9Y_uMYSdMUFrIHjcayzapYeBqJ8i20xaHCgcDh1zOkr3w_; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 07:48:52 GMT, _cfuvid=_vXYWdRprn5wdDjmDSegbR7qJFipQCMqB7HPxIFqFlI-1783149532.039095-1.0.1.1-6Fm70qvfqaeI4ygfm1FsqA.IMRwLdnrZ5qhjugmJk_4; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15c5bbf3bc625a4-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 12:48:51,142 |   \u274c Fetch failed HDFCBANK: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 07:18:52 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': '3d541302-fd37-4478-ba97-b9123f2024b9', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': 'cb438acb-c372-48c2-b6dc-944fa42a13e5', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=.X3AGUQtmX0AFAFwuOiE_LCMereAjFRl32BhP4hOXlQ-1783149532.121618-1.0.1.1-EM5u9ZRn9V3YpaIT8L6NcVo11sWC7T3jy4NYL.w203HydeFQwLxFYv8De5VJACbdHAUzUFzQmk.C0vg5A6Tq.EiRCy0aZgeKpJukG1PWHZ9re7AWUhDBWRzXPOjdQS1N; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 07:48:52 GMT, _cfuvid=yFsme9GYnI.kYrg60GwUlyg6OUfbd70oBA.G2PEOslI-1783149532.121618-1.0.1.1-n26_KsMj5WltdA3oghhJ0FUavW_EY8HO2H4i4.OVIE0; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15c5bbfccf325a4-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 12:48:51,204 |   \u274c Fetch failed ICICIBANK: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 07:18:52 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': '550f1210-2a80-4405-ae33-0955021b5565', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': 'f0405d90-ed94-40a2-9dcb-301fcbc7c09a', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=hI_f_HI_pEKegk0wNk9h8Qf5Q_UpRUc.IYXDkSNR3hw-1783149532.1764984-1.0.1.1-s7FMg8ns4ON1vyDnOOSAioKC9vHo3dVjNqWD8TvZQ4b2Oa2m3GthphEWMxN_tzSoqIz2gcFQh9NvSNQ_3z.r6K_K5QmL7IAXUvGGG6TFk08xJq6ImksVV8DgQk24wpVD; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 07:48:52 GMT, _cfuvid=PaLv.HWOkhnUIdIWNdaSSq.xjLoPAJFfrR3IE2v8v2k-1783149532.1764984-1.0.1.1-tZjmSbZCwizR9TbD4drmD.kYe6TB7N9vo8cYDPOKW4s; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15c5bc01d9e25a4-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 13:00:43,586 | ==================================================
+2026-07-04 13:00:43,586 |   LIVE BOT STARTING
+2026-07-04 13:00:43,586 |   Capital    : \u20b950,000
+2026-07-04 13:00:43,588 |   Mode       : PAPER TRADING
+2026-07-04 13:00:43,588 |   Kill switch: \u20b9200 daily loss
+2026-07-04 13:00:43,588 |   Stocks     : ABBOTINDIA, ADANIENT, ADANIGREEN, ADANIPORTS, ALKEM, APOLLOHOSP, ASHOKLEY, ASIANPAINT, AUROPHARMA, AXISBANK, BAJAJ-AUTO, BAJAJFINSV, BAJAJHLDNG, BAJFINANCE, BANKBARODA, BERGEPAINT, BHARTIARTL, BIOCON, BOSCHLTD, BPCL, BRITANNIA, CANBK, CHOLAFIN, CIPLA, COALINDIA, COFORGE, COLPAL, CONCOR, CUMMINSIND, DABUR, DIVISLAB, DIXON, DLF, DRREDDY, EICHERMOT, ESCORTS, FEDERALBNK, GODREJCP, GRASIM, HAVELLS, HCLTECH, HDFCBANK, HDFCLIFE, HEROMOTOCO, HINDALCO, HINDUNILVR, ICICIBANK, IDFCFIRSTB, INDIGO, INDUSINDBK, IPCALAB, IRCTC, ITC, JSWSTEEL, KOTAKBANK, LT, LUPIN, M&M, MARICO, MARUTI, MOTHERSON, MPHASIS, MUTHOOTFIN, NAUKRI, NESTLEIND, NTPC, OBEROIRLTY, OFSS, ONGC, PAGEIND, PERSISTENT, PIDILITIND, PNB, POWERGRID, RBLBANK, RELIANCE, SAIL, SBILIFE, SBIN, SHREECEM, SIEMENS, SUNPHARMA, TATACONSUM, TATAPOWER, TATASTEEL, TCS, TECHM, TITAN, TORNTPHARM, TORNTPOWER, TRENT, UBL, UNIONBANK, VEDL, VOLTAS, WIPRO
+2026-07-04 13:00:43,588 | ==================================================
+2026-07-04 13:00:43,588 | 
+==================================================
+2026-07-04 13:00:43,588 |   SCAN at 13:00
+2026-07-04 13:00:43,588 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-04 13:00:43,590 | ==================================================
+2026-07-04 13:00:44,186 |   \u26a0\ufe0f  No candles yet for ABBOTINDIA
+2026-07-04 13:00:44,254 |   \u26a0\ufe0f  No candles yet for ADANIENT
+2026-07-04 13:00:44,316 |   \u26a0\ufe0f  No candles yet for ADANIGREEN
+2026-07-04 13:00:44,396 |   \u26a0\ufe0f  No candles yet for ADANIPORTS
+2026-07-04 13:00:44,449 |   \u26a0\ufe0f  No candles yet for ALKEM
+2026-07-04 13:00:44,510 |   \u26a0\ufe0f  No candles yet for APOLLOHOSP
+2026-07-04 13:00:44,560 |   \u26a0\ufe0f  No candles yet for ASHOKLEY
+2026-07-04 13:00:44,585 |   \u26a0\ufe0f  No candles yet for ASIANPAINT
+2026-07-04 13:00:44,650 |   \u26a0\ufe0f  No candles yet for AUROPHARMA
+2026-07-04 13:00:44,700 |   \u26a0\ufe0f  No candles yet for AXISBANK
+2026-07-04 13:00:44,758 |   \u26a0\ufe0f  No candles yet for BAJAJ-AUTO
+2026-07-04 13:00:44,816 |   \u26a0\ufe0f  No candles yet for BAJAJFINSV
+2026-07-04 13:00:44,872 |   \u26a0\ufe0f  No candles yet for BAJAJHLDNG
+2026-07-04 13:00:44,933 |   \u26a0\ufe0f  No candles yet for BAJFINANCE
+2026-07-04 13:00:44,981 |   \u26a0\ufe0f  No candles yet for BANKBARODA
+2026-07-04 13:00:45,040 |   \u26a0\ufe0f  No candles yet for BERGEPAINT
+2026-07-04 13:00:45,098 |   \u26a0\ufe0f  No candles yet for BHARTIARTL
+2026-07-04 13:00:45,179 |   \u26a0\ufe0f  No candles yet for BIOCON
+2026-07-04 13:00:45,234 |   \u26a0\ufe0f  No candles yet for BOSCHLTD
+2026-07-04 13:00:45,287 |   \u26a0\ufe0f  No candles yet for BPCL
+2026-07-04 13:00:45,359 |   \u26a0\ufe0f  No candles yet for BRITANNIA
+2026-07-04 13:00:45,431 |   \u26a0\ufe0f  No candles yet for CANBK
+2026-07-04 13:00:45,554 |   \u26a0\ufe0f  No candles yet for CHOLAFIN
+2026-07-04 13:00:45,608 |   \u26a0\ufe0f  No candles yet for CIPLA
+2026-07-04 13:00:45,675 |   \u26a0\ufe0f  No candles yet for COALINDIA
+2026-07-04 13:00:45,731 |   \u26a0\ufe0f  No candles yet for COFORGE
+2026-07-04 13:00:45,790 |   \u26a0\ufe0f  No candles yet for COLPAL
+2026-07-04 13:00:45,855 |   \u26a0\ufe0f  No candles yet for CONCOR
+2026-07-04 13:00:45,917 |   \u26a0\ufe0f  No candles yet for CUMMINSIND
+2026-07-04 13:00:45,966 |   \u26a0\ufe0f  No candles yet for DABUR
+2026-07-04 13:00:46,019 |   \u26a0\ufe0f  No candles yet for DIVISLAB
+2026-07-04 13:00:46,074 |   \u26a0\ufe0f  No candles yet for DIXON
+2026-07-04 13:00:46,128 |   \u26a0\ufe0f  No candles yet for DLF
+2026-07-04 13:00:46,184 |   \u26a0\ufe0f  No candles yet for DRREDDY
+2026-07-04 13:00:46,246 |   \u26a0\ufe0f  No candles yet for EICHERMOT
+2026-07-04 13:00:46,298 |   \u26a0\ufe0f  No candles yet for ESCORTS
+2026-07-04 13:00:46,352 |   \u26a0\ufe0f  No candles yet for FEDERALBNK
+2026-07-04 13:00:46,404 |   \u26a0\ufe0f  No candles yet for GODREJCP
+2026-07-04 13:00:46,473 |   \u26a0\ufe0f  No candles yet for GRASIM
+2026-07-04 13:00:46,519 |   \u26a0\ufe0f  No candles yet for HAVELLS
+2026-07-04 13:00:46,583 |   \u26a0\ufe0f  No candles yet for HCLTECH
+2026-07-04 13:00:46,642 |   \u26a0\ufe0f  No candles yet for HDFCBANK
+2026-07-04 13:00:46,712 |   \u26a0\ufe0f  No candles yet for HDFCLIFE
+2026-07-04 13:00:46,770 |   \u26a0\ufe0f  No candles yet for HEROMOTOCO
+2026-07-04 13:00:46,824 |   \u26a0\ufe0f  No candles yet for HINDALCO
+2026-07-04 13:00:46,876 |   \u26a0\ufe0f  No candles yet for HINDUNILVR
+2026-07-04 13:00:46,936 |   \u26a0\ufe0f  No candles yet for ICICIBANK
+2026-07-04 13:00:46,998 |   \u26a0\ufe0f  No candles yet for IDFCFIRSTB
+2026-07-04 13:00:47,047 |   \u26a0\ufe0f  No candles yet for INDIGO
+2026-07-04 13:00:47,094 |   \u26a0\ufe0f  No candles yet for INDUSINDBK
+2026-07-04 13:00:47,162 |   \u26a0\ufe0f  No candles yet for IPCALAB
+2026-07-04 13:00:47,219 |   \u26a0\ufe0f  No candles yet for IRCTC
+2026-07-04 13:00:47,280 |   \u26a0\ufe0f  No candles yet for ITC
+2026-07-04 13:00:47,344 |   \u26a0\ufe0f  No candles yet for JSWSTEEL
+2026-07-04 13:00:47,404 |   \u26a0\ufe0f  No candles yet for KOTAKBANK
+2026-07-04 13:00:47,464 |   \u26a0\ufe0f  No candles yet for LT
+2026-07-04 13:00:47,521 |   \u26a0\ufe0f  No candles yet for LUPIN
+2026-07-04 13:00:47,574 |   \u26a0\ufe0f  No candles yet for M&M
+2026-07-04 13:00:47,622 |   \u26a0\ufe0f  No candles yet for MARICO
+2026-07-04 13:00:47,676 |   \u26a0\ufe0f  No candles yet for MARUTI
+2026-07-04 13:00:47,732 |   \u26a0\ufe0f  No candles yet for MOTHERSON
+2026-07-04 13:00:47,794 |   \u26a0\ufe0f  No candles yet for MPHASIS
+2026-07-04 13:00:47,846 |   \u26a0\ufe0f  No candles yet for MUTHOOTFIN
+2026-07-04 13:00:47,904 |   \u26a0\ufe0f  No candles yet for NAUKRI
+2026-07-04 13:00:47,964 |   \u26a0\ufe0f  No candles yet for NESTLEIND
+2026-07-04 13:00:48,026 |   \u26a0\ufe0f  No candles yet for NTPC
+2026-07-04 13:00:48,074 |   \u26a0\ufe0f  No candles yet for OBEROIRLTY
+2026-07-04 13:00:48,132 |   \u26a0\ufe0f  No candles yet for OFSS
+2026-07-04 13:00:48,182 |   \u26a0\ufe0f  No candles yet for ONGC
+2026-07-04 13:00:48,254 |   \u26a0\ufe0f  No candles yet for PAGEIND
+2026-07-04 13:00:48,307 |   \u26a0\ufe0f  No candles yet for PERSISTENT
+2026-07-04 13:00:48,358 |   \u26a0\ufe0f  No candles yet for PIDILITIND
+2026-07-04 13:00:48,406 |   \u26a0\ufe0f  No candles yet for PNB
+2026-07-04 13:00:48,448 |   \u26a0\ufe0f  No candles yet for POWERGRID
+2026-07-04 13:00:48,524 |   \u26a0\ufe0f  No candles yet for RBLBANK
+2026-07-04 13:00:48,606 |   \u26a0\ufe0f  No candles yet for RELIANCE
+2026-07-04 13:00:48,660 |   \u26a0\ufe0f  No candles yet for SAIL
+2026-07-04 13:00:48,731 |   \u26a0\ufe0f  No candles yet for SBILIFE
+2026-07-04 13:00:48,782 |   \u26a0\ufe0f  No candles yet for SBIN
+2026-07-04 13:00:48,834 |   \u26a0\ufe0f  No candles yet for SHREECEM
+2026-07-04 13:00:48,886 |   \u26a0\ufe0f  No candles yet for SIEMENS
+2026-07-04 13:00:48,934 |   \u26a0\ufe0f  No candles yet for SUNPHARMA
+2026-07-04 13:00:48,978 |   \u26a0\ufe0f  No candles yet for TATACONSUM
+2026-07-04 13:00:49,034 |   \u26a0\ufe0f  No candles yet for TATAPOWER
+2026-07-04 13:00:49,078 |   \u26a0\ufe0f  No candles yet for TATASTEEL
+2026-07-04 13:00:49,126 |   \u26a0\ufe0f  No candles yet for TCS
+2026-07-04 13:00:49,174 |   \u26a0\ufe0f  No candles yet for TECHM
+2026-07-04 13:00:49,224 |   \u26a0\ufe0f  No candles yet for TITAN
+2026-07-04 13:00:49,278 |   \u26a0\ufe0f  No candles yet for TORNTPHARM
+2026-07-04 13:00:49,320 |   \u26a0\ufe0f  No candles yet for TORNTPOWER
+2026-07-04 13:00:49,372 |   \u26a0\ufe0f  No candles yet for TRENT
+2026-07-04 13:00:49,428 |   \u26a0\ufe0f  No candles yet for UBL
+2026-07-04 13:00:49,486 |   \u26a0\ufe0f  No candles yet for UNIONBANK
+2026-07-04 13:00:49,538 |   \u26a0\ufe0f  No candles yet for VEDL
+2026-07-04 13:00:49,592 |   \u26a0\ufe0f  No candles yet for VOLTAS
+2026-07-04 13:00:49,640 |   \u26a0\ufe0f  No candles yet for WIPRO
+2026-07-04 13:00:49,640 | 
+  Bot running — press Ctrl+C to stop
+2026-07-04 13:03:52,370 | 
+==================================================
+2026-07-04 13:03:52,379 |   SCAN at 13:03
+2026-07-04 13:03:52,385 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-04 13:03:52,388 | ==================================================
+2026-07-04 13:04:11,624 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/historical-candle/NSE_EQ%7CINE002A01018/15minute/2026-07-04/2026-07-04
+2026-07-04 13:04:11,974 |   \u274c Fetch failed RELIANCE: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 07:34:11 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': '36442f69-a68c-4f80-ab93-fcab47788144', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': 'c5788980-68e2-4d25-a0e5-8935f555810b', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=12oqHXBAuVqdZYsX.1_4kp0JaMQEjS4QTRrhGsyUxDM-1783150451.879317-1.0.1.1-z0.6UXkrWwpF2lKBySdeOaCK3LXgWj30oO37BYyRO2lRu0S8bxnaOVh9O9I89Psa7E6XSZ1D_SCSLXZYIrwGM63JgnQ1unvUFRi1aAOdeNr1.meNLhUPXsjPSZqRWamg; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 08:04:11 GMT, _cfuvid=9dpd_rh7D6glgp_Tair9rhAsxCrh0dukhqWMElXjonA-1783150451.879317-1.0.1.1-uPH4njXt2cqMmAY49fabv9JV3QJ8dZ4YvzMmFnWG.1U; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15c7234388f7ec6-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 13:04:12,074 |   \u274c Fetch failed TCS: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 07:34:11 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': '2d1da812-9c62-483d-8140-74b7eb1cab82', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': 'edb45ed0-180a-4ebc-acaf-890dd37e09c4', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=Oz_zscvRUYAmGKsChp08dB_4lNoiULve8ApTRDqkaFA-1783150451.9438002-1.0.1.1-B5hyx8eiyIe1b_0HdjH6Pvx1JEnkjHZmdr5A28.hZ0dC6h4DpZbjEt63J6yX3CESIyL4jZUk.CRlMoCDT5DLHsgy3Rsswt9.VdoEgqKBmL5265INH8r0PUMa9I4KgD8u; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 08:04:11 GMT, _cfuvid=_kxnUw_ch1EY6yf4b1RvmmdFLxbK5nkvY2MNBW4xQtY-1783150451.9438002-1.0.1.1-50LkCXMh3nnn09WIZUt8oV1NiHzCuLe939d2_ZFQW08; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15c7234a93a7ec6-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 13:04:12,119 |   \u274c Fetch failed INFY: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 07:34:12 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': '569c1b23-35f4-4f05-81e0-60b161fab794', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': 'f32a9109-2cb0-4150-a6c5-aafb52d201c7', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=bCOGNB6.KfJ7EViCWNEDPDFirx3MAacFhbY2UV.5fDY-1783150452.0428424-1.0.1.1-oMDYGiRLZ5NSmETdvzyQ1qcy0lOETU_vMbkoWHXUUiB4Nw6pjHgmHj2hbh3XaeE9Sr2vEjZPt_iNQmOiwXVM9oiHBRuluW8Y6RwiGX5Ejv9_AK_Pd0j5ebb.3TVrJ_Ln; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 08:04:12 GMT, _cfuvid=C_ZNtv8H5MgzY7zWKcjXQWo2bHQuThV0DCjZ0MCVvYU-1783150452.0428424-1.0.1.1-5Fzcmmvth2IDenWmGFwVkrxYzF.ZaJLNYfHLS13.j_M; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15c72354a3a7ec6-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 13:04:12,287 |   \u274c Fetch failed HDFCBANK: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 07:34:12 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqId': '560c9417-1a79-4a84-b606-def04a738579', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestId': '0a2cc0fe-74ac-40c0-9773-1f990fb60448', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'Strict-Transport-Security': 'max-age=0; includeSubDomains', 'X-Frame-Options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=.O0HtI5GDwVDfad2ncQIoLpLGxsoRVICGXC_6HjhSd8-1783150452.0909579-1.0.1.1-LA0OMt8sWXbROjMfJXwWt5kYvgQOkRnTOvc469An2AXpeOYAhYOKP83LQt18aKym8t0wJzB3dof5xTqLAp2fI8kRHj_Q0Pv3C2_rlVV14pusxYECy7XI0UMuyU5i_aTr; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 08:04:12 GMT, _cfuvid=iLcsETa3T3TMiv1.RyyomI8_6UDAnrPVmeQcVAZOWVM-1783150452.0909579-1.0.1.1-Fsmnzkl3XPevCmo5.JQAbzjWO2.8hUgdiKR6A4ik5zU; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15c72359aca7ec6-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 13:04:12,329 |   \u274c Fetch failed ICICIBANK: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 07:34:12 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqId': 'df56976e-23f3-4e9a-83b0-be7316cb42ee', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestId': '979663a5-e712-4f8e-b723-5d1c4dcf0feb', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'Strict-Transport-Security': 'max-age=0; includeSubDomains', 'X-Frame-Options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=G2ruMBQaNBt4CwyKX9xu9pKDoz201UKK3WbAYwvPxPM-1783150452.2550263-1.0.1.1-xdZ5k475AID5FiXbSKgQ._t9yceRatcBCZR1yjrB1ccD3Cp6jvInzuMpeGIWmWR0Ds0dFz9j08aTEGXWNG6M5PrS3ewKqbGid_uBz7i5L0AOrsAgz1ysVhYLiMo1XFHz; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 08:04:12 GMT, _cfuvid=1irt26BE39hBxBhceHrFoRyozYB9kvcjtCYSg_A6uaM-1783150452.2550263-1.0.1.1-c5WNtQ3.i1fHSrNYpodXcX.JuBHwmAV4EElseWyry4c; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15c72369c997ec6-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 13:13:03,883 | ==================================================
+2026-07-04 13:13:03,883 |   LIVE BOT STARTING
+2026-07-04 13:13:03,883 |   Capital    : \u20b950,000
+2026-07-04 13:13:03,883 |   Mode       : PAPER TRADING
+2026-07-04 13:13:03,893 |   Kill switch: \u20b9200 daily loss
+2026-07-04 13:13:03,893 |   Stocks     : ABBOTINDIA, ADANIENT, ADANIGREEN, ADANIPORTS, ALKEM, APOLLOHOSP, ASHOKLEY, ASIANPAINT, AUROPHARMA, AXISBANK, BAJAJFINSV, BAJFINANCE, BANKBARODA, BERGEPAINT, BHARTIARTL, BIOCON, BOSCHLTD, BPCL, BRITANNIA, CANBK, CHOLAFIN, CIPLA, COALINDIA, COFORGE, COLPAL, CONCOR, CUMMINSIND, DABUR, DIVISLAB, DIXON, DLF, DRREDDY, EICHERMOT, ESCORTS, FEDERALBNK, GODREJCP, GRASIM, HAVELLS, HCLTECH, HDFCBANK, HDFCLIFE, HEROMOTOCO, HINDALCO, HINDUNILVR, ICICIBANK, IDFCFIRSTB, INDIGO, INDUSINDBK, IPCALAB, IRCTC, ITC, JSWSTEEL, KOTAKBANK, LT, LUPIN, MARICO, MARUTI, MOTHERSON, MPHASIS, MUTHOOTFIN, NAUKRI, NESTLEIND, NTPC, OBEROIRLTY, OFSS, ONGC, PAGEIND, PERSISTENT, PIDILITIND, PNB, POWERGRID, RELIANCE, SAIL, SBILIFE, SBIN, SHREECEM, SIEMENS, SUNPHARMA, TATACONSUM, TATAPOWER, TATASTEEL, TCS, TECHM, TITAN, TORNTPHARM, TORNTPOWER, TRENT, UBL, UNIONBANK, VEDL, VOLTAS, WIPRO
+2026-07-04 13:13:03,893 | ==================================================
+2026-07-04 13:13:03,895 | 
+==================================================
+2026-07-04 13:13:03,895 |   SCAN at 13:13
+2026-07-04 13:13:03,895 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-04 13:13:03,895 | ==================================================
+2026-07-04 13:13:04,595 |   \u26a0\ufe0f  No candles yet for ABBOTINDIA
+2026-07-04 13:13:04,618 |   \u26a0\ufe0f  No candles yet for ADANIENT
+2026-07-04 13:13:04,639 |   \u26a0\ufe0f  No candles yet for ADANIGREEN
+2026-07-04 13:13:04,661 |   \u26a0\ufe0f  No candles yet for ADANIPORTS
+2026-07-04 13:13:04,687 |   \u26a0\ufe0f  No candles yet for ALKEM
+2026-07-04 13:13:04,729 |   \u26a0\ufe0f  No candles yet for APOLLOHOSP
+2026-07-04 13:13:04,754 |   \u26a0\ufe0f  No candles yet for ASHOKLEY
+2026-07-04 13:13:04,783 |   \u26a0\ufe0f  No candles yet for ASIANPAINT
+2026-07-04 13:13:04,804 |   \u26a0\ufe0f  No candles yet for AUROPHARMA
+2026-07-04 13:13:04,828 |   \u26a0\ufe0f  No candles yet for AXISBANK
+2026-07-04 13:13:04,857 |   \u26a0\ufe0f  No candles yet for BAJAJFINSV
+2026-07-04 13:13:04,877 |   \u26a0\ufe0f  No candles yet for BAJFINANCE
+2026-07-04 13:13:04,906 |   \u26a0\ufe0f  No candles yet for BANKBARODA
+2026-07-04 13:13:04,927 |   \u26a0\ufe0f  No candles yet for BERGEPAINT
+2026-07-04 13:13:04,957 |   \u26a0\ufe0f  No candles yet for BHARTIARTL
+2026-07-04 13:13:04,979 |   \u26a0\ufe0f  No candles yet for BIOCON
+2026-07-04 13:13:05,007 |   \u26a0\ufe0f  No candles yet for BOSCHLTD
+2026-07-04 13:13:05,052 |   \u26a0\ufe0f  No candles yet for BPCL
+2026-07-04 13:13:05,101 |   \u26a0\ufe0f  No candles yet for BRITANNIA
+2026-07-04 13:13:05,128 |   \u26a0\ufe0f  No candles yet for CANBK
+2026-07-04 13:13:05,151 |   \u26a0\ufe0f  No candles yet for CHOLAFIN
+2026-07-04 13:13:05,177 |   \u26a0\ufe0f  No candles yet for CIPLA
+2026-07-04 13:13:05,207 |   \u26a0\ufe0f  No candles yet for COALINDIA
+2026-07-04 13:13:05,227 |   \u26a0\ufe0f  No candles yet for COFORGE
+2026-07-04 13:13:05,254 |   \u26a0\ufe0f  No candles yet for COLPAL
+2026-07-04 13:13:05,277 |   \u26a0\ufe0f  No candles yet for CONCOR
+2026-07-04 13:13:05,306 |   \u26a0\ufe0f  No candles yet for CUMMINSIND
+2026-07-04 13:13:05,368 |   \u26a0\ufe0f  No candles yet for DABUR
+2026-07-04 13:13:05,386 |   \u26a0\ufe0f  No candles yet for DIVISLAB
+2026-07-04 13:13:05,411 |   \u26a0\ufe0f  No candles yet for DIXON
+2026-07-04 13:13:05,445 |   \u26a0\ufe0f  No candles yet for DLF
+2026-07-04 13:13:05,470 |   \u26a0\ufe0f  No candles yet for DRREDDY
+2026-07-04 13:13:05,490 |   \u26a0\ufe0f  No candles yet for EICHERMOT
+2026-07-04 13:13:05,513 |   \u26a0\ufe0f  No candles yet for ESCORTS
+2026-07-04 13:13:05,545 |   \u26a0\ufe0f  No candles yet for FEDERALBNK
+2026-07-04 13:13:05,568 |   \u26a0\ufe0f  No candles yet for GODREJCP
+2026-07-04 13:13:05,597 |   \u26a0\ufe0f  No candles yet for GRASIM
+2026-07-04 13:13:05,623 |   \u26a0\ufe0f  No candles yet for HAVELLS
+2026-07-04 13:13:05,647 |   \u26a0\ufe0f  No candles yet for HCLTECH
+2026-07-04 13:13:05,676 |   \u26a0\ufe0f  No candles yet for HDFCBANK
+2026-07-04 13:13:05,694 |   \u26a0\ufe0f  No candles yet for HDFCLIFE
+2026-07-04 13:13:05,727 |   \u26a0\ufe0f  No candles yet for HEROMOTOCO
+2026-07-04 13:13:05,760 |   \u26a0\ufe0f  No candles yet for HINDALCO
+2026-07-04 13:13:05,786 |   \u26a0\ufe0f  No candles yet for HINDUNILVR
+2026-07-04 13:13:05,818 |   \u26a0\ufe0f  No candles yet for ICICIBANK
+2026-07-04 13:13:05,844 |   \u26a0\ufe0f  No candles yet for IDFCFIRSTB
+2026-07-04 13:13:05,868 |   \u26a0\ufe0f  No candles yet for INDIGO
+2026-07-04 13:13:05,890 |   \u26a0\ufe0f  No candles yet for INDUSINDBK
+2026-07-04 13:13:05,903 |   \u26a0\ufe0f  No candles yet for IPCALAB
+2026-07-04 13:13:05,937 |   \u26a0\ufe0f  No candles yet for IRCTC
+2026-07-04 13:13:05,961 |   \u26a0\ufe0f  No candles yet for ITC
+2026-07-04 13:13:05,986 |   \u26a0\ufe0f  No candles yet for JSWSTEEL
+2026-07-04 13:13:06,033 |   \u26a0\ufe0f  No candles yet for KOTAKBANK
+2026-07-04 13:13:06,057 |   \u26a0\ufe0f  No candles yet for LT
+2026-07-04 13:13:06,084 |   \u26a0\ufe0f  No candles yet for LUPIN
+2026-07-04 13:13:06,105 |   \u26a0\ufe0f  No candles yet for MARICO
+2026-07-04 13:13:06,127 |   \u26a0\ufe0f  No candles yet for MARUTI
+2026-07-04 13:13:06,154 |   \u26a0\ufe0f  No candles yet for MOTHERSON
+2026-07-04 13:13:06,201 |   \u26a0\ufe0f  No candles yet for MPHASIS
+2026-07-04 13:13:06,224 |   \u26a0\ufe0f  No candles yet for MUTHOOTFIN
+2026-07-04 13:13:06,244 |   \u26a0\ufe0f  No candles yet for NAUKRI
+2026-07-04 13:13:06,265 |   \u26a0\ufe0f  No candles yet for NESTLEIND
+2026-07-04 13:13:06,290 |   \u26a0\ufe0f  No candles yet for NTPC
+2026-07-04 13:13:06,312 |   \u26a0\ufe0f  No candles yet for OBEROIRLTY
+2026-07-04 13:13:06,336 |   \u26a0\ufe0f  No candles yet for OFSS
+2026-07-04 13:13:06,363 |   \u26a0\ufe0f  No candles yet for ONGC
+2026-07-04 13:13:06,388 |   \u26a0\ufe0f  No candles yet for PAGEIND
+2026-07-04 13:13:06,409 |   \u26a0\ufe0f  No candles yet for PERSISTENT
+2026-07-04 13:13:06,429 |   \u26a0\ufe0f  No candles yet for PIDILITIND
+2026-07-04 13:13:06,453 |   \u26a0\ufe0f  No candles yet for PNB
+2026-07-04 13:13:06,472 |   \u26a0\ufe0f  No candles yet for POWERGRID
+2026-07-04 13:13:06,494 |   \u26a0\ufe0f  No candles yet for RELIANCE
+2026-07-04 13:13:06,518 |   \u26a0\ufe0f  No candles yet for SAIL
+2026-07-04 13:13:06,549 |   \u26a0\ufe0f  No candles yet for SBILIFE
+2026-07-04 13:13:06,569 |   \u26a0\ufe0f  No candles yet for SBIN
+2026-07-04 13:13:06,603 |   \u26a0\ufe0f  No candles yet for SHREECEM
+2026-07-04 13:13:06,634 |   \u26a0\ufe0f  No candles yet for SIEMENS
+2026-07-04 13:13:06,657 |   \u26a0\ufe0f  No candles yet for SUNPHARMA
+2026-07-04 13:13:06,677 |   \u26a0\ufe0f  No candles yet for TATACONSUM
+2026-07-04 13:13:06,697 |   \u26a0\ufe0f  No candles yet for TATAPOWER
+2026-07-04 13:13:06,720 |   \u26a0\ufe0f  No candles yet for TATASTEEL
+2026-07-04 13:13:06,737 |   \u26a0\ufe0f  No candles yet for TCS
+2026-07-04 13:13:06,761 |   \u26a0\ufe0f  No candles yet for TECHM
+2026-07-04 13:13:06,786 |   \u26a0\ufe0f  No candles yet for TITAN
+2026-07-04 13:13:06,810 |   \u26a0\ufe0f  No candles yet for TORNTPHARM
+2026-07-04 13:13:06,828 |   \u26a0\ufe0f  No candles yet for TORNTPOWER
+2026-07-04 13:13:06,853 |   \u26a0\ufe0f  No candles yet for TRENT
+2026-07-04 13:13:06,869 |   \u26a0\ufe0f  No candles yet for UBL
+2026-07-04 13:13:06,886 |   \u26a0\ufe0f  No candles yet for UNIONBANK
+2026-07-04 13:13:06,916 |   \u26a0\ufe0f  No candles yet for VEDL
+2026-07-04 13:13:06,940 |   \u26a0\ufe0f  No candles yet for VOLTAS
+2026-07-04 13:13:06,968 |   \u26a0\ufe0f  No candles yet for WIPRO
+2026-07-04 13:13:06,969 | 
+  Bot running — press Ctrl+C to stop
+2026-07-04 13:19:12,446 | 
+==================================================
+2026-07-04 13:19:12,463 |   SCAN at 13:19
+2026-07-04 13:19:12,469 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-04 13:19:12,474 | ==================================================
+2026-07-04 13:19:31,717 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/historical-candle/NSE_EQ%7CINE002A01018/15minute/2026-07-04/2026-07-04
+2026-07-04 13:19:32,211 |   \u274c Fetch failed RELIANCE: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 07:49:32 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': '5f4e1fb6-67a5-4c2e-b7b0-8003e71903ed', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': '7a844aff-6f57-4c96-a0ba-b44ac5b8a6ce', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=RYptTR9.zbwGbUO0ocgqYatrH3QOIiQZyJSJFgbH6K0-1783151372.1229284-1.0.1.1-HA1_d_Lwj58wAlBNPmmXwKVY0dC5tJnhlldSGJY1ISh8N89hyshmmhpHa6EXGlOvZTyWUg_fW4OVd0PkTjYcEM9wExppVh4jgBWtfWF.yTgu1tr.mF0KRJzv60eQW30q; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 08:19:32 GMT, _cfuvid=jc2Zm7Bwz4zhwgE5NJ1sPviqbk88428aPQv_8ykDkJw-1783151372.1229284-1.0.1.1-kGqlTdokqMksyj1iI9o9RqkvTkvcrbs_Ksrm2w9HYKU; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15c88abcad9dc7f-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 13:19:32,250 |   \u274c Fetch failed TCS: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 07:49:32 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqId': '10c50500-e43c-4b34-afa0-4ccf66851698', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestId': 'be9a1d31-17a3-4c81-82dd-7d41ac087f55', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'Strict-Transport-Security': 'max-age=0; includeSubDomains', 'X-Frame-Options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=DJf9Nku5XxhetEoySvHvULK7AQ5q52b9FsTnS.SFCAU-1783151372.1804643-1.0.1.1-rcm5YywJJdjhoefC6s.AKxqZeyX4YPYHyBhOPsORT5YwVDW6hoKAmTjOshYpUWll8AeNIelZmvX2Zs29_RykoxO.l4EBru17hqT_nKakuod.FG1dAdGlbpn1wMArxUX2; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 08:19:32 GMT, _cfuvid=sy5Yp6678JIJeGOJOXiD6nM_W3C7W1M9aUKbCzNLjwk-1783151372.1804643-1.0.1.1-vy6tLs2eA2E5bOqTUNTRthMF7CrJPDx.HhqJo7sRlLA; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15c88ac1b9cdc7f-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 13:19:32,308 |   \u274c Fetch failed INFY: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 07:49:32 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': '1c267458-129d-4934-aa2b-5e00f4704f69', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': 'ef7df08b-95c5-4a94-9021-f87d8f530394', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=0hbG.93e0zVOIt8FAT1keV2CR3XnVh4jcV60lrMWZRA-1783151372.2254329-1.0.1.1-YwcEWtXZvRRUmmK5BsZawSTN8HaX8PP_Wpb9xVUaFYa4ZMphlnEgS8qz.JPYfTZ33WWDo8WLEb0vpsAVbTQfqtCJuvxEmrhO66xiYvRAoAvQd0R_ITXZ.4tB__AuZed4; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 08:19:32 GMT, _cfuvid=6nqqqurGk7a20fAZfVZqrWbDaDmbIo0HPELLG35sohg-1783151372.2254329-1.0.1.1-3UJ11_VP6bPjVkg8LqyWGe2Wj214OF8hUqZh_1U.Rbs; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15c88ac6c40dc7f-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 13:19:32,346 |   \u274c Fetch failed HDFCBANK: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 07:49:32 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqId': 'cf6256bd-cf29-46b5-9197-1982090f5126', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestId': '71e5c330-d813-4342-a6a2-4de066d1df65', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'Strict-Transport-Security': 'max-age=0; includeSubDomains', 'X-Frame-Options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=iWWmF.fYbVxSmdlFERwVY2S8LVnm62Pf9zYgrsnTNbI-1783151372.2732444-1.0.1.1-wOYvrSeDQuwNcTSrSN_fKXK9MFOEeccbmERQZE8ZnAw9AEFxzSa.4GqpL3T6sKJhIR5TqPEvkJoR85LnrHKAyxZjdE6nJfqEbvJ3nkYmT8M_cnc0rfYYh8l5gnOALn9I; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 08:19:32 GMT, _cfuvid=QZNilsCGYVNIVm9Xoa7rcIWKLLJt6spzaxbYvL9.rLs-1783151372.2732444-1.0.1.1-Z3SLGGZwf5.2OgmipbUBGX18Erc1ghshsY0h9EbaCko; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15c88acbd04dc7f-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 13:19:32,393 |   \u274c Fetch failed ICICIBANK: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 07:49:32 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqId': '29e0b5bf-6eae-4dae-9221-604f1d0f5bce', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestId': '0f154a55-c926-457b-8d4e-b35f69a38a11', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'Strict-Transport-Security': 'max-age=0; includeSubDomains', 'X-Frame-Options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=XKZXEdKJ3dZgYKcndiwqejYPLFbihxq3T3GWwEa_7kk-1783151372.3183155-1.0.1.1-DPGnYoyxoCN788Kaoqz1uZVsiC8Z7RNJRfMgEilq2ObF_1frh_sfwg4DPGLA0wqBhmSwCzY.PK2rEOuxic2z.pD1gnHf5wWbmD6CKyQfQfogj10BeOvyveWntXYI5bq1; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 08:19:32 GMT, _cfuvid=ldjIjNih_CbdcUedSCBhmChRoHTkMaVNngze9asxi44-1783151372.3183155-1.0.1.1-ke_lK_i2OGbm_.oVdNXeF1Tye11pBt6v7p2YEUwkgg0; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15c88acfdaddc7f-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 13:34:32,431 | 
+==================================================
+2026-07-04 13:34:32,447 |   SCAN at 13:34
+2026-07-04 13:34:32,447 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-04 13:34:32,447 | ==================================================
+2026-07-04 13:34:51,709 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/historical-candle/NSE_EQ%7CINE002A01018/15minute/2026-07-04/2026-07-04
+2026-07-04 13:34:52,100 |   \u274c Fetch failed RELIANCE: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 08:04:52 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': 'b151a123-cf46-4011-acdb-6796cea79827', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': '3b2ca69e-65b4-4bf5-ac61-12dc2720476b', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=fBSAqBiJT7g58d_89D2.AB_hF73bdhwl5aO9epRNJrI-1783152292.011505-1.0.1.1-1PhHjiXng0BWIdlDpC6pu_FXV80unQ.Uyh2geF19fSnkbOthcQBpqTG7kQu3ZNp1GhT8keN4ewOyHf_i.J7SpktakaE43PCWrHLwtIjXvPFBlGj1HJOLp82fXrM.cHKC; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 08:34:52 GMT, _cfuvid=NQwhvimju74_cPz22_E4SxRIbLyot7tYreufe_av0Fk-1783152292.011505-1.0.1.1-RMwDWwNvY5hntab.clfoi6GWA5BVUz36qG20iDEpYcc; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15c9f211dc7cd8c-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 13:34:52,141 |   \u274c Fetch failed TCS: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 08:04:52 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': 'f4eefa84-0cf4-49c5-aa6d-865b802ef996', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': '913e5dc6-148c-4c3a-8716-295fb5b4442e', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=phVOXhD5IjNZ4bTmlQitFDnBP6Mwvo44Z__jUSe04NY-1783152292.065134-1.0.1.1-e3r82hlO7Vx6DSE.RknDcWchP5LT71e0J3sSote7qMu0JpUuKnp.Jn.XALIB.asYtCrwUla1JQyYVxIHgroAM8yG0Vmc8q8oDEg5qPtYoowmLFLlAUhlTSckx9wu1psD; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 08:34:52 GMT, _cfuvid=fgHiFO7B5nGIyGIT0lk7tZ.QztLZC_YYTvhgsHjTMIo-1783152292.065134-1.0.1.1-XSoW715hGRyiPGmnLCgivIP9RorAVKntnWLRG1HiLu4; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15c9f216e61cd8c-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 13:34:52,221 |   \u274c Fetch failed INFY: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 08:04:52 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': '27e66de4-11a6-48df-ae3a-081a307aa9bf', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': '953821fc-1197-4d00-aa4d-009c8d8df4b4', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=mO_sa2nc9ohP4liOCNV5OC3B1o4Y1HN_SkkNhkGLaHU-1783152292.147589-1.0.1.1-7oETWnwUUEbbKj2c8tgSf_7i5SBAx4SS9lNlXghu.f6WyGTkmsL0TLLLc_NjMMSCXImzzFhgYbbj3cvYmT.YMU8S89tVSEgQKqw14pCS9WYW18ShIKxu3bIOpVvfWWW8; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 08:34:52 GMT, _cfuvid=nAZErAw8cp7lrqKOzq2nbwbg95GZhYMswoNWZoahjKs-1783152292.147589-1.0.1.1-LLkKnzLv82c3JQKTqzOueYh1SM4i4Me0rNbY7BkWdW4; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15c9f21ef39cd8c-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 13:34:52,302 |   \u274c Fetch failed HDFCBANK: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 08:04:52 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqId': '3adf2aac-9d3e-4e3b-b460-efab7a208c1d', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestId': '6ad0afb0-1e79-40ee-83b9-cbc1405a9285', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'Strict-Transport-Security': 'max-age=0; includeSubDomains', 'X-Frame-Options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=8Z.kUYqhkla8ppxPCKjgRyv0hu0OKTc7DdtnRoJouOQ-1783152292.2146223-1.0.1.1-nDnwix4WwQKw6Elwb0pLEBbr7cz19OX2_cWw7WwA_v3Bu3mTU2vn.L1TfpRb4NQ6LwBruQWkFCbJujQij6qCBk8gBaR4HauSJi0zslh6W3qzK6Fe6nb8qx.QsasncOZm; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 08:34:52 GMT, _cfuvid=6G.eLG4CPxLQyNGXQZbDGeBWqpZFafHB4Mz6dn83vxA-1783152292.2146223-1.0.1.1-u_5btFalwV1hWnaShoV6fF0K13buqpPJKsnj7kcy0JA; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15c9f225801cd8c-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 13:34:52,432 |   \u274c Fetch failed ICICIBANK: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 08:04:52 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqId': '7679c093-44ba-4209-aaf7-af1b0d5d6ff6', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestId': '4515b830-6f48-48de-aff4-2e61f482e115', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'Strict-Transport-Security': 'max-age=0; includeSubDomains', 'X-Frame-Options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=wEE_5CY5Ch7gBAR40RibOy_azTXDV4.u9mm_ZPvyFmk-1783152292.3503602-1.0.1.1-m3E42S.qvV.hzGlohRySYRNEJzJmtaZ5w2h4r3KVtKI6h7KpfQgAytFr1ymipVhaZa7i8mHZlTzmNSV3zgvVbXmgr5X9IiXovUvlQLfu0O2XFbEmZrQMww0ZFO2DFsxS; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 08:34:52 GMT, _cfuvid=p.C_cZIxwfUSxQBAeIxc91n8IXvZQ.t4eQYh9JwfRGE-1783152292.3503602-1.0.1.1-RY0rpST9VHK6L426Dl2hJEQ6YMzz5koVmC9dfJV1jk0; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15c9f232981cd8c-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 13:49:52,516 | 
+==================================================
+2026-07-04 13:49:52,527 |   SCAN at 13:49
+2026-07-04 13:49:52,531 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-04 13:49:52,536 | ==================================================
+2026-07-04 13:50:11,833 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/historical-candle/NSE_EQ%7CINE002A01018/15minute/2026-07-04/2026-07-04
+2026-07-04 13:50:12,566 |   \u274c Fetch failed RELIANCE: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 08:20:12 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': 'c19afbaf-50af-422b-ba61-0f584fd2f801', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': '556d57ad-93c1-4446-85e7-ca243aa7d5a0', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=F47.7q.uYsDtzb2MZ2r__sSXtEoUVO8bWWmZSth2RTs-1783153212.4771008-1.0.1.1-OP6QdDhTxb7EM6VIe3zLNyzAGGSUAue0rcHUb6QewMzw.AWpOfikK9y.hw1sNMHIZPkSlpEhfhKxc_Ews.0TPfjrnI98vk68xn_XiX774hnnnmnGtK4DMRWBkfmKrIUW; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 08:50:12 GMT, _cfuvid=_OTpCcZ.fBKqS1PhPQIz9lNd1xeBcL_Hp9_r1KBjdUo-1783153212.4771008-1.0.1.1-1czmIIPy_WCiEbBd3ErlwN0_lonYDsRMxHWe.JTwK2E; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15cb599fb140c66-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 13:50:12,618 |   \u274c Fetch failed TCS: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 08:20:12 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqId': '509bf520-2d46-4a47-9af3-f48c932bcd55', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestId': '8d74b95a-f7ce-4192-a9d2-d494f94730db', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'Strict-Transport-Security': 'max-age=0; includeSubDomains', 'X-Frame-Options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=qXBNhgrVqgYicFHXy6R0bP2K7hKhEfU3FbR7uxI1I88-1783153212.5353055-1.0.1.1-w9Zq_1t9xZdPRSpkJs5vsPRT2JuCAQwdjS1V7LsizrOCTqOioCQgu_BJAsEHv9bAfnQCoYrdeagkfZM_lPSUWY8oPrqjdXgVOwqptuNnc73tS3nblVLzOWsKV0j1cDtX; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 08:50:12 GMT, _cfuvid=eSnfuyZXGKkHfGkmFptXgawvUU.9tbhrxt1f.1VQz5I-1783153212.5353055-1.0.1.1-KtvDwoFBjtKfplWofM144hXyblGphvvac1oX4p8YGng; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15cb59a5bc90c66-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 13:50:12,661 |   \u274c Fetch failed INFY: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 08:20:12 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': '7262a5c7-08b0-4d92-ba24-53590fb1f1b3', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': 'ec0afd7c-e82e-4114-8e1e-6b13779d993d', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=01BSdkT.Gg69Q0XK3FeB1v5xwAC_lfME6pAKXMSjuTo-1783153212.5790837-1.0.1.1-wc5g2QPVXOzgo8WdOoKTq_k7NnPvtyTaiYJxm3ld8x2W1Yew0xn937twUTGiHXLL9aztE_JQ3VgHQbV2BREcghN782Y6nrbE.Serrw7F2SFbPuShH86Ssb21YZqM6Efl; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 08:50:12 GMT, _cfuvid=WQNeIhValfzw8KJcpBdIrmF2QTxCc_A_B_6p3ERv.jM-1783153212.5790837-1.0.1.1-X0YAfONq844.ySWPXm9ygdGDaf1dWV0eGJiIyuUTgMA; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15cb59a9c630c66-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 13:50:12,712 |   \u274c Fetch failed HDFCBANK: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 08:20:12 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': '8bd34009-d63d-4083-a9b5-a26623c1baf8', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': '041ccfd2-deb2-4c80-9ba4-ad33631fb8f0', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=NcU8e8605TvXZYw1ejhGrSa3sgzeWILRHF48n8dXyck-1783153212.625046-1.0.1.1-Zg3avyGSTnWI0bVHPmXJtyFZiixnF.Pf0_xMlW740Irwg4EJLldBTYlZcKVxVQ_NJ8T_ruld39OGFZOy8e.ME1o2PhL3BEm7OiS54f.8kQlOZ01U26.OIZMrS3MRtzWb; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 08:50:12 GMT, _cfuvid=H6cmusvcTa4IzT2VcMnmcXgaob6YhBNdRAIUK2KD3wA-1783153212.625046-1.0.1.1-UFQnH8k2zHGdNp.Mdo9fXf.C769eLPDNe0206tg8ttM; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15cb59aed050c66-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 13:50:12,786 |   \u274c Fetch failed ICICIBANK: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 08:20:12 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqId': 'b6694873-2782-4883-ba04-f68e79385fa6', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestId': '5a2d7fdc-75e7-43b1-aad5-b25763e36cb5', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'Strict-Transport-Security': 'max-age=0; includeSubDomains', 'X-Frame-Options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=xfPDM2fJ2v4eB8_BZFtq8Q1my6UG0u1iStNi.NwoDlo-1783153212.696038-1.0.1.1-5s6jjyCx3dDnh3ChcrmM_ld2JRkbuQ0ZT_3wNLE.BXtx7_GtQz0N680GHnqT4m6Gf7_jm.2kOR4Rm8cVDwR.BqVeefwMmh9z6_umTSBk63IDEn2dcas8aAWq.Ht4.B1S; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 08:50:12 GMT, _cfuvid=E23tzXsNUsPzldPNXEkStS7.uvaHo0OAwHu4FHhoQGk-1783153212.696038-1.0.1.1-beOFLtD7lbywkSdSr.Tq09ATmpyVrKCQD4SSA0PFkXU; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15cb59b5db50c66-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 14:05:12,812 | 
+==================================================
+2026-07-04 14:05:12,829 |   SCAN at 14:05
+2026-07-04 14:05:12,830 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-04 14:05:12,830 | ==================================================
+2026-07-04 14:05:32,032 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/historical-candle/NSE_EQ%7CINE002A01018/15minute/2026-07-04/2026-07-04
+2026-07-04 14:05:33,953 |   \u274c Fetch failed RELIANCE: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 08:35:33 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': '949624cd-4902-4d06-9ab3-573fa84b80e9', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': 'b1f51271-c4f4-4ec4-b486-338f52366a59', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=0pF9ld1IPXw4qsGjuADn3g2uTTCYGg2wOJogwcU6H0E-1783154133.8582861-1.0.1.1-faZRgkKpB.1WrNLSXyAKkEKx4SFsKw9kkoL78ct2S7R4wGfNUDhVEA2ixjPM4l.HTKImvVsSbTHVcV5BZ_qapXt.LMG0MZmldbpFUIucY4_GhhcFpnn1uQcDOeBs0U8W; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 09:05:33 GMT, _cfuvid=dDqJ5rL6B09F3Atlqh2N0SJ5q37bioysZpsymh7QgBY-1783154133.8582861-1.0.1.1-P4EAf5BHrLw9PlF6SjAvGKCSp8IAVwCjUj36Fd_Nbt8; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15ccc189f41c9b2-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 14:05:34,054 |   \u274c Fetch failed TCS: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 08:35:34 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqId': '9d71bfc7-86fc-4832-92c2-1171f6c9ffe0', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestId': '8555d3b0-0fea-4772-ac60-329c9da60c75', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'Strict-Transport-Security': 'max-age=0; includeSubDomains', 'X-Frame-Options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=6Kv1ADxdUvR4wilokoRyDSkPcnXiBxvblmcJUeSfAlA-1783154133.9147587-1.0.1.1-8ydpKdvLBi0Y2rGAbP8vo5mFEvX6XOI2MCOSXOxbscs4.VnP9igxHswPtcNxSpW9nLK5U01uuGkJmdzeQIbhkfYj0NJyvG.yyRlxgDSgj7L_ozhNud2g9cFWR2QpKJ2u; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 09:05:34 GMT, _cfuvid=cf41rpL9Eq_fFTJIYbUJWQWPsfjK.OuBJnMRADjpPNg-1783154133.9147587-1.0.1.1-VfavKCCeOKULwfyhZ9JN6dyfQi88lCRb8.jjd6VYeKI; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15ccc18ffebc9b2-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 14:05:34,100 |   \u274c Fetch failed INFY: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 08:35:34 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': 'edcace9a-14c6-4ef6-8cdd-3c150803de77', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': '7592928b-5e34-41c5-afca-7f7b0a172b1c', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=cZDj._CiYhJv65h8vZBwadcLeA9F1vIHHq83wcElpa4-1783154134.0144994-1.0.1.1-5u1rcsn0YawCYwNPRFoRNNOT62DOIjRg5u7nyCNG83NwesDmAVLKYggUYBDqCeVZfLBT6WUF.wxTQMtnVom9oCtc_Jq0R.cIyGrRbsXRj0XMFx.XMYZq3_56YAbGD_Ip; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 09:05:34 GMT, _cfuvid=PALWC_ntfpKUiEXPLjmVp_4mUqLtvKIRMGJjgwxljeA-1783154134.0144994-1.0.1.1-J5aQ7b_DijfqQdy_91CcugDyFleUN1EX70ri7rPpfmI; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15ccc199934c9b2-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 14:05:34,147 |   \u274c Fetch failed HDFCBANK: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 08:35:34 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqId': '63535449-ea1b-47c7-89ff-97c1982d8d2c', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestId': '0fdef99e-fa3e-4811-a09b-74ec4b1e615b', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'Strict-Transport-Security': 'max-age=0; includeSubDomains', 'X-Frame-Options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=o4PONQwsQHYk9d5DG22a5AaoruIfJPnA00SNE7DHRFg-1783154134.059478-1.0.1.1-sduLbdG3uGXVKGapqv_cu_zPj7J.mEM2jAwFYue7oGcI75Wrc28ElBJGUgmf4clz1aoEsjK0H5HmdUw1prg4_gjGs2T3mAZkkgaPsgVJXCwNVGpnhbtt.MGIjXocXfOu; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 09:05:34 GMT, _cfuvid=rTkYUck5Apo8UGUOJShMxStpGdBpPMXhqjwiJ.trTcs-1783154134.059478-1.0.1.1-KoqEL4RdISK7dgzljtYCEgHdUzp26qoFgkhWqYt3ub4; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15ccc19d9c8c9b2-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 14:05:34,202 |   \u274c Fetch failed ICICIBANK: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 08:35:34 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqId': '4ee04567-6056-45a8-88fb-4cd1ebcd554b', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestId': 'e78d048d-2b2e-4975-8054-85e368942bc4', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'Strict-Transport-Security': 'max-age=0; includeSubDomains', 'X-Frame-Options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=lZLjEl.ILDt1KcHYHYqpBEObhdogfpdXTdRKy.v0ftg-1783154134.1074607-1.0.1.1-kjkNlbn7PIMl5579WgUiLLO6Td3DXX6pGLoMIJkOY5eNGoPxHpp5J2zq5NO7Vtb7bb7STtWy3LYK5MFb.974l9d_b_cQmzW0uqUtKisImco1a6qgAdWxxNl7LfsgfCU4; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 09:05:34 GMT, _cfuvid=eQ_njmyIRBb5UpOdCIu6z.PELFF3pDNQ3ubpncTAIFs-1783154134.1074607-1.0.1.1-OSAJZdT6r4gHAiuTYn0dq50Xu6sXHI9ZljWy76qqvHs; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15ccc1a2a4cc9b2-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 14:20:34,226 | 
+==================================================
+2026-07-04 14:20:34,229 |   SCAN at 14:20
+2026-07-04 14:20:34,229 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-04 14:20:34,229 | ==================================================
+2026-07-04 14:20:53,417 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/historical-candle/NSE_EQ%7CINE002A01018/15minute/2026-07-04/2026-07-04
+2026-07-04 14:20:53,869 |   \u274c Fetch failed RELIANCE: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 08:50:53 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqId': '0e976e05-61fc-4105-a0ed-f46f266a017a', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestId': 'e4cfe1ce-54e0-4a8b-a121-212f38a8382f', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'Strict-Transport-Security': 'max-age=0; includeSubDomains', 'X-Frame-Options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=hlMbb2Wz9SJ3aPKBqxSP98_1ZYNQ7iDVvTV324ci1Mg-1783155053.7794561-1.0.1.1-DbEzQaA_hzIh2JZrTfjyusrDFJ6O0cLpoAFNNi4wVCqlKliyN5U6EARJ5hZ2cYxLoKKWkomvIOl9eru6uTVfPDKrCPbLC5PsxBwES51prApZtyBqtZRBnw31NyNZwOgv; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 09:20:53 GMT, _cfuvid=DMaDHWCiX7awGKHFPHOboxWonP7FM05zWszLhnALtTw-1783155053.7794561-1.0.1.1-VDRIVsvaLoxOk61TkrSipR.CyEAIw7snECADjnnx900; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15ce28e1a017f23-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 14:20:53,916 |   \u274c Fetch failed TCS: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 08:50:53 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqId': '6132ae21-b746-4d72-b7fb-87b2e5dde326', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestId': '41946557-c8bf-441d-b52e-929133d4f523', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'Strict-Transport-Security': 'max-age=0; includeSubDomains', 'X-Frame-Options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=xdEMjJ.IktdOIlj2GYoGStP3wjayGG259iX2._LT30U-1783155053.8254528-1.0.1.1-4iw8Z2TXw3_a_SoqaH25o15GZ2O1cmYD2WuIE9RCZQFAHit5AY_TOa5MKd8QEXcUlwzu7Ur9Myx8Qc1pTLcbRMlcfSVLRWZikg_1TSrUAPmCdMqp1m_YUPZo42w1Jiih; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 09:20:53 GMT, _cfuvid=3qQXCUsw6ZdUUhJVrRW2V42MuRb5fA1jKMTpqrtjOa4-1783155053.8254528-1.0.1.1-lxd1BCge8iqEy0yhbwtnd2NY.5xIvpuxa1RFTgnART4; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15ce28e6a8c7f23-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 14:20:53,960 |   \u274c Fetch failed INFY: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 08:50:53 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqId': '7af994d7-ba25-4d35-a1b3-9ebea78f7c69', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestId': '416cbb85-3af9-42e9-bfb9-c80343243098', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'Strict-Transport-Security': 'max-age=0; includeSubDomains', 'X-Frame-Options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=pVe58JQwjDvqJj6igK9YTFJzXpfMtmGsLbvC0kmAvfk-1783155053.8725271-1.0.1.1-MdypzkET6XlhcDPXhgf6ZdcSH7KOxGTfPBl.F_qNVK4lrqGPJDXs6VH7oggrPdNpK5YbQgpenrbzwa6Tw2yFrfPnkHnVD8H7F8brWwasdjdOgSWjDbR9srvpjBNEmujh; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 09:20:53 GMT, _cfuvid=AVQ92rn_9BpyuO6NSJ9s37tz2wSjGHBfcgytLKw0Vq8-1783155053.8725271-1.0.1.1-ZmRWmtya1F_tc6SfP.G2oJ1SdA5HpGNnd4HEhKM.EIw; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15ce28ebb097f23-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 14:20:54,010 |   \u274c Fetch failed HDFCBANK: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 08:50:53 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': '48011b14-a96b-413c-bf29-59562ceb4bdf', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': '96522bb8-433b-40f6-9fb9-63a74d6120b2', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=AI783KunB1tAr4lDy.b53iUM46ttob5nSYXH4_Q4bMY-1783155053.917364-1.0.1.1-sPYeDycSSVrH6J5qP0r2yxekkp05v0i2ppeKbETQ8l7kgKQJN7oO1r2QOXBqWyr09CVz8LuDIt02fLhdkoYR7QVI9TwA6wYGZB_7yFsLLsteTaLsNNaFGEL91dFyXcvy; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 09:20:53 GMT, _cfuvid=dqmzu545Ng1JBPm.MkM5m7nTtrp0DPZHGfIfSpjZ5Cc-1783155053.917364-1.0.1.1-0DAPNiwB1ovNRiBjvPJc5x524l.IX88SoWb1FNZAVM0; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15ce28efbaf7f23-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 14:20:54,074 |   \u274c Fetch failed ICICIBANK: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 08:50:54 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqId': '3d67ddcf-6b3e-4e90-9189-16c9f315ab7c', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestId': 'fdbf5c8a-4719-476f-9ecb-cf7be38d3c3c', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'Strict-Transport-Security': 'max-age=0; includeSubDomains', 'X-Frame-Options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=olK.NTnZq3PduOvq4ox_mqhW1IQvERQcKGnm9whCN2g-1783155053.9838092-1.0.1.1-K2lw4MoYBGyo5I.mH15Hg8QlmTDdRqBr_X2TO4byL0ARMjquhQgiYKt5Wzlb1uGOf_xSc7.ifEWtkrc4Zab3PGpSIMj3wZBLcCwg7lrqEUu5ZmKXuWt2StFbjrV99e6d; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 09:20:54 GMT, _cfuvid=fQJ5UMnSk.H4KVsp.cjAU_ezqdQPpCYCPzg8DOopEYA-1783155053.9838092-1.0.1.1-8HXTxxlFvRsHlKC1aSEO2YQwvFpJBGK2xeJOxHnUC4c; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15ce28f6c837f23-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 14:35:54,589 | 
+==================================================
+2026-07-04 14:35:54,692 |   SCAN at 14:35
+2026-07-04 14:35:54,720 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-04 14:35:54,752 | ==================================================
+2026-07-04 14:36:14,253 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/historical-candle/NSE_EQ%7CINE002A01018/15minute/2026-07-04/2026-07-04
+2026-07-04 14:36:14,886 |   \u274c Fetch failed RELIANCE: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 09:06:14 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': '83197a90-77f8-459f-a174-2c59269e1924', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': 'd1214438-d28d-4a90-abe7-8c532960bfb4', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=fH5T1gJWrt6dty9TZ10FUf49vQPeYFpD6CMwlBeDqzo-1783155974.7942698-1.0.1.1-axBF_jUs.lZyOsI9dHYeZcOEZxjGixm_uPBzrRjlj_d.5bYAPw2AkTeCarHf3c7KkAoqYwKQXhPpjSggPXhwNCdB7nkJJoAZFY6QQiDS11q7UtjJ2uCg4UAItM0Zfkjy; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 09:36:14 GMT, _cfuvid=4xmEJFzdFXzt0na6SclUew_96sfTHUVC7Z6AJI6BL2I-1783155974.7942698-1.0.1.1-fz3KHLXQcQ642BoghqS9WpHCVnVMYyHzMHZ4iDRaIIc; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15cf90a7ad3f806-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 14:36:14,933 |   \u274c Fetch failed TCS: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 09:06:14 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqId': '034dd258-e77c-4172-8e5f-5e104d342cb6', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestId': '53db75c7-9a98-4061-8482-40a0d10efe81', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'Strict-Transport-Security': 'max-age=0; includeSubDomains', 'X-Frame-Options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=JOXMxaLbv4lzKqD4dHu.QZRVP5jkZotnEX27liuF0XY-1783155974.8420165-1.0.1.1-9UGCiTmlZap_2PZVxDxecJVbFWt8zSsZkLqSrMLz8QM3LLhuPw6aOfETZ1YvJm44RvRv3sd.j_26Tc7amH4vRB5FvWYtCEWCcB3fA3y5CKv86IBwuJQBe0G25aASKBuA; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 09:36:14 GMT, _cfuvid=u6xFEdDeT2ewdoHs.E8qM8CXOtlOwTOyXpnJF9_Zuq4-1783155974.8420165-1.0.1.1-AfEnfXuV3XDk2qbh6cwMlqC1T1o0WuhxRhrVHaB0tpM; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15cf90acb66f806-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 14:36:14,983 |   \u274c Fetch failed INFY: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 09:06:14 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': 'd683d38b-df32-4f83-80d9-86ef33a58cbe', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': '28e213aa-c466-44c2-8025-4bd593f9cc84', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=GL5B5I6UfBw99CJU5izLn41wNkX.qdLcaxZRWKbgejk-1783155974.88722-1.0.1.1-0_JGwWChDm3KXBatqXGrc0id9zRkGu4PDY348zACFJKCi77OP98TkOxYQxkTWayAAbykrxWAlcMLJcQA_xZOh9zHjZ1Ydw3uRjSzsJP3.QtYcT34Tc07w79nJ8X9mLZZ; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 09:36:14 GMT, _cfuvid=6OfsEJ7yTrFeNvgpyUMy5XSoBHuP_sZ9IXfRM.RT4mQ-1783155974.88722-1.0.1.1-c5zXlJFJLgh1sj7XmyVHHmotFL9QO3WPAOtl9071MTI; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15cf90b0c00f806-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 14:36:15,036 |   \u274c Fetch failed HDFCBANK: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 09:06:14 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqId': 'c60af500-cd53-499d-8476-3cc694394b96', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestId': 'dd122187-f444-40d8-9440-9727651cb6c4', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'Strict-Transport-Security': 'max-age=0; includeSubDomains', 'X-Frame-Options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=FdhQHg2fFmWA5wTFEXi2qYysZLsSKGYnQAQW.25xZn0-1783155974.9370298-1.0.1.1-bL581J3Xn.PVyeSgOIro5UmBGtuQls9du2FIESgURCR5QoBwQgqUA2C60qAlIhbIJ59afewm_YlK0vn6UMeGm.AkUCDsb9LDl2tVRdLVWQGg7vvvaSv2mIUNCcSQ9ZLj; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 09:36:14 GMT, _cfuvid=nww31870KlEcWl3Sl3JNv1T4qTT9CItSmmJFUBIt25w-1783155974.9370298-1.0.1.1-iqut3vZptrOk9N2tT.KdR7ZADHKOw55GqrZYJ0NTd5c; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15cf90b5ca3f806-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 14:36:15,133 |   \u274c Fetch failed ICICIBANK: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 09:06:15 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqId': '64083479-a6ac-48d4-a9f7-a12753c409a2', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestId': '536cc302-7213-4dd8-9918-6eacfa30b2ad', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'Strict-Transport-Security': 'max-age=0; includeSubDomains', 'X-Frame-Options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=yL73Te.6nf8AWvrk.ijaYBA1Gv9JdUkeDepR8YHz5.Q-1783155975.0262024-1.0.1.1-bHmwB9U53Expvg7nucnbg.rxj1NtV9gft5.gGS68SceQiGNsQ9yZF_uyxKF1ZMA.IcDUz8ftpCxZp5LZZzWam9Zm62UJdSRdITgUUZqqOD7wMnZazLDjxzqQdDNkgd9c; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 09:36:15 GMT, _cfuvid=.jdAHet8DGocigjwtlYCxtKpBWKBcceX3TpO5_Sw5B0-1783155975.0262024-1.0.1.1-tgiaedcUphqjpmTcyssCRnjii4ie5IFS2M.tsu6JKPk; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15cf90beda6f806-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 14:51:15,207 | 
+==================================================
+2026-07-04 14:51:15,213 |   SCAN at 14:51
+2026-07-04 14:51:15,223 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-04 14:51:15,223 | ==================================================
+2026-07-04 14:51:34,486 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/historical-candle/NSE_EQ%7CINE002A01018/15minute/2026-07-04/2026-07-04
+2026-07-04 14:51:35,934 |   \u274c Fetch failed RELIANCE: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 09:21:35 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': '78b4d191-6fec-4bab-a391-d301ff7f0dc1', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': '2e345e1b-043f-4348-9e44-ed075f29b327', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=wGI071CZ7izTnbdxePDerL9fUqe7kB9PJrxgvf7Rhwo-1783156895.8478005-1.0.1.1-QVsacD5sQh05L4SPJDxJnEa9FwfJETYmEb2kGtPuV9vaDi00w9nRh4HywkeiHW_n9rKIfw2o7hjLPczVhxdNWqGxrlcQQODYTqnH7CMijX09ceiMAjf43tvOYKWTRezW; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 09:51:35 GMT, _cfuvid=5BZO8sEIQKe_wr3ZYz5HibwDoeRs.5lwOnlq6_.GY1o-1783156895.8478005-1.0.1.1-2Rc_Hj6KYqHDC.dlRYMC_.P_mKLO1OQXH1iYUDx5FUU; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15d0f870c05d40b-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 14:51:36,007 |   \u274c Fetch failed TCS: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 09:21:35 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqId': '7f247e9c-096c-4ea6-8268-fc1fe8fd3aa3', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestId': '588ae921-cb13-4de9-8129-8b9d6e666794', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'Strict-Transport-Security': 'max-age=0; includeSubDomains', 'X-Frame-Options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=qF6TIDlr6GcIxofbOqgGgOwleU4K4tuQvrXB8rVcj.Y-1783156895.8985987-1.0.1.1-XdumYMWMR2pZE9V2Lp6flYjch9FFL.PT7haSmrKtY0WpyXvYAhJU82H6t8V.KBuy_O_EiBcQJkwrmieQg3EsWp8tBdyIHiAtYML2oY.UQnuhptmuD99Z7CA9SASrkuOx; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 09:51:35 GMT, _cfuvid=SfzkLGORfdCgMwTn7yHoGXIl5IZ9SF8Tluoc9vRXhZE-1783156895.8985987-1.0.1.1-NPQWIDuSiksEwMBz8kmeCHcmU9O_.XaP_aFbuVJ2B1w; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15d0f875c89d40b-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 14:51:36,061 |   \u274c Fetch failed INFY: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 09:21:36 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqId': '9857b354-e465-4c4f-b9f9-22e00585c819', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestId': 'd67bec4d-8e1d-496d-abc2-e7d519a260e0', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'Strict-Transport-Security': 'max-age=0; includeSubDomains', 'X-Frame-Options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=clmp3B1LcGjMGL3Tiam4vkeUuXfXXjOQvWKuXPksGbA-1783156895.9658542-1.0.1.1-g9aK83NPv.E7laJm_K7OO51fBJrcIq0EJ_VtFpjtZ_tuOin3Lxmvd9SXSXlGQFvIlz79eCDsmTfbnqlXLg29jKzYlhV1aNFaUeFNUtOID0uAr4WnZEe1UQVjGUwJSnpN; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 09:51:36 GMT, _cfuvid=1Hhx7yrcD0fZTGH06YHywlbX8lECuDAM3pOgRDFjDsk-1783156895.9658542-1.0.1.1-ysG4dZwJVsoMuECd1XNPF_u.TIeHuPNlI5OXYiaepqA; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15d0f87cd50d40b-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 14:51:36,114 |   \u274c Fetch failed HDFCBANK: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 09:21:36 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqId': 'c6186c72-6bb5-4c0d-8af1-9cc98e415eae', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestId': '10fb34ac-e429-45c9-b3f8-9be4781e71f8', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'Strict-Transport-Security': 'max-age=0; includeSubDomains', 'X-Frame-Options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=iSQsUnCAPhYYd57L5kQXF1lGl1_AT9Lgvv8PU1QzFnY-1783156896.0147216-1.0.1.1-Qod5a6D6jan5AoSv2DuBxSKpa.dfPPAwXmouaFtkMJLYiFy3sKA97EScSM4z4Bij9EXfP0BpmFGLSDr9z30Ttxu_UQwytRZIxtgfgohBxyN6n7nquIVn7C59qZwJIhVg; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 09:51:36 GMT, _cfuvid=yzJWAjrq_6.S5sIHKIpD01XWdSf3ga0rnffWLIUJHlg-1783156896.0147216-1.0.1.1-6j_XRS6BuhG0R3dgP0YW7XNhtUuRDK6dKNS6xfUboO4; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15d0f881dcbd40b-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 14:51:36,159 |   \u274c Fetch failed ICICIBANK: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 09:21:36 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqId': 'd42555cb-c10c-4341-b339-822dbd5454e0', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestId': '8614916f-b565-474e-abe0-3353325bf7c0', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'Strict-Transport-Security': 'max-age=0; includeSubDomains', 'X-Frame-Options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=oQrjVZe.BR8G3Vo3ZDL0r8p8fl0c6q5Fm8ubcQgc5us-1783156896.068309-1.0.1.1-r10bwDxec9WEDwzwCK9P.NVYj4hacJr76WMimMQ1gdZsgEU9lCHtLnO4AXnRaGPjNtNzjGqa8QlqfaNYQPZeDBE8UWlmqwVjlcw4VGQagPIyKB2QGGx1uzIYf71GJIqE; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 09:51:36 GMT, _cfuvid=MVlOAZZX6YCn_vBqpvfdwSGgh1MEEQUfOWQrC9.BkZg-1783156896.068309-1.0.1.1-1WzwDtuT3A43U.NM9oVdNsKybdob4spvSTh1jCX1GMQ; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15d0f886e58d40b-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 15:06:36,218 | 
+==================================================
+2026-07-04 15:06:36,232 |   SCAN at 15:06
+2026-07-04 15:06:36,235 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-04 15:06:36,240 | ==================================================
+2026-07-04 15:06:55,458 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/historical-candle/NSE_EQ%7CINE002A01018/15minute/2026-07-04/2026-07-04
+2026-07-04 15:06:57,365 |   \u274c Fetch failed RELIANCE: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 09:36:57 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': '8284f0fe-40cc-4f18-921f-dd3a1017fa1f', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': '45f71ace-a96c-4975-a21c-dec3b7a4a176', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=cz2OCUIP.zhA8mVpQid2HwBGBNyFFTm_sZzaMNGxxBc-1783157817.2465289-1.0.1.1-m7h7jRWLtjd2.4sCCXIPyTJm0uQFfq1rj6u2o6xpdJD2zHR39SggX49E66wKQeOeWktYT_ZHlyu4MmePakrhJzoDadCrXgu6ur3iPgsrpi4rvgqqZVNLfCreNZx8D76Z; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 10:06:57 GMT, _cfuvid=SV_a8b0lyowzvywKpMEDQVhiZ1MRgzLgEHc6xL0BAYw-1783157817.2465289-1.0.1.1-mDrlrEjME3QxVkWiiOuYjDdEpQAUpeyYXv91kQaqqyE; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15d2605cdd1b232-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 15:06:57,419 |   \u274c Fetch failed TCS: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 09:36:57 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqId': '86372b4a-3f5a-4e85-a652-72e2011d8038', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestId': '9d6e3cec-16ad-40e5-9199-2f2f88f83fb0', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'Strict-Transport-Security': 'max-age=0; includeSubDomains', 'X-Frame-Options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=i0J1.EuobxbRxG12dfk0wP7.HY9MGFD2GKyuElqTXj8-1783157817.3223433-1.0.1.1-sOLyz_k5tcChZrGmBrzGKJ__4N15Rwn59Xat4aOOwHyImL_lLVPyKbIro.C_HbbB4movVDW7HZiQ2gDJVxKs3p.8EodcPx_poDLqs90KheimBGCMsRGpJghD_jY8OOhv; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 10:06:57 GMT, _cfuvid=S99cK3Wp8I9x4Xo_nJEmjVDDerzYa9lVhsLpw42uHb4-1783157817.3223433-1.0.1.1-8473iZ3DLp4jEJIRxpNBKnE_pOP5o9GV.g_wA8bKp28; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15d26064eb1b232-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 15:06:57,473 |   \u274c Fetch failed INFY: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 09:36:57 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': 'def6b294-2150-4327-94e3-7af53fba0c0a', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': '9b04a296-937f-475f-957a-1f6d95e228d1', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=EHc1I.OMpY0V4JusSAIuqV4bjfxkPtaTXPllBd6S050-1783157817.3720725-1.0.1.1-vbNEgKNPVmDTotcLeLjMBsFN7GtPy.WPYlKSccMX8k9zYE9X1Z6U96OLw_W3Ex.RT3MxPACcaHpSIVcdDFOlfqPvj8tdLK0btpVQ1QkAEuxPv8P.DQVThP5k92RP04W_; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 10:06:57 GMT, _cfuvid=HURuKo4mbpMqDB3i1RwRu5rOdzcuEQ8SsulofiI6KZs-1783157817.3720725-1.0.1.1-6BadbyycHpdB.szMpFa3168iJWJydrOW3aFtweBfm4g; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15d26069f72b232-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 15:06:57,528 |   \u274c Fetch failed HDFCBANK: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 09:36:57 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqId': '274dede9-584b-4aec-9146-17910018be4b', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestId': '35434636-e1bd-464d-a33b-43cd8a81058b', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'Strict-Transport-Security': 'max-age=0; includeSubDomains', 'X-Frame-Options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=jQY8PWbiteITgIF_3HFs9hdMm_tSI8P5wVTUyzWRWn8-1783157817.4274547-1.0.1.1-lY9I_NPx0p7Itigl2BBg6GNBdTm6pd6_o25hi53OiCCzveA7Lg8bG_.ZwYBW_tYO8B3x86dbPRgX1JvJO_pyDvk42EZ5voHY0r7PNSBs3BehisLfKqKIQSE_SOtkCmtr; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 10:06:57 GMT, _cfuvid=YctZ.Mi2M.Q_8oSYnptmuRev1THWeKm.cpYNQRJT3Sw-1783157817.4274547-1.0.1.1-2Oqm.Jkv78wTWnpeDfs.GKQuul09FjsksAgrO86WG88; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15d2606e81eb232-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 15:06:57,578 |   \u274c Fetch failed ICICIBANK: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 04 Jul 2026 09:36:57 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqId': '8a772c8e-0591-43e5-8e5f-c4238885c5bd', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestId': '1dce65f8-e660-40a6-831b-b6161d6621cb', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'Strict-Transport-Security': 'max-age=0; includeSubDomains', 'X-Frame-Options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=EqG3Z77MZEgIqdCS84HXhvqguUHN9Mj9ZDU9y7VwSUM-1783157817.4821594-1.0.1.1-brMY_2oRtHu0JTBydITCCWm7Yw0hfWO1q7nxRiX1abiKfQ1SEjrHRAReRqP12c4Rni4qP10XWnPT.TaYIieUso22Xii24KY0KwjqkL.3s4de6Fsi5AySpF81yvnjTG2O; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Sat, 04 Jul 2026 10:06:57 GMT, _cfuvid=2joba_gJfXsDG3HlDGDF3r8ybXhctaREiP6uKd8w5Xw-1783157817.4821594-1.0.1.1-ufeMqamPNLODA92vWwUfZews0Kgl6A4M96oBHwistNQ; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a15d260748ceb232-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-04 15:21:57,655 | 
+==================================================
+2026-07-04 15:21:57,668 |   SCAN at 15:21
+2026-07-04 15:21:57,673 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-04 15:21:57,675 | ==================================================
+2026-07-04 15:21:57,676 |   \u23f8\ufe0f  Market closed
+2026-07-04 17:26:14,501 | 
+==================================================
+2026-07-04 17:26:14,534 |   SCAN at 17:26
+2026-07-04 17:26:14,558 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-04 17:26:14,566 | ==================================================
+2026-07-04 17:26:14,566 |   \u23f8\ufe0f  Market closed
+2026-07-04 17:41:14,647 | 
+==================================================
+2026-07-04 17:41:14,647 |   SCAN at 17:41
+2026-07-04 17:41:14,666 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-04 17:41:14,666 | ==================================================
+2026-07-04 17:41:14,666 |   \u23f8\ufe0f  Market closed
+2026-07-04 17:56:14,721 | 
+==================================================
+2026-07-04 17:56:14,721 |   SCAN at 17:56
+2026-07-04 17:56:14,731 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-04 17:56:14,733 | ==================================================
+2026-07-04 17:56:14,733 |   \u23f8\ufe0f  Market closed
+2026-07-04 18:11:14,796 | 
+==================================================
+2026-07-04 18:11:14,799 |   SCAN at 18:11
+2026-07-04 18:11:14,799 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-04 18:11:14,799 | ==================================================
+2026-07-04 18:11:14,799 |   \u23f8\ufe0f  Market closed
+2026-07-05 22:00:50,427 | 
+==================================================
+2026-07-05 22:00:50,427 |   SCAN at 22:00
+2026-07-05 22:00:50,427 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-05 22:00:50,427 | ==================================================
+2026-07-05 22:00:50,427 |   \u23f8\ufe0f  Market closed
+2026-07-05 22:15:50,491 | 
+==================================================
+2026-07-05 22:15:50,497 |   SCAN at 22:15
+2026-07-05 22:15:50,499 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-05 22:15:50,500 | ==================================================
+2026-07-05 22:15:50,501 |   \u23f8\ufe0f  Market closed
+2026-07-05 22:30:50,562 | 
+==================================================
+2026-07-05 22:30:50,571 |   SCAN at 22:30
+2026-07-05 22:30:50,576 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-05 22:30:50,579 | ==================================================
+2026-07-05 22:30:50,580 |   \u23f8\ufe0f  Market closed
+2026-07-05 22:45:50,658 | 
+==================================================
+2026-07-05 22:45:50,666 |   SCAN at 22:45
+2026-07-05 22:45:50,673 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-05 22:45:50,677 | ==================================================
+2026-07-05 22:45:50,677 |   \u23f8\ufe0f  Market closed
+2026-07-05 23:00:50,744 | 
+==================================================
+2026-07-05 23:00:50,750 |   SCAN at 23:00
+2026-07-05 23:00:50,750 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-05 23:00:50,752 | ==================================================
+2026-07-05 23:00:50,752 |   \u23f8\ufe0f  Market closed
+2026-07-05 23:15:50,804 | 
+==================================================
+2026-07-05 23:15:50,814 |   SCAN at 23:15
+2026-07-05 23:15:50,818 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-05 23:15:50,819 | ==================================================
+2026-07-05 23:15:50,823 |   \u23f8\ufe0f  Market closed
+2026-07-05 23:30:50,937 | 
+==================================================
+2026-07-05 23:30:50,948 |   SCAN at 23:30
+2026-07-05 23:30:50,955 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-05 23:30:50,959 | ==================================================
+2026-07-05 23:30:50,959 |   \u23f8\ufe0f  Market closed
+2026-07-05 23:45:51,008 | 
+==================================================
+2026-07-05 23:45:51,014 |   SCAN at 23:45
+2026-07-05 23:45:51,015 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-05 23:45:51,019 | ==================================================
+2026-07-05 23:45:51,019 |   \u23f8\ufe0f  Market closed
+2026-07-06 00:00:51,061 | 
+==================================================
+2026-07-06 00:00:51,066 |   SCAN at 00:00
+2026-07-06 00:00:51,069 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-06 00:00:51,072 | ==================================================
+2026-07-06 00:00:51,072 |   \u23f8\ufe0f  Market closed
+2026-07-06 01:11:50,606 | 
+==================================================
+2026-07-06 01:11:50,641 |   SCAN at 01:11
+2026-07-06 01:11:50,663 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-06 01:11:50,667 | ==================================================
+2026-07-06 01:11:50,669 |   \u23f8\ufe0f  Market closed
+2026-07-06 18:51:04,546 | 
+==================================================
+2026-07-06 18:51:04,548 |   SCAN at 18:51
+2026-07-06 18:51:04,552 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-06 18:51:04,552 | ==================================================
+2026-07-06 18:51:04,552 |   \u23f8\ufe0f  Market closed
+2026-07-06 19:06:04,662 | 
+==================================================
+2026-07-06 19:06:04,667 |   SCAN at 19:06
+2026-07-06 19:06:04,669 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-06 19:06:04,671 | ==================================================
+2026-07-06 19:06:04,671 |   \u23f8\ufe0f  Market closed
+2026-07-06 19:21:04,701 | 
+==================================================
+2026-07-06 19:21:04,703 |   SCAN at 19:21
+2026-07-06 19:21:04,703 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-06 19:21:04,703 | ==================================================
+2026-07-06 19:21:04,703 |   \u23f8\ufe0f  Market closed
+2026-07-06 19:36:04,735 | 
+==================================================
+2026-07-06 19:36:04,738 |   SCAN at 19:36
+2026-07-06 19:36:04,741 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-06 19:36:04,742 | ==================================================
+2026-07-06 19:36:04,742 |   \u23f8\ufe0f  Market closed
+2026-07-06 19:51:04,788 | 
+==================================================
+2026-07-06 19:51:04,813 |   SCAN at 19:51
+2026-07-06 19:51:04,816 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-06 19:51:04,818 | ==================================================
+2026-07-06 19:51:04,818 |   \u23f8\ufe0f  Market closed
+2026-07-06 20:06:04,905 | 
+==================================================
+2026-07-06 20:06:04,913 |   SCAN at 20:06
+2026-07-06 20:06:04,916 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-06 20:06:04,916 | ==================================================
+2026-07-06 20:06:04,916 |   \u23f8\ufe0f  Market closed
+2026-07-06 20:21:05,092 | 
+==================================================
+2026-07-06 20:21:05,092 |   SCAN at 20:21
+2026-07-06 20:21:05,092 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-06 20:21:05,109 | ==================================================
+2026-07-06 20:21:05,109 |   \u23f8\ufe0f  Market closed
+2026-07-06 20:36:05,163 | 
+==================================================
+2026-07-06 20:36:05,170 |   SCAN at 20:36
+2026-07-06 20:36:05,170 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-06 20:36:05,170 | ==================================================
+2026-07-06 20:36:05,172 |   \u23f8\ufe0f  Market closed
+2026-07-06 20:51:05,660 | 
+==================================================
+2026-07-06 20:51:05,665 |   SCAN at 20:51
+2026-07-06 20:51:05,665 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-06 20:51:05,665 | ==================================================
+2026-07-06 20:51:05,665 |   \u23f8\ufe0f  Market closed
+2026-07-06 21:06:05,808 | 
+==================================================
+2026-07-06 21:06:05,808 |   SCAN at 21:06
+2026-07-06 21:06:05,816 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-06 21:06:05,816 | ==================================================
+2026-07-06 21:06:05,816 |   \u23f8\ufe0f  Market closed
+2026-07-06 22:44:01,369 | 
+==================================================
+2026-07-06 22:44:01,393 |   SCAN at 22:44
+2026-07-06 22:44:01,398 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-06 22:44:01,405 | ==================================================
+2026-07-06 22:44:01,407 |   \u23f8\ufe0f  Market closed
+2026-07-06 22:59:01,504 | 
+==================================================
+2026-07-06 22:59:01,513 |   SCAN at 22:59
+2026-07-06 22:59:01,513 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-06 22:59:01,523 | ==================================================
+2026-07-06 22:59:01,523 |   \u23f8\ufe0f  Market closed
+2026-07-06 23:14:05,271 | 
+==================================================
+2026-07-06 23:14:05,281 |   SCAN at 23:14
+2026-07-06 23:14:05,283 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-06 23:14:05,287 | ==================================================
+2026-07-06 23:14:05,287 |   \u23f8\ufe0f  Market closed
+2026-07-06 23:29:05,308 | 
+==================================================
+2026-07-06 23:29:05,308 |   SCAN at 23:29
+2026-07-06 23:29:05,308 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-06 23:29:05,308 | ==================================================
+2026-07-06 23:29:05,308 |   \u23f8\ufe0f  Market closed
+2026-07-06 23:44:05,332 | 
+==================================================
+2026-07-06 23:44:05,332 |   SCAN at 23:44
+2026-07-06 23:44:05,332 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-06 23:44:05,332 | ==================================================
+2026-07-06 23:44:05,335 |   \u23f8\ufe0f  Market closed
+2026-07-07 11:08:28,790 | 
+==================================================
+2026-07-07 11:08:28,796 |   SCAN at 11:08
+2026-07-07 11:08:28,798 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-07 11:08:28,802 | ==================================================
+2026-07-07 11:08:30,006 |   \u274c Fetch failed RELIANCE: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 07 Jul 2026 05:38:29 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': '5fcdf1bd-b220-409b-b579-6c629df18663', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': '502c1fcd-2da5-44c8-9892-13f9162065b9', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=XvD97BSbdNw7At2VmmXoon1k47F29ZeSmiUmD57rRhs-1783402709.574759-1.0.1.1-qknONYno8S2.W_2Za0lpHPRZviARjml4old7OqyQopdn_e74dYRj.QcEJk1VNSdjeCIyZ6a4uikrHcleRC4u1EsBDkXsA4RPc0IP8Q.ZffNJ5avsLMX3B80R6sTxKG7j; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Tue, 07 Jul 2026 06:08:29 GMT, _cfuvid=tWKJDnN.fX.hzBO.YQ_x3FnzP1xb4tsq4oOCgAgXndk-1783402709.574759-1.0.1.1-PSMKCe6HURKN6bRQ6iMdUKesvzwzct9TTLhPLGR_BIY; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a17480d6dbb759ac-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-07 11:08:30,072 |   \u274c Fetch failed TCS: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 07 Jul 2026 05:38:29 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': 'b91e058f-8710-4ffa-84d6-8d9be3b19637', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': '9dc0413d-acd0-40c4-b47f-bdbb15cf5ae8', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=N_sQGsPjWZ3NaIovlgHOKXY6OgicmfCeNvcbvQtN61c-1783402709.9218078-1.0.1.1-QyUwRB4t.4rk3eRk_UmdNPrQVKcrTbRiSnh7bt_75zh4b53L09BF_Cx_VyM6qvWdbmRzbeR.UOOUdLBmtnjvEhWxLyzTsI0l.IaVvSr.KSnMzNkJ36VW9qBnxJ.NbEw1; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Tue, 07 Jul 2026 06:08:29 GMT, _cfuvid=OXJ7.n5nMjfy.dt1dBMkDiSgmIQIlvy2F8et4Eqhazw-1783402709.9218078-1.0.1.1-nN8pn0KgzCiFzh7bvEPHHYFGcsyb.dl3xAsW0aMOiAA; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a17480d90e8d59ac-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-07 11:08:30,136 |   \u274c Fetch failed INFY: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 07 Jul 2026 05:38:30 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': '1e8f333e-3553-48b0-9ab6-2bdfdb12c893', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': 'ed55dfe9-7a04-494a-a4e4-59f745296df0', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=2_qy6088Tjnsspu2_bpTlN.p6aXtSRHRthFJYYCA2r0-1783402709.974729-1.0.1.1-2nbvmkTqKVDzyYqo6d6OV3n6SSOeSD2gETiePh_4J3xsAy1lNDfwHw_7kUMHuoAsS2n2M4vtkisZkjUGUSZODB2eVqtIB.ETzUYa8dQgSVADl3UFxYMp0OqjuTxdNqGg; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Tue, 07 Jul 2026 06:08:30 GMT, _cfuvid=rPBvZ_djhYXrMS8sZQM2w2TeRqVrCkOxHgTf_zwg3JA-1783402709.974729-1.0.1.1-W5J_wzFZ8yDIjcfySmTPpT8ZpOv5fwnToO0RfCB18Xg; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a17480d95ece59ac-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-07 11:08:30,204 |   \u274c Fetch failed HDFCBANK: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 07 Jul 2026 05:38:30 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': '18b86d32-c3b1-4f7f-a2c6-a01fbd89b7ba', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': 'ac826564-fbb8-47dc-b3a2-b9cb7785c1b3', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=CI8FSCwRaA3D1zgk.Or0XyttC1KyiUu0Qt_bUWVP3NE-1783402710.040008-1.0.1.1-dfgqOaW8CvJls3vJB0T7nySu7VzpJOAVSw5_vMjRpkgndg_xrYov5uDoJXBJuzpQjRgcP7xSr21NX4nPcrauPjW0bMwsHciftoqioRrbl7Rgccx40bvBcCYMXHZ4gYTr; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Tue, 07 Jul 2026 06:08:30 GMT, _cfuvid=0PoBvMCb5tvpkcYZQSbaHO8Xag6q.jSNIaLYs2AYYNA-1783402710.040008-1.0.1.1-PCjWKP2dn5TeHnSjPMkjfTjM6Cw9k.WlsUceoHc0.h4; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a17480d9bf1459ac-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-07 11:08:30,265 |   \u274c Fetch failed ICICIBANK: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 07 Jul 2026 05:38:30 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'reqid': '53d62a6f-06ea-41da-9afd-5b276b084ac9', 'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'requestid': '83b88c69-e783-4193-ace0-4713b42d6429', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'strict-transport-security': 'max-age=0; includeSubDomains', 'x-frame-options': 'DENY', 'cf-cache-status': 'BYPASS', 'set-cookie': '__cf_bm=YeMdDFLvib.nEOzssMYiWG4cRSpWokdbhGc8TRo5ot8-1783402710.106659-1.0.1.1-UjGHD63sl_YWK7Juho9.lJ69Jhu3Y_04sZZ8x5TLWtb1n2Jd24RIhkUz69MXlc4xtm0dThdz0ueIqrNu.nCfxPhPd_nbPpc0drGMfPzUbF_5CgNLfzKoz63xyzabgICj; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com; Expires=Tue, 07 Jul 2026 06:08:30 GMT, _cfuvid=RcbjOq0PqkEZ1e0Ddhrg4bOlccOrzIPNyzfCGZS3aRI-1783402710.106659-1.0.1.1-W_0AeizvIQ_re8TBAe4lnXSlvTtXiGyicE8HiDdLQdU; HttpOnly; SameSite=None; Secure; Path=/; Domain=upstox.com', 'Server': 'cloudflare', 'CF-RAY': 'a17480da2f4f59ac-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","message":"Interval accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"15minute","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"15minute"}]}'
+
+2026-07-07 11:11:25,692 | ==================================================
+2026-07-07 11:11:25,697 |   LIVE BOT STARTING
+2026-07-07 11:11:25,700 |   Capital    : \u20b950,000
+2026-07-07 11:11:25,703 |   Mode       : PAPER TRADING
+2026-07-07 11:11:25,706 |   Kill switch: \u20b9200 daily loss
+2026-07-07 11:11:25,710 |   Stocks     : ABBOTINDIA, ADANIENT, ADANIGREEN, ADANIPORTS, ALKEM, APOLLOHOSP, ASHOKLEY, ASIANPAINT, AUROPHARMA, AXISBANK, BAJAJFINSV, BAJFINANCE, BANKBARODA, BERGEPAINT, BHARTIARTL, BIOCON, BOSCHLTD, BPCL, BRITANNIA, CANBK, CHOLAFIN, CIPLA, COALINDIA, COFORGE, COLPAL, CONCOR, CUMMINSIND, DABUR, DIVISLAB, DIXON, DLF, DRREDDY, EICHERMOT, ESCORTS, FEDERALBNK, GODREJCP, GRASIM, HAVELLS, HCLTECH, HDFCBANK, HDFCLIFE, HEROMOTOCO, HINDALCO, HINDUNILVR, ICICIBANK, IDFCFIRSTB, INDIGO, INDUSINDBK, IPCALAB, IRCTC, ITC, JSWSTEEL, KOTAKBANK, LT, LUPIN, MARICO, MARUTI, MOTHERSON, MPHASIS, MUTHOOTFIN, NAUKRI, NESTLEIND, NTPC, OBEROIRLTY, OFSS, ONGC, PAGEIND, PERSISTENT, PIDILITIND, PNB, POWERGRID, RELIANCE, SAIL, SBILIFE, SBIN, SHREECEM, SIEMENS, SUNPHARMA, TATACONSUM, TATAPOWER, TATASTEEL, TCS, TECHM, TITAN, TORNTPHARM, TORNTPOWER, TRENT, UBL, UNIONBANK, VEDL, VOLTAS, WIPRO
+2026-07-07 11:11:25,718 | ==================================================
+2026-07-07 11:11:25,732 | 
+==================================================
+2026-07-07 11:11:25,733 |   SCAN at 11:11
+2026-07-07 11:11:25,738 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-07 11:11:25,740 | ==================================================
+2026-07-07 11:11:26,506 |   \u26a0\ufe0f  No candles yet for ABBOTINDIA
+2026-07-07 11:11:26,582 |   \u26a0\ufe0f  No candles yet for ADANIENT
+2026-07-07 11:11:26,639 |   \u26a0\ufe0f  No candles yet for ADANIGREEN
+2026-07-07 11:11:26,701 |   \u26a0\ufe0f  No candles yet for ADANIPORTS
+2026-07-07 11:11:26,782 |   \u26a0\ufe0f  No candles yet for ALKEM
+2026-07-07 11:11:26,839 |   \u26a0\ufe0f  No candles yet for APOLLOHOSP
+2026-07-07 11:11:26,898 |   \u26a0\ufe0f  No candles yet for ASHOKLEY
+2026-07-07 11:11:26,955 |   \u26a0\ufe0f  No candles yet for ASIANPAINT
+2026-07-07 11:11:27,007 |   \u26a0\ufe0f  No candles yet for AUROPHARMA
+2026-07-07 11:11:27,058 |   \u26a0\ufe0f  No candles yet for AXISBANK
+2026-07-07 11:11:27,111 |   \u26a0\ufe0f  No candles yet for BAJAJFINSV
+2026-07-07 11:11:27,170 |   \u26a0\ufe0f  No candles yet for BAJFINANCE
+2026-07-07 11:11:27,241 |   \u26a0\ufe0f  No candles yet for BANKBARODA
+2026-07-07 11:11:27,297 |   \u26a0\ufe0f  No candles yet for BERGEPAINT
+2026-07-07 11:11:27,356 |   \u26a0\ufe0f  No candles yet for BHARTIARTL
+2026-07-07 11:11:27,407 |   \u26a0\ufe0f  No candles yet for BIOCON
+2026-07-07 11:11:27,465 |   \u26a0\ufe0f  No candles yet for BOSCHLTD
+2026-07-07 11:11:27,538 |   \u26a0\ufe0f  No candles yet for BPCL
+2026-07-07 11:11:27,594 |   \u26a0\ufe0f  No candles yet for BRITANNIA
+2026-07-07 11:11:27,655 |   \u26a0\ufe0f  No candles yet for CANBK
+2026-07-07 11:11:27,989 |   \u26a0\ufe0f  No candles yet for CHOLAFIN
+2026-07-07 11:11:29,077 |   \u26a0\ufe0f  No candles yet for CIPLA
+2026-07-07 11:11:29,167 |   \u26a0\ufe0f  No candles yet for COALINDIA
+2026-07-07 11:11:29,229 |   \u26a0\ufe0f  No candles yet for COFORGE
+2026-07-07 11:11:29,292 |   \u26a0\ufe0f  No candles yet for COLPAL
+2026-07-07 11:11:29,362 |   \u26a0\ufe0f  No candles yet for CONCOR
+2026-07-07 11:11:29,436 |   \u26a0\ufe0f  No candles yet for CUMMINSIND
+2026-07-07 11:11:29,558 |   \u26a0\ufe0f  No candles yet for DABUR
+2026-07-07 11:11:29,624 |   \u26a0\ufe0f  No candles yet for DIVISLAB
+2026-07-07 11:11:29,686 |   \u26a0\ufe0f  No candles yet for DIXON
+2026-07-07 11:11:29,742 |   \u26a0\ufe0f  No candles yet for DLF
+2026-07-07 11:11:29,812 |   \u26a0\ufe0f  No candles yet for DRREDDY
+2026-07-07 11:11:29,877 |   \u26a0\ufe0f  No candles yet for EICHERMOT
+2026-07-07 11:11:29,949 |   \u26a0\ufe0f  No candles yet for ESCORTS
+2026-07-07 11:11:30,011 |   \u26a0\ufe0f  No candles yet for FEDERALBNK
+2026-07-07 11:11:30,060 |   \u26a0\ufe0f  No candles yet for GODREJCP
+2026-07-07 11:11:30,127 |   \u26a0\ufe0f  No candles yet for GRASIM
+2026-07-07 11:11:30,188 |   \u26a0\ufe0f  No candles yet for HAVELLS
+2026-07-07 11:11:30,251 |   \u26a0\ufe0f  No candles yet for HCLTECH
+2026-07-07 11:11:30,290 |   \u26a0\ufe0f  No candles yet for HDFCBANK
+2026-07-07 11:11:30,349 |   \u26a0\ufe0f  No candles yet for HDFCLIFE
+2026-07-07 11:11:30,410 |   \u26a0\ufe0f  No candles yet for HEROMOTOCO
+2026-07-07 11:11:30,477 |   \u26a0\ufe0f  No candles yet for HINDALCO
+2026-07-07 11:11:30,537 |   \u26a0\ufe0f  No candles yet for HINDUNILVR
+2026-07-07 11:11:30,578 |   \u26a0\ufe0f  No candles yet for ICICIBANK
+2026-07-07 11:11:30,650 |   \u26a0\ufe0f  No candles yet for IDFCFIRSTB
+2026-07-07 11:11:30,710 |   \u26a0\ufe0f  No candles yet for INDIGO
+2026-07-07 11:11:30,760 |   \u26a0\ufe0f  No candles yet for INDUSINDBK
+2026-07-07 11:11:30,830 |   \u26a0\ufe0f  No candles yet for IPCALAB
+2026-07-07 11:11:30,887 |   \u26a0\ufe0f  No candles yet for IRCTC
+2026-07-07 11:11:30,944 |   \u26a0\ufe0f  No candles yet for ITC
+2026-07-07 11:11:30,999 |   \u26a0\ufe0f  No candles yet for JSWSTEEL
+2026-07-07 11:11:31,051 |   \u26a0\ufe0f  No candles yet for KOTAKBANK
+2026-07-07 11:11:31,101 |   \u26a0\ufe0f  No candles yet for LT
+2026-07-07 11:11:31,158 |   \u26a0\ufe0f  No candles yet for LUPIN
+2026-07-07 11:11:31,216 |   \u26a0\ufe0f  No candles yet for MARICO
+2026-07-07 11:11:31,277 |   \u26a0\ufe0f  No candles yet for MARUTI
+2026-07-07 11:11:31,335 |   \u26a0\ufe0f  No candles yet for MOTHERSON
+2026-07-07 11:11:31,404 |   \u26a0\ufe0f  No candles yet for MPHASIS
+2026-07-07 11:11:31,462 |   \u26a0\ufe0f  No candles yet for MUTHOOTFIN
+2026-07-07 11:11:31,522 |   \u26a0\ufe0f  No candles yet for NAUKRI
+2026-07-07 11:11:31,588 |   \u26a0\ufe0f  No candles yet for NESTLEIND
+2026-07-07 11:11:31,651 |   \u26a0\ufe0f  No candles yet for NTPC
+2026-07-07 11:11:31,700 |   \u26a0\ufe0f  No candles yet for OBEROIRLTY
+2026-07-07 11:11:31,762 |   \u26a0\ufe0f  No candles yet for OFSS
+2026-07-07 11:11:31,822 |   \u26a0\ufe0f  No candles yet for ONGC
+2026-07-07 11:11:31,891 |   \u26a0\ufe0f  No candles yet for PAGEIND
+2026-07-07 11:11:31,954 |   \u26a0\ufe0f  No candles yet for PERSISTENT
+2026-07-07 11:11:32,012 |   \u26a0\ufe0f  No candles yet for PIDILITIND
+2026-07-07 11:11:32,060 |   \u26a0\ufe0f  No candles yet for PNB
+2026-07-07 11:11:32,116 |   \u26a0\ufe0f  No candles yet for POWERGRID
+2026-07-07 11:11:32,151 |   \u26a0\ufe0f  No candles yet for RELIANCE
+2026-07-07 11:11:32,211 |   \u26a0\ufe0f  No candles yet for SAIL
+2026-07-07 11:11:32,266 |   \u26a0\ufe0f  No candles yet for SBILIFE
+2026-07-07 11:11:32,305 |   \u26a0\ufe0f  No candles yet for SBIN
+2026-07-07 11:11:32,361 |   \u26a0\ufe0f  No candles yet for SHREECEM
+2026-07-07 11:11:32,412 |   \u26a0\ufe0f  No candles yet for SIEMENS
+2026-07-07 11:11:32,464 |   \u26a0\ufe0f  No candles yet for SUNPHARMA
+2026-07-07 11:11:32,518 |   \u26a0\ufe0f  No candles yet for TATACONSUM
+2026-07-07 11:11:32,577 |   \u26a0\ufe0f  No candles yet for TATAPOWER
+2026-07-07 11:11:32,627 |   \u26a0\ufe0f  No candles yet for TATASTEEL
+2026-07-07 11:11:32,660 |   \u26a0\ufe0f  No candles yet for TCS
+2026-07-07 11:11:32,710 |   \u26a0\ufe0f  No candles yet for TECHM
+2026-07-07 11:11:32,762 |   \u26a0\ufe0f  No candles yet for TITAN
+2026-07-07 11:11:32,813 |   \u26a0\ufe0f  No candles yet for TORNTPHARM
+2026-07-07 11:11:32,838 |   \u26a0\ufe0f  No candles yet for TORNTPOWER
+2026-07-07 11:11:32,887 |   \u26a0\ufe0f  No candles yet for TRENT
+2026-07-07 11:11:32,936 |   \u26a0\ufe0f  No candles yet for UBL
+2026-07-07 11:11:32,989 |   \u26a0\ufe0f  No candles yet for UNIONBANK
+2026-07-07 11:11:33,041 |   \u26a0\ufe0f  No candles yet for VEDL
+2026-07-07 11:11:33,110 |   \u26a0\ufe0f  No candles yet for VOLTAS
+2026-07-07 11:11:33,167 |   \u26a0\ufe0f  No candles yet for WIPRO
+2026-07-07 11:11:33,167 | 
+  Bot running — press Ctrl+C to stop
+2026-07-07 11:16:33,312 | 
+==================================================
+2026-07-07 11:16:33,320 |   SCAN at 11:16
+2026-07-07 11:16:33,321 |   Daily P&L: \u20b90 | Positions: 0
+2026-07-07 11:16:33,322 | ==================================================
+2026-07-07 11:16:54,950 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/historical-candle/NSE_EQ%7CINE358A01014/1minute/2026-07-07/2026-07-07
+2026-07-07 11:16:58,333 |   \u26a0\ufe0f  No candles yet for ABBOTINDIA
+2026-07-07 11:16:58,465 |   \u26a0\ufe0f  No candles yet for ADANIENT
+2026-07-07 11:16:58,505 |   \u26a0\ufe0f  No candles yet for ADANIGREEN
+2026-07-07 11:16:58,532 |   \u26a0\ufe0f  No candles yet for ADANIPORTS
+2026-07-07 11:16:58,553 |   \u26a0\ufe0f  No candles yet for ALKEM
+2026-07-07 11:16:58,573 |   \u26a0\ufe0f  No candles yet for APOLLOHOSP
+2026-07-07 11:16:58,596 |   \u26a0\ufe0f  No candles yet for ASHOKLEY
+2026-07-07 11:16:58,621 |   \u26a0\ufe0f  No candles yet for ASIANPAINT
+2026-07-07 11:16:58,639 |   \u26a0\ufe0f  No candles yet for AUROPHARMA
+2026-07-07 11:16:58,670 |   \u26a0\ufe0f  No candles yet for AXISBANK
+2026-07-07 11:16:58,699 |   \u26a0\ufe0f  No candles yet for BAJAJFINSV
+2026-07-07 11:16:58,721 |   \u26a0\ufe0f  No candles yet for BAJFINANCE
+2026-07-07 11:16:58,744 |   \u26a0\ufe0f  No candles yet for BANKBARODA
+2026-07-07 11:16:58,774 |   \u26a0\ufe0f  No candles yet for BERGEPAINT
+2026-07-07 11:16:58,799 |   \u26a0\ufe0f  No candles yet for BHARTIARTL
+2026-07-07 11:16:58,823 |   \u26a0\ufe0f  No candles yet for BIOCON
+2026-07-07 11:16:58,856 |   \u26a0\ufe0f  No candles yet for BOSCHLTD
+2026-07-07 11:16:58,882 |   \u26a0\ufe0f  No candles yet for BPCL
+2026-07-07 11:16:58,908 |   \u26a0\ufe0f  No candles yet for BRITANNIA
+2026-07-07 11:16:58,931 |   \u26a0\ufe0f  No candles yet for CANBK
+2026-07-07 11:16:58,957 |   \u26a0\ufe0f  No candles yet for CHOLAFIN
+2026-07-07 11:16:58,982 |   \u26a0\ufe0f  No candles yet for CIPLA
+2026-07-07 11:16:59,011 |   \u26a0\ufe0f  No candles yet for COALINDIA
+2026-07-07 11:16:59,033 |   \u26a0\ufe0f  No candles yet for COFORGE
+2026-07-07 11:16:59,061 |   \u26a0\ufe0f  No candles yet for COLPAL
+2026-07-07 11:16:59,082 |   \u26a0\ufe0f  No candles yet for CONCOR
+2026-07-07 11:16:59,106 |   \u26a0\ufe0f  No candles yet for CUMMINSIND
+2026-07-07 11:16:59,128 |   \u26a0\ufe0f  No candles yet for DABUR
+2026-07-07 11:16:59,148 |   \u26a0\ufe0f  No candles yet for DIVISLAB
+2026-07-07 11:16:59,188 |   \u26a0\ufe0f  No candles yet for DIXON
+2026-07-07 11:16:59,212 |   \u26a0\ufe0f  No candles yet for DLF
+2026-07-07 11:16:59,230 |   \u26a0\ufe0f  No candles yet for DRREDDY
+2026-07-07 11:16:59,253 |   \u26a0\ufe0f  No candles yet for EICHERMOT
+2026-07-07 11:16:59,330 |   \u26a0\ufe0f  No candles yet for ESCORTS
+2026-07-07 11:16:59,356 |   \u26a0\ufe0f  No candles yet for FEDERALBNK
+2026-07-07 11:16:59,388 |   \u26a0\ufe0f  No candles yet for GODREJCP
+2026-07-07 11:16:59,406 |   \u26a0\ufe0f  No candles yet for GRASIM
+2026-07-07 11:16:59,429 |   \u26a0\ufe0f  No candles yet for HAVELLS
+2026-07-07 11:16:59,451 |   \u26a0\ufe0f  No candles yet for HCLTECH
+2026-07-07 11:16:59,473 |   \u26a0\ufe0f  No candles yet for HDFCBANK
+2026-07-07 11:16:59,494 |   \u26a0\ufe0f  No candles yet for HDFCLIFE
+2026-07-07 11:16:59,519 |   \u26a0\ufe0f  No candles yet for HEROMOTOCO
+2026-07-07 11:16:59,546 |   \u26a0\ufe0f  No candles yet for HINDALCO
+2026-07-07 11:16:59,572 |   \u26a0\ufe0f  No candles yet for HINDUNILVR
+2026-07-07 11:16:59,592 |   \u26a0\ufe0f  No candles yet for ICICIBANK
+2026-07-07 11:16:59,613 |   \u26a0\ufe0f  No candles yet for IDFCFIRSTB
+2026-07-07 11:16:59,645 |   \u26a0\ufe0f  No candles yet for INDIGO
+2026-07-07 11:16:59,683 |   \u26a0\ufe0f  No candles yet for INDUSINDBK
+2026-07-07 11:16:59,711 |   \u26a0\ufe0f  No candles yet for IPCALAB
+2026-07-07 11:16:59,732 |   \u26a0\ufe0f  No candles yet for IRCTC
+2026-07-07 11:16:59,753 |   \u26a0\ufe0f  No candles yet for ITC
+2026-07-07 11:16:59,781 |   \u26a0\ufe0f  No candles yet for JSWSTEEL
+2026-07-07 11:16:59,808 |   \u26a0\ufe0f  No candles yet for KOTAKBANK
+2026-07-07 11:16:59,837 |   \u26a0\ufe0f  No candles yet for LT
+2026-07-07 11:16:59,858 |   \u26a0\ufe0f  No candles yet for LUPIN
+2026-07-07 11:16:59,880 |   \u26a0\ufe0f  No candles yet for MARICO
+2026-07-07 11:16:59,905 |   \u26a0\ufe0f  No candles yet for MARUTI
+2026-07-07 11:16:59,930 |   \u26a0\ufe0f  No candles yet for MOTHERSON
+2026-07-07 11:16:59,971 |   \u26a0\ufe0f  No candles yet for MPHASIS
+2026-07-07 11:17:00,023 |   \u26a0\ufe0f  No candles yet for MUTHOOTFIN
+2026-07-07 11:17:00,050 |   \u26a0\ufe0f  No candles yet for NAUKRI
+2026-07-07 11:17:00,072 |   \u26a0\ufe0f  No candles yet for NESTLEIND
+2026-07-07 11:17:00,109 |   \u26a0\ufe0f  No candles yet for NTPC
+2026-07-07 11:17:00,134 |   \u26a0\ufe0f  No candles yet for OBEROIRLTY
+2026-07-07 11:17:00,155 |   \u26a0\ufe0f  No candles yet for OFSS
+2026-07-07 11:17:00,176 |   \u26a0\ufe0f  No candles yet for ONGC
+2026-07-07 11:17:00,204 |   \u26a0\ufe0f  No candles yet for PAGEIND
+2026-07-07 11:17:00,225 |   \u26a0\ufe0f  No candles yet for PERSISTENT
+2026-07-07 11:17:00,243 |   \u26a0\ufe0f  No candles yet for PIDILITIND
+2026-07-07 11:17:00,272 |   \u26a0\ufe0f  No candles yet for PNB
+2026-07-07 11:17:00,293 |   \u26a0\ufe0f  No candles yet for POWERGRID
+2026-07-07 11:17:00,316 |   \u26a0\ufe0f  No candles yet for RELIANCE
+2026-07-07 11:17:00,339 |   \u26a0\ufe0f  No candles yet for SAIL
+2026-07-07 11:17:00,357 |   \u26a0\ufe0f  No candles yet for SBILIFE
+2026-07-07 11:17:00,375 |   \u26a0\ufe0f  No candles yet for SBIN
+2026-07-07 11:17:00,396 |   \u26a0\ufe0f  No candles yet for SHREECEM
+2026-07-07 11:17:00,415 |   \u26a0\ufe0f  No candles yet for SIEMENS
+2026-07-07 11:17:00,436 |   \u26a0\ufe0f  No candles yet for SUNPHARMA
+2026-07-07 11:17:00,456 |   \u26a0\ufe0f  No candles yet for TATACONSUM
+2026-07-07 11:17:00,474 |   \u26a0\ufe0f  No candles yet for TATAPOWER
+2026-07-07 11:17:00,494 |   \u26a0\ufe0f  No candles yet for TATASTEEL
+2026-07-07 11:17:00,512 |   \u26a0\ufe0f  No candles yet for TCS
+2026-07-07 11:17:00,540 |   \u26a0\ufe0f  No candles yet for TECHM
+2026-07-07 11:17:00,565 |   \u26a0\ufe0f  No candles yet for TITAN
+2026-07-07 11:17:00,595 |   \u26a0\ufe0f  No candles yet for TORNTPHARM
+2026-07-07 11:17:00,628 |   \u26a0\ufe0f  No candles yet for TORNTPOWER
+2026-07-07 11:17:00,651 |   \u26a0\ufe0f  No candles yet for TRENT
+2026-07-07 11:17:00,685 |   \u26a0\ufe0f  No candles yet for UBL
+2026-07-07 11:17:00,716 |   \u26a0\ufe0f  No candles yet for UNIONBANK
+2026-07-07 11:17:00,736 |   \u26a0\ufe0f  No candles yet for VEDL
+2026-07-07 11:17:00,756 |   \u26a0\ufe0f  No candles yet for VOLTAS
+2026-07-07 11:17:00,776 |   \u26a0\ufe0f  No candles yet for WIPRO
+2026-07-07 11:19:32,147 | ==================================================
+2026-07-07 11:19:32,147 |   LIVE BOT STARTING
+2026-07-07 11:19:32,147 |   Capital    : \u20b950,000
+2026-07-07 11:19:32,147 |   Mode       : PAPER TRADING
+2026-07-07 11:19:32,147 |   Interval   : 1 min candles, scan every 5 mins
+2026-07-07 11:19:32,147 |   Kill switch: \u20b92000 daily loss
+2026-07-07 11:19:32,147 |   Stocks     : 92 Nifty 100 stocks
+2026-07-07 11:19:32,147 | ==================================================
+2026-07-07 11:19:32,156 | 
+==================================================
+2026-07-07 11:19:32,156 |   SCAN at 11:19 | P&L: \u20b90 | Positions: 0
+2026-07-07 11:19:32,156 | ==================================================
+2026-07-07 11:19:36,522 |   \u2b1c No new signals this scan
+2026-07-07 11:19:36,522 | 
+  Bot running — press Ctrl+C to stop
+2026-07-07 11:30:48,097 | ==================================================
+2026-07-07 11:30:48,097 |   LIVE BOT STARTING
+2026-07-07 11:30:48,097 |   Capital    : \u20b950,000
+2026-07-07 11:30:48,097 |   Mode       : PAPER TRADING
+2026-07-07 11:30:48,097 |   Interval   : 1 min candles, scan every 5 mins
+2026-07-07 11:30:48,097 |   Kill switch: \u20b92000 daily loss
+2026-07-07 11:30:48,097 |   Stocks     : 92 Nifty 100 stocks
+2026-07-07 11:30:48,097 | ==================================================
+2026-07-07 11:30:48,101 | 
+==================================================
+2026-07-07 11:30:48,101 |   SCAN at 11:30 | P&L: \u20b90 | Positions: 0
+2026-07-07 11:30:48,101 | ==================================================
+2026-07-07 11:30:53,597 |   \u2b1c No new signals this scan
+2026-07-07 11:30:53,597 | 
+  Bot running — press Ctrl+C to stop
+2026-07-07 11:38:23,410 | ==================================================
+2026-07-07 11:38:23,410 |   LIVE BOT STARTING
+2026-07-07 11:38:23,410 |   Capital    : \u20b950,000
+2026-07-07 11:38:23,410 |   Mode       : PAPER TRADING
+2026-07-07 11:38:23,410 |   Scan every : 5 minutes
+2026-07-07 11:38:23,410 |   Kill switch: \u20b92000 daily loss
+2026-07-07 11:38:23,410 |   Stocks     : 92 Nifty 100 stocks
+2026-07-07 11:38:23,410 | ==================================================
+2026-07-07 11:38:23,410 | 
+==================================================
+2026-07-07 11:38:23,410 |   SCAN at 11:38 | P&L: \u20b90 | Positions: 0
+2026-07-07 11:38:23,410 | ==================================================
+2026-07-07 11:38:46,816 |   \u2b1c No signals this scan
+2026-07-07 11:38:46,816 | 
+  Bot running — press Ctrl+C to stop
+2026-07-07 11:49:30,807 | ==================================================
+2026-07-07 11:49:30,807 |   LIVE BOT STARTING
+2026-07-07 11:49:30,807 |   Capital    : \u20b950,000
+2026-07-07 11:49:30,807 |   Mode       : PAPER TRADING
+2026-07-07 11:49:30,807 |   Scan every : 5 minutes
+2026-07-07 11:49:30,807 |   Kill switch: \u20b92000 daily loss
+2026-07-07 11:49:30,807 |   Stocks     : 92 Nifty 100 stocks
+2026-07-07 11:49:30,815 | ==================================================
+2026-07-07 11:49:30,815 | 
+  Seeding price history from 2026-07-06...
+2026-07-07 11:49:51,678 |   \u2705 Seeded 92/92 stocks
+2026-07-07 11:49:51,678 | 
+==================================================
+2026-07-07 11:49:51,678 |   SCAN at 11:49 | P&L: \u20b90 | Positions: 0
+2026-07-07 11:49:51,678 | ==================================================
+2026-07-07 11:49:58,813 | 
+  DABUR — \u20b9450.9 | VWAP:\u20b9450.62 | RSI:61.48 | DOM:1.55x
+2026-07-07 11:49:58,813 |   \U0001f7e2 BUY | Entry:\u20b9450.9 SL:\u20b9448.67 TGT:\u20b9455.37 Qty:224
+2026-07-07 11:49:58,813 |   \U0001f4cb PAPER — BUY 224 DABUR
+2026-07-07 11:50:01,404 | 
+  HAVELLS — \u20b91207.9 | VWAP:\u20b91198.8 | RSI:78.87 | DOM:1.66x
+2026-07-07 11:50:01,404 |   \U0001f7e2 BUY | Entry:\u20b91207.9 SL:\u20b91197.61 TGT:\u20b91228.48 Qty:48
+2026-07-07 11:50:01,404 |   \U0001f4cb PAPER — BUY 48 HAVELLS
+2026-07-07 11:50:04,026 | 
+  INDUSINDBK — \u20b91026.3 | VWAP:\u20b91019.25 | RSI:67.87 | DOM:3.67x
+2026-07-07 11:50:04,026 |   \U0001f7e2 BUY | Entry:\u20b91026.3 SL:\u20b91019.44 TGT:\u20b91040.01 Qty:72
+2026-07-07 11:50:04,026 |   \U0001f4cb PAPER — BUY 72 INDUSINDBK
+2026-07-07 11:50:08,677 | 
+  ONGC — \u20b9244.39 | VWAP:\u20b9244.17 | RSI:66.15 | DOM:1.66x
+2026-07-07 11:50:08,677 |   \U0001f7e2 BUY | Entry:\u20b9244.39 SL:\u20b9243.67 TGT:\u20b9245.84 Qty:694
+2026-07-07 11:50:08,677 |   \U0001f4cb PAPER — BUY 694 ONGC
+2026-07-07 11:50:13,440 | 
+  TECHM — \u20b91456.7 | VWAP:\u20b91439.5 | RSI:88.23 | DOM:3.28x
+2026-07-07 11:50:13,440 |   \U0001f7e2 BUY | Entry:\u20b91456.7 SL:\u20b91437.26 TGT:\u20b91495.58 Qty:25
+2026-07-07 11:50:13,440 |   \U0001f4cb PAPER — BUY 25 TECHM
+2026-07-07 11:50:15,978 |   \u2705 5 signal(s) acted on
+2026-07-07 11:50:15,978 | 
+  Bot running — press Ctrl+C to stop
+2026-07-07 11:54:25,306 | ==================================================
+2026-07-07 11:54:25,306 |   LIVE BOT STARTING
+2026-07-07 11:54:25,306 |   Capital    : \u20b950,000
+2026-07-07 11:54:25,306 |   Mode       : PAPER TRADING
+2026-07-07 11:54:25,306 |   Scan every : 5 minutes
+2026-07-07 11:54:25,306 |   Kill switch: \u20b92000 daily loss
+2026-07-07 11:54:25,306 |   Stocks     : 92 Nifty 100 stocks
+2026-07-07 11:54:25,306 | ==================================================
+2026-07-07 11:54:25,306 | 
+  Seeding price history from 2026-07-06...
+2026-07-07 11:54:46,561 |   \u2705 Seeded 92/92 stocks
+2026-07-07 11:54:46,561 | 
+==================================================
+2026-07-07 11:54:46,561 |   SCAN at 11:54 | P&L: \u20b90 | Positions: 0
+2026-07-07 11:54:46,561 | ==================================================
+2026-07-07 11:54:57,693 | 
+  HEROMOTOCO — \u20b94997.9 | VWAP:\u20b94986.43 | RSI:69.14 | DOM:3.51x
+2026-07-07 11:54:57,693 |   \U0001f7e2 BUY | Entry:\u20b94997.9 SL:\u20b94976.12 TGT:\u20b95041.46 Qty:22
+2026-07-07 11:54:57,693 |   \U0001f4cb PAPER — BUY 22 HEROMOTOCO
+2026-07-07 11:55:01,300 | 
+  MARICO — \u20b9842.4 | VWAP:\u20b9841.37 | RSI:60.72 | DOM:1.63x
+2026-07-07 11:55:01,300 |   \U0001f7e2 BUY | Entry:\u20b9842.4 SL:\u20b9840.45 TGT:\u20b9846.3 Qty:256
+2026-07-07 11:55:01,300 |   \U0001f4cb PAPER — BUY 256 MARICO
+2026-07-07 11:55:03,940 | 
+  ONGC — \u20b9244.26 | VWAP:\u20b9244.13 | RSI:65.68 | DOM:1.78x
+2026-07-07 11:55:03,940 |   \U0001f7e2 BUY | Entry:\u20b9244.26 SL:\u20b9243.54 TGT:\u20b9245.71 Qty:694
+2026-07-07 11:55:03,940 |   \U0001f4cb PAPER — BUY 694 ONGC
+2026-07-07 11:55:10,633 | 
+  WIPRO — \u20b9175.0 | VWAP:\u20b9174.99 | RSI:63.34 | DOM:3.30x
+2026-07-07 11:55:10,633 |   \U0001f7e2 BUY | Entry:\u20b9175.0 SL:\u20b9174.27 TGT:\u20b9176.45 Qty:684
+2026-07-07 11:55:10,633 |   \U0001f4cb PAPER — BUY 684 WIPRO
+2026-07-07 11:55:10,836 |   \u2705 4 signal(s) acted on
+2026-07-07 11:55:10,836 | 
+  Bot running — press Ctrl+C to stop
+2026-07-07 12:00:10,856 | 
+==================================================
+2026-07-07 12:00:10,856 |   SCAN at 12:00 | P&L: \u20b90 | Positions: 4
+2026-07-07 12:00:10,859 | ==================================================
+2026-07-07 12:00:32,485 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE158A01026
+2026-07-07 12:00:47,162 | 
+  DABUR — \u20b9450.95 | VWAP:\u20b9450.63 | RSI:61.01 | DOM:1.80x
+2026-07-07 12:00:47,162 |   \U0001f7e2 BUY | Entry:\u20b9450.95 SL:\u20b9448.72 TGT:\u20b9455.42 Qty:224
+2026-07-07 12:00:47,162 |   \U0001f4cb PAPER — BUY 224 DABUR
+2026-07-07 12:00:52,213 | 
+  INDUSINDBK — \u20b91027.5 | VWAP:\u20b91020.2 | RSI:68.19 | DOM:2.59x
+2026-07-07 12:00:52,213 |   \U0001f7e2 BUY | Entry:\u20b91027.5 SL:\u20b91020.15 TGT:\u20b91042.2 Qty:68
+2026-07-07 12:00:52,213 |   \U0001f4cb PAPER — BUY 68 INDUSINDBK
+2026-07-07 12:01:02,862 | 
+  VOLTAS — \u20b91281.3 | VWAP:\u20b91278.97 | RSI:59.24 | DOM:2.41x
+2026-07-07 12:01:02,862 |   \U0001f7e2 BUY | Entry:\u20b91281.3 SL:\u20b91275.0 TGT:\u20b91293.9 Qty:79
+2026-07-07 12:01:02,862 |   \U0001f4cb PAPER — BUY 79 VOLTAS
+2026-07-07 12:01:03,068 |   \u2705 3 signal(s) acted on
+2026-07-07 12:06:03,090 | 
+==================================================
+2026-07-07 12:06:03,090 |   SCAN at 12:06 | P&L: \u20b90 | Positions: 7
+2026-07-07 12:06:03,090 | ==================================================
+2026-07-07 12:06:22,239 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE158A01026
+2026-07-07 12:06:23,040 |   \U0001f534 SL HIT — VOLTAS @ \u20b91274.6 | P&L: \u20b9-498
+2026-07-07 12:06:23,040 |   \U0001f4cb PAPER — SELL 79 VOLTAS
+2026-07-07 12:06:38,212 | 
+  HCLTECH — \u20b91167.1 | VWAP:\u20b91157.67 | RSI:74.14 | DOM:2.63x
+2026-07-07 12:06:38,213 |   \U0001f7e2 BUY | Entry:\u20b91167.1 SL:\u20b91155.73 TGT:\u20b91189.84 Qty:43
+2026-07-07 12:06:38,216 |   \U0001f4cb PAPER — BUY 43 HCLTECH
+2026-07-07 12:06:39,047 | 
+  HDFCLIFE — \u20b9570.5 | VWAP:\u20b9568.13 | RSI:68.49 | DOM:1.93x
+2026-07-07 12:06:39,048 |   \U0001f7e2 BUY | Entry:\u20b9570.5 SL:\u20b9568.19 TGT:\u20b9575.12 Qty:216
+2026-07-07 12:06:39,048 |   \U0001f4cb PAPER — BUY 216 HDFCLIFE
+2026-07-07 12:06:47,156 | 
+  PIDILITIND — \u20b91618.8 | VWAP:\u20b91615.37 | RSI:71.17 | DOM:7.01x
+2026-07-07 12:06:47,156 |   \U0001f7e2 BUY | Entry:\u20b91618.8 SL:\u20b91614.45 TGT:\u20b91627.5 Qty:114
+2026-07-07 12:06:47,156 |   \U0001f4cb PAPER — BUY 114 PIDILITIND
+2026-07-07 12:06:54,160 |   \u2705 3 signal(s) acted on
+2026-07-07 12:11:54,180 | 
+==================================================
+2026-07-07 12:11:54,180 |   SCAN at 12:11 | P&L: \u20b9-498 | Positions: 9
+2026-07-07 12:11:54,180 | ==================================================
+2026-07-07 12:12:24,465 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE158A01026
+2026-07-07 12:12:34,814 | 
+  HAVELLS — \u20b91202.5 | VWAP:\u20b91197.0 | RSI:71.07 | DOM:2.64x
+2026-07-07 12:12:34,814 |   \U0001f7e2 BUY | Entry:\u20b91202.5 SL:\u20b91192.21 TGT:\u20b91223.08 Qty:48
+2026-07-07 12:12:34,814 |   \U0001f4cb PAPER — BUY 48 HAVELLS
+2026-07-07 12:12:37,450 | 
+  JSWSTEEL — \u20b91241.0 | VWAP:\u20b91236.6 | RSI:55.08 | DOM:1.64x
+2026-07-07 12:12:37,450 |   \U0001f7e2 BUY | Entry:\u20b91241.0 SL:\u20b91233.08 TGT:\u20b91256.84 Qty:63
+2026-07-07 12:12:37,450 |   \U0001f4cb PAPER — BUY 63 JSWSTEEL
+2026-07-07 12:12:47,453 |   \u2705 2 signal(s) acted on
+2026-07-07 12:17:47,478 | 
+==================================================
+2026-07-07 12:17:47,479 |   SCAN at 12:17 | P&L: \u20b9-498 | Positions: 11
+2026-07-07 12:17:47,479 | ==================================================
+2026-07-07 12:18:06,658 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE158A01026
+2026-07-07 12:18:28,251 |   \u2b1c No signals this scan
+2026-07-07 12:23:28,283 | 
+==================================================
+2026-07-07 12:23:28,283 |   SCAN at 12:23 | P&L: \u20b9-498 | Positions: 11
+2026-07-07 12:23:28,283 | ==================================================
+2026-07-07 12:23:47,454 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE158A01026
+2026-07-07 12:23:50,857 |   \U0001f534 SL HIT — ONGC @ \u20b9243.44 | P&L: \u20b9-500
+2026-07-07 12:23:50,857 |   \U0001f4cb PAPER — SELL 694 ONGC
+2026-07-07 12:24:02,941 | 
+  ITC — \u20b9288.5 | VWAP:\u20b9288.2 | RSI:57.91 | DOM:2.54x
+2026-07-07 12:24:02,941 |   \U0001f7e2 BUY | Entry:\u20b9288.5 SL:\u20b9287.6 TGT:\u20b9290.3 Qty:555
+2026-07-07 12:24:02,941 |   \U0001f4cb PAPER — BUY 555 ITC
+2026-07-07 12:24:10,479 | 
+  TCS — \u20b92105.2 | VWAP:\u20b92092.3 | RSI:73.52 | DOM:9.02x
+2026-07-07 12:24:10,479 |   \U0001f7e2 BUY | Entry:\u20b92105.2 SL:\u20b92083.09 TGT:\u20b92149.42 Qty:22
+2026-07-07 12:24:10,479 |   \U0001f4cb PAPER — BUY 22 TCS
+2026-07-07 12:24:13,034 |   \u2705 2 signal(s) acted on
