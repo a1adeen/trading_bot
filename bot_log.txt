@@ -3501,3 +3501,576 @@ HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","mess
 2026-07-07 12:24:10,479 |   \U0001f7e2 BUY | Entry:\u20b92105.2 SL:\u20b92083.09 TGT:\u20b92149.42 Qty:22
 2026-07-07 12:24:10,479 |   \U0001f4cb PAPER — BUY 22 TCS
 2026-07-07 12:24:13,034 |   \u2705 2 signal(s) acted on
+2026-07-09 11:59:23,143 | ==================================================
+2026-07-09 11:59:23,143 |   LIVE BOT STARTING
+2026-07-09 11:59:23,146 |   Capital    : \u20b950,000
+2026-07-09 11:59:23,146 |   Mode       : PAPER TRADING
+2026-07-09 11:59:23,146 |   Scan every : 5 minutes
+2026-07-09 11:59:23,148 |   Kill switch: \u20b92000 daily loss
+2026-07-09 11:59:23,148 |   Stocks     : 92 Nifty 100 stocks
+2026-07-09 11:59:23,150 | ==================================================
+2026-07-09 11:59:23,152 | 
+  Seeding price history from 2026-07-08...
+2026-07-09 12:01:24,088 | ==================================================
+2026-07-09 12:01:24,090 |   LIVE BOT STARTING
+2026-07-09 12:01:24,090 |   Capital    : \u20b950,000
+2026-07-09 12:01:24,090 |   Mode       : PAPER TRADING
+2026-07-09 12:01:24,091 |   Scan every : 5 minutes
+2026-07-09 12:01:24,091 |   Kill switch: \u20b92000 daily loss
+2026-07-09 12:01:24,091 |   Stocks     : 92 Nifty 100 stocks
+2026-07-09 12:01:24,091 | ==================================================
+2026-07-09 12:01:24,091 | 
+  Seeding price history from 2026-07-08...
+2026-07-09 12:01:42,576 |   \u2705 Seeded 92/92 stocks
+2026-07-09 12:01:42,576 | 
+==================================================
+2026-07-09 12:01:42,577 |   SCAN at 12:01 | P&L: \u20b90 | Positions: 0
+2026-07-09 12:01:42,577 | ==================================================
+2026-07-09 12:01:47,063 | 
+  BPCL — \u20b9307.5 | VWAP:\u20b9305.22 | RSI:68.5 | DOM:1.54x
+2026-07-09 12:01:47,063 |   \U0001f7e2 BUY | Entry:\u20b9307.5 SL:\u20b9304.91 TGT:\u20b9312.69 Qty:193
+2026-07-09 12:01:47,063 |   \U0001f4cb PAPER — BUY 193 BPCL
+2026-07-09 12:01:48,606 | 
+  COFORGE — \u20b91473.0 | VWAP:\u20b91459.27 | RSI:61.68 | DOM:4.91x
+2026-07-09 12:01:48,607 |   \U0001f7e2 BUY | Entry:\u20b91473.0 SL:\u20b91458.24 TGT:\u20b91502.52 Qty:33
+2026-07-09 12:01:48,607 |   \U0001f4cb PAPER — BUY 33 COFORGE
+2026-07-09 12:01:49,879 | 
+  DIVISLAB — \u20b96856.5 | VWAP:\u20b96847.33 | RSI:70.99 | DOM:4.03x
+2026-07-09 12:01:49,879 |   \U0001f7e2 BUY | Entry:\u20b96856.5 SL:\u20b96795.15 TGT:\u20b96979.2 Qty:8
+2026-07-09 12:01:49,879 |   \U0001f4cb PAPER — BUY 8 DIVISLAB
+2026-07-09 12:01:58,520 | 
+  NESTLEIND — \u20b91469.2 | VWAP:\u20b91467.4 | RSI:69.56 | DOM:2.11x
+2026-07-09 12:01:58,524 |   \U0001f7e2 BUY | Entry:\u20b91469.2 SL:\u20b91460.5 TGT:\u20b91486.6 Qty:57
+2026-07-09 12:01:58,524 |   \U0001f4cb PAPER — BUY 57 NESTLEIND
+2026-07-09 12:02:00,086 | 
+  PERSISTENT — \u20b94811.7 | VWAP:\u20b94780.57 | RSI:55.15 | DOM:2.99x
+2026-07-09 12:02:00,086 |   \U0001f7e2 BUY | Entry:\u20b94811.7 SL:\u20b94775.7 TGT:\u20b94883.7 Qty:13
+2026-07-09 12:02:00,086 |   \U0001f4cb PAPER — BUY 13 PERSISTENT
+2026-07-09 12:02:07,145 |   \u2705 5 signal(s) acted on
+2026-07-09 12:02:07,145 | 
+  Bot running — press Ctrl+C to stop
+2026-07-09 12:07:07,160 | 
+==================================================
+2026-07-09 12:07:07,160 |   SCAN at 12:07 | P&L: \u20b90 | Positions: 5
+2026-07-09 12:07:07,160 | ==================================================
+2026-07-09 12:07:28,843 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE029A01011
+2026-07-09 12:07:32,672 | 
+  ASIANPAINT — \u20b92713.4 | VWAP:\u20b92696.83 | RSI:59.81 | DOM:2.41x
+2026-07-09 12:07:32,672 |   \U0001f7e2 BUY | Entry:\u20b92713.4 SL:\u20b92693.87 TGT:\u20b92752.46 Qty:25
+2026-07-09 12:07:32,672 |   \U0001f4cb PAPER — BUY 25 ASIANPAINT
+2026-07-09 12:07:32,986 | 
+  AUROPHARMA — \u20b91600.5 | VWAP:\u20b91583.83 | RSI:73.55 | DOM:2.39x
+2026-07-09 12:07:32,986 |   \U0001f7e2 BUY | Entry:\u20b91600.5 SL:\u20b91585.26 TGT:\u20b91630.98 Qty:32
+2026-07-09 12:07:32,986 |   \U0001f4cb PAPER — BUY 32 AUROPHARMA
+2026-07-09 12:07:48,111 | 
+  GODREJCP — \u20b91095.8 | VWAP:\u20b91086.13 | RSI:58.2 | DOM:1.85x
+2026-07-09 12:07:48,111 |   \U0001f7e2 BUY | Entry:\u20b91095.8 SL:\u20b91087.1 TGT:\u20b91113.2 Qty:57
+2026-07-09 12:07:48,111 |   \U0001f4cb PAPER — BUY 57 GODREJCP
+2026-07-09 12:08:00,473 | 
+  POWERGRID — \u20b9283.25 | VWAP:\u20b9282.4 | RSI:58.28 | DOM:1.70x
+2026-07-09 12:08:00,473 |   \U0001f7e2 BUY | Entry:\u20b9283.25 SL:\u20b9282.07 TGT:\u20b9285.62 Qty:423
+2026-07-09 12:08:00,473 |   \U0001f4cb PAPER — BUY 423 POWERGRID
+2026-07-09 12:08:06,661 |   \u2705 4 signal(s) acted on
+2026-07-09 12:13:06,677 | 
+==================================================
+2026-07-09 12:13:06,678 |   SCAN at 12:13 | P&L: \u20b90 | Positions: 9
+2026-07-09 12:13:06,678 | ==================================================
+2026-07-09 12:13:25,878 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE029A01011
+2026-07-09 12:13:29,712 | 
+  APOLLOHOSP — \u20b98880.0 | VWAP:\u20b98852.33 | RSI:74.29 | DOM:4.90x
+2026-07-09 12:13:29,713 |   \U0001f7e2 BUY | Entry:\u20b98880.0 SL:\u20b98830.8 TGT:\u20b98978.4 Qty:10
+2026-07-09 12:13:29,713 |   \U0001f4cb PAPER — BUY 10 APOLLOHOSP
+2026-07-09 12:13:34,479 | 
+  DABUR — \u20b9448.6 | VWAP:\u20b9444.92 | RSI:67.54 | DOM:1.93x
+2026-07-09 12:13:34,479 |   \U0001f7e2 BUY | Entry:\u20b9448.6 SL:\u20b9444.96 TGT:\u20b9455.89 Qty:137
+2026-07-09 12:13:34,479 |   \U0001f4cb PAPER — BUY 137 DABUR
+2026-07-09 12:13:49,860 |   \u2705 2 signal(s) acted on
+2026-07-09 12:18:49,881 | 
+==================================================
+2026-07-09 12:18:49,881 |   SCAN at 12:18 | P&L: \u20b90 | Positions: 11
+2026-07-09 12:18:49,881 | ==================================================
+2026-07-09 12:19:11,466 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE029A01011
+2026-07-09 12:19:34,195 |   \u2b1c No signals this scan
+2026-07-09 12:24:34,212 | 
+==================================================
+2026-07-09 12:24:34,212 |   SCAN at 12:24 | P&L: \u20b90 | Positions: 11
+2026-07-09 12:24:34,212 | ==================================================
+2026-07-09 12:24:53,392 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE029A01011
+2026-07-09 12:24:57,100 | 
+  BHARTIARTL — \u20b91938.9 | VWAP:\u20b91934.57 | RSI:69.15 | DOM:6.09x
+2026-07-09 12:24:57,100 |   \U0001f7e2 BUY | Entry:\u20b91938.9 SL:\u20b91918.74 TGT:\u20b91979.22 Qty:24
+2026-07-09 12:24:57,100 |   \U0001f4cb PAPER — BUY 24 BHARTIARTL
+2026-07-09 12:25:01,488 | 
+  GRASIM — \u20b93214.4 | VWAP:\u20b93188.73 | RSI:59.52 | DOM:2.19x
+2026-07-09 12:25:01,488 |   \U0001f7e2 BUY | Entry:\u20b93214.4 SL:\u20b93190.64 TGT:\u20b93261.92 Qty:21
+2026-07-09 12:25:01,488 |   \U0001f4cb PAPER — BUY 21 GRASIM
+2026-07-09 12:25:09,741 | 
+  RELIANCE — \u20b91293.4 | VWAP:\u20b91288.03 | RSI:67.19 | DOM:2.99x
+2026-07-09 12:25:09,741 |   \U0001f7e2 BUY | Entry:\u20b91293.4 SL:\u20b91286.71 TGT:\u20b91306.78 Qty:74
+2026-07-09 12:25:09,743 |   \U0001f4cb PAPER — BUY 74 RELIANCE
+2026-07-09 12:25:15,074 |   \u2705 3 signal(s) acted on
+2026-07-09 12:30:15,095 | 
+==================================================
+2026-07-09 12:30:15,097 |   SCAN at 12:30 | P&L: \u20b90 | Positions: 14
+2026-07-09 12:30:15,097 | ==================================================
+2026-07-09 12:30:34,269 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE029A01011
+2026-07-09 12:30:56,160 |   \u2b1c No signals this scan
+2026-07-09 12:35:56,219 | 
+==================================================
+2026-07-09 12:35:56,219 |   SCAN at 12:35 | P&L: \u20b90 | Positions: 14
+2026-07-09 12:35:56,219 | ==================================================
+2026-07-09 12:36:15,373 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE029A01011
+2026-07-09 12:36:29,195 | 
+  DIXON — \u20b913555.0 | VWAP:\u20b913436.0 | RSI:71.84 | DOM:2.33x
+2026-07-09 12:36:29,196 |   \U0001f7e2 BUY | Entry:\u20b913555.0 SL:\u20b913420.9 TGT:\u20b913823.2 Qty:3
+2026-07-09 12:36:29,197 |   \U0001f4cb PAPER — BUY 3 DIXON
+2026-07-09 12:36:45,655 | 
+  NAUKRI — \u20b91203.45 | VWAP:\u20b91196.52 | RSI:70.66 | DOM:4.06x
+2026-07-09 12:36:45,655 |   \U0001f7e2 BUY | Entry:\u20b91203.45 SL:\u20b91188.63 TGT:\u20b91233.09 Qty:33
+2026-07-09 12:36:45,655 |   \U0001f4cb PAPER — BUY 33 NAUKRI
+2026-07-09 12:36:46,313 | 
+  OBEROIRLTY — \u20b91908.7 | VWAP:\u20b91896.23 | RSI:65.34 | DOM:4.92x
+2026-07-09 12:36:46,315 |   \U0001f7e2 BUY | Entry:\u20b91908.7 SL:\u20b91891.0 TGT:\u20b91944.1 Qty:28
+2026-07-09 12:36:46,315 |   \U0001f4cb PAPER — BUY 28 OBEROIRLTY
+2026-07-09 12:36:51,904 | 
+  TORNTPOWER — \u20b91418.8 | VWAP:\u20b91412.77 | RSI:60.2 | DOM:1.91x
+2026-07-09 12:36:51,904 |   \U0001f7e2 BUY | Entry:\u20b91418.8 SL:\u20b91412.95 TGT:\u20b91430.5 Qty:85
+2026-07-09 12:36:51,910 |   \U0001f4cb PAPER — BUY 85 TORNTPOWER
+2026-07-09 12:36:53,770 |   \u2705 4 signal(s) acted on
+2026-07-09 12:38:48,985 | ==================================================
+2026-07-09 12:38:48,985 |   LIVE BOT STARTING
+2026-07-09 12:38:48,985 |   Capital    : \u20b950,000
+2026-07-09 12:38:48,985 |   Mode       : PAPER TRADING
+2026-07-09 12:38:48,985 |   Strategy   : VWAP + RSI(55-75) + DOM(1.5x)
+2026-07-09 12:38:48,985 |   Scan every : 5 minutes
+2026-07-09 12:38:48,985 |   Kill switch: \u20b92000 daily loss
+2026-07-09 12:38:48,985 |   Stocks     : 92 Nifty 100 stocks
+2026-07-09 12:38:48,985 | ==================================================
+2026-07-09 12:38:48,985 | 
+  Seeding price history from 2026-07-08...
+2026-07-09 12:39:10,651 |   \u2705 Seeded 92/92 stocks
+2026-07-09 12:39:10,651 | 
+==================================================
+2026-07-09 12:39:10,651 |   SCAN at 12:39 | P&L: \u20b90 | Positions: 0
+2026-07-09 12:39:10,651 | ==================================================
+2026-07-09 12:39:16,844 | 
+  BPCL — \u20b9307.0 | VWAP:\u20b9305.05 | RSI:66.9 | DOM:1.57x
+2026-07-09 12:39:16,847 |   \U0001f7e2 BUY | Entry:\u20b9307.0 SL:\u20b9304.41 TGT:\u20b9312.19 Qty:193
+2026-07-09 12:39:16,848 |   \U0001f4cb PAPER — BUY 193 BPCL
+2026-07-09 12:39:17,042 |   \U0001f4c8 Chart opened: https://in.tradingview.com/chart/?symbol=NSE%3ABPCL
+2026-07-09 12:39:19,230 | 
+  COFORGE — \u20b91470.0 | VWAP:\u20b91459.0 | RSI:59.04 | DOM:1.84x
+2026-07-09 12:39:19,230 |   \U0001f7e2 BUY | Entry:\u20b91470.0 SL:\u20b91454.58 TGT:\u20b91500.84 Qty:32
+2026-07-09 12:39:19,230 |   \U0001f4cb PAPER — BUY 32 COFORGE
+2026-07-09 12:39:19,289 |   \U0001f4c8 Chart opened: https://in.tradingview.com/chart/?symbol=NSE%3ACOFORGE
+2026-07-09 12:39:20,896 | 
+  DIVISLAB — \u20b96860.0 | VWAP:\u20b96848.5 | RSI:71.36 | DOM:10.20x
+2026-07-09 12:39:20,896 |   \U0001f7e2 BUY | Entry:\u20b96860.0 SL:\u20b96798.65 TGT:\u20b96982.7 Qty:8
+2026-07-09 12:39:20,896 |   \U0001f4cb PAPER — BUY 8 DIVISLAB
+2026-07-09 12:39:20,952 |   \U0001f4c8 Chart opened: https://in.tradingview.com/chart/?symbol=NSE%3ADIVISLAB
+2026-07-09 12:39:21,534 | 
+  DLF — \u20b9651.1 | VWAP:\u20b9646.37 | RSI:56.5 | DOM:2.08x
+2026-07-09 12:39:21,535 |   \U0001f7e2 BUY | Entry:\u20b9651.1 SL:\u20b9645.7 TGT:\u20b9661.9 Qty:92
+2026-07-09 12:39:21,549 |   \U0001f4cb PAPER — BUY 92 DLF
+2026-07-09 12:39:21,858 |   \U0001f4c8 Chart opened: https://in.tradingview.com/chart/?symbol=NSE%3ADLF
+2026-07-09 12:39:36,070 | 
+  PERSISTENT — \u20b94815.1 | VWAP:\u20b94781.7 | RSI:56.25 | DOM:3.05x
+2026-07-09 12:39:36,072 |   \U0001f7e2 BUY | Entry:\u20b94815.1 SL:\u20b94779.1 TGT:\u20b94887.1 Qty:13
+2026-07-09 12:39:36,073 |   \U0001f4cb PAPER — BUY 13 PERSISTENT
+2026-07-09 12:39:36,167 |   \U0001f4c8 Chart opened: https://in.tradingview.com/chart/?symbol=NSE%3APERSISTENT
+2026-07-09 12:39:37,294 | 
+  RELIANCE — \u20b91288.5 | VWAP:\u20b91286.4 | RSI:59.79 | DOM:2.46x
+2026-07-09 12:39:37,295 |   \U0001f7e2 BUY | Entry:\u20b91288.5 SL:\u20b91281.81 TGT:\u20b91301.88 Qty:74
+2026-07-09 12:39:37,295 |   \U0001f4cb PAPER — BUY 74 RELIANCE
+2026-07-09 12:39:37,390 |   \U0001f4c8 Chart opened: https://in.tradingview.com/chart/?symbol=NSE%3ARELIANCE
+2026-07-09 12:39:43,132 |   \u2705 6 signal(s) acted on
+2026-07-09 12:39:43,141 | 
+  Bot running — press Ctrl+C to stop
+2026-07-09 12:44:43,159 | 
+==================================================
+2026-07-09 12:44:43,159 |   SCAN at 12:44 | P&L: \u20b90 | Positions: 6
+2026-07-09 12:44:43,159 | ==================================================
+2026-07-09 12:45:02,355 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE029A01011
+2026-07-09 12:45:23,584 | 
+  NESTLEIND — \u20b91472.7 | VWAP:\u20b91468.57 | RSI:71.01 | DOM:2.13x
+2026-07-09 12:45:23,586 |   \U0001f7e2 BUY | Entry:\u20b91472.7 SL:\u20b91464.0 TGT:\u20b91490.1 Qty:57
+2026-07-09 12:45:23,588 |   \U0001f4cb PAPER — BUY 57 NESTLEIND
+2026-07-09 12:45:23,715 |   \U0001f4c8 Chart opened: https://in.tradingview.com/chart/?symbol=NSE%3ANESTLEIND
+2026-07-09 12:45:26,634 | 
+  SBILIFE — \u20b91832.1 | VWAP:\u20b91818.17 | RSI:73.07 | DOM:1.61x
+2026-07-09 12:45:26,636 |   \U0001f7e2 BUY | Entry:\u20b91832.1 SL:\u20b91816.32 TGT:\u20b91863.66 Qty:31
+2026-07-09 12:45:26,637 |   \U0001f4cb PAPER — BUY 31 SBILIFE
+2026-07-09 12:45:26,741 |   \U0001f4c8 Chart opened: https://in.tradingview.com/chart/?symbol=NSE%3ASBILIFE
+2026-07-09 12:45:31,738 |   \u2705 2 signal(s) acted on
+2026-07-09 12:54:40,697 | ==================================================
+2026-07-09 12:54:40,699 |   LIVE BOT STARTING
+2026-07-09 12:54:40,699 |   Capital    : \u20b950,000
+2026-07-09 12:54:40,700 |   Mode       : PAPER TRADING
+2026-07-09 12:54:40,700 |   Strategy   : VWAP + RSI(55-75) + DOM(1.5x)
+2026-07-09 12:54:40,700 |   Scan every : 5 minutes
+2026-07-09 12:54:40,700 |   Kill switch: \u20b92000 daily loss
+2026-07-09 12:54:40,701 |   Stocks     : 92 Nifty 100 stocks
+2026-07-09 12:54:40,701 | ==================================================
+2026-07-09 12:54:40,701 | 
+  Seeding price history from 2026-07-08...
+2026-07-09 12:54:59,882 |   \u2705 Seeded 92/92 stocks
+2026-07-09 12:54:59,882 | 
+==================================================
+2026-07-09 12:54:59,884 |   SCAN at 12:54 | P&L: \u20b90 | Positions: 0
+2026-07-09 12:54:59,884 | ==================================================
+2026-07-09 12:55:02,402 | 
+  AUROPHARMA — \u20b91596.6 | VWAP:\u20b91583.17 | RSI:70.79 | DOM:2.01x
+2026-07-09 12:55:02,404 |   \U0001f7e2 BUY | Entry:\u20b91596.6 SL:\u20b91580.79 TGT:\u20b91628.22 Qty:31
+2026-07-09 12:55:02,404 |   \U0001f4cb PAPER — BUY 31 AUROPHARMA
+2026-07-09 12:55:02,404 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AAUROPHARMA
+2026-07-09 12:55:04,929 | 
+  BPCL — \u20b9306.5 | VWAP:\u20b9304.88 | RSI:65.14 | DOM:33.72x
+2026-07-09 12:55:04,929 |   \U0001f7e2 BUY | Entry:\u20b9306.5 SL:\u20b9303.91 TGT:\u20b9311.69 Qty:193
+2026-07-09 12:55:04,929 |   \U0001f4cb PAPER — BUY 193 BPCL
+2026-07-09 12:55:04,929 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ABPCL
+2026-07-09 12:55:07,982 | 
+  DIVISLAB — \u20b96857.0 | VWAP:\u20b96847.5 | RSI:71.05 | DOM:13.94x
+2026-07-09 12:55:07,982 |   \U0001f7e2 BUY | Entry:\u20b96857.0 SL:\u20b96795.65 TGT:\u20b96979.7 Qty:8
+2026-07-09 12:55:07,982 |   \U0001f4cb PAPER — BUY 8 DIVISLAB
+2026-07-09 12:55:07,982 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ADIVISLAB
+2026-07-09 12:55:08,254 | 
+  DIXON — \u20b913527.0 | VWAP:\u20b913426.67 | RSI:74.45 | DOM:1.61x
+2026-07-09 12:55:08,254 |   \U0001f7e2 BUY | Entry:\u20b913527.0 SL:\u20b913392.9 TGT:\u20b913795.2 Qty:3
+2026-07-09 12:55:08,254 |   \U0001f4cb PAPER — BUY 3 DIXON
+2026-07-09 12:55:08,254 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ADIXON
+2026-07-09 12:55:17,991 | 
+  OBEROIRLTY — \u20b91912.0 | VWAP:\u20b91897.33 | RSI:69.26 | DOM:2.34x
+2026-07-09 12:55:17,992 |   \U0001f7e2 BUY | Entry:\u20b91912.0 SL:\u20b91894.3 TGT:\u20b91947.4 Qty:28
+2026-07-09 12:55:17,992 |   \U0001f4cb PAPER — BUY 28 OBEROIRLTY
+2026-07-09 12:55:17,992 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AOBEROIRLTY
+2026-07-09 12:55:19,885 | 
+  POWERGRID — \u20b9283.0 | VWAP:\u20b9282.32 | RSI:55.54 | DOM:1.64x
+2026-07-09 12:55:19,886 |   \U0001f7e2 BUY | Entry:\u20b9283.0 SL:\u20b9281.82 TGT:\u20b9285.37 Qty:423
+2026-07-09 12:55:19,888 |   \U0001f4cb PAPER — BUY 423 POWERGRID
+2026-07-09 12:55:19,888 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3APOWERGRID
+2026-07-09 12:55:23,551 | 
+  TECHM — \u20b91432.5 | VWAP:\u20b91422.6 | RSI:56.06 | DOM:5.57x
+2026-07-09 12:55:23,551 |   \U0001f7e2 BUY | Entry:\u20b91432.5 SL:\u20b91421.31 TGT:\u20b91454.88 Qty:44
+2026-07-09 12:55:23,554 |   \U0001f4cb PAPER — BUY 44 TECHM
+2026-07-09 12:55:23,554 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ATECHM
+2026-07-09 12:55:26,231 |   \u2705 7 signal(s) acted on
+2026-07-09 12:55:26,233 | 
+  Bot running — press Ctrl+C to stop
+2026-07-09 13:00:26,251 | 
+==================================================
+2026-07-09 13:00:26,253 |   SCAN at 13:00 | P&L: \u20b90 | Positions: 7
+2026-07-09 13:00:26,255 | ==================================================
+2026-07-09 13:00:45,430 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE406A01037
+2026-07-09 13:00:53,509 | 
+  DLF — \u20b9655.9 | VWAP:\u20b9649.1 | RSI:63.94 | DOM:102.12x
+2026-07-09 13:00:53,512 |   \U0001f7e2 BUY | Entry:\u20b9655.9 SL:\u20b9649.48 TGT:\u20b9668.74 Qty:77
+2026-07-09 13:00:53,514 |   \U0001f4cb PAPER — BUY 77 DLF
+2026-07-09 13:00:53,514 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ADLF
+2026-07-09 13:00:54,588 | 
+  FEDERALBNK — \u20b9331.65 | VWAP:\u20b9330.07 | RSI:55.2 | DOM:3.78x
+2026-07-09 13:00:54,588 |   \U0001f7e2 BUY | Entry:\u20b9331.65 SL:\u20b9330.02 TGT:\u20b9334.92 Qty:306
+2026-07-09 13:00:54,588 |   \U0001f4cb PAPER — BUY 306 FEDERALBNK
+2026-07-09 13:00:54,588 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AFEDERALBNK
+2026-07-09 13:01:01,920 | 
+  NESTLEIND — \u20b91472.4 | VWAP:\u20b91468.47 | RSI:71.48 | DOM:1.96x
+2026-07-09 13:01:01,920 |   \U0001f7e2 BUY | Entry:\u20b91472.4 SL:\u20b91463.7 TGT:\u20b91489.8 Qty:57
+2026-07-09 13:01:01,920 |   \U0001f4cb PAPER — BUY 57 NESTLEIND
+2026-07-09 13:01:01,920 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ANESTLEIND
+2026-07-09 13:01:04,098 | 
+  RELIANCE — \u20b91289.7 | VWAP:\u20b91286.8 | RSI:59.7 | DOM:1.81x
+2026-07-09 13:01:04,098 |   \U0001f7e2 BUY | Entry:\u20b91289.7 SL:\u20b91283.01 TGT:\u20b91303.08 Qty:74
+2026-07-09 13:01:04,098 |   \U0001f4cb PAPER — BUY 74 RELIANCE
+2026-07-09 13:01:04,098 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ARELIANCE
+2026-07-09 13:01:09,390 |   \u2705 4 signal(s) acted on
+2026-07-09 13:06:09,429 | 
+==================================================
+2026-07-09 13:06:09,437 |   SCAN at 13:06 | P&L: \u20b90 | Positions: 11
+2026-07-09 13:06:09,440 | ==================================================
+2026-07-09 13:06:28,614 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE406A01037
+2026-07-09 13:06:31,166 | 
+  APOLLOHOSP — \u20b98862.0 | VWAP:\u20b98846.33 | RSI:68.51 | DOM:6.31x
+2026-07-09 13:06:31,166 |   \U0001f7e2 BUY | Entry:\u20b98862.0 SL:\u20b98812.8 TGT:\u20b98960.4 Qty:10
+2026-07-09 13:06:31,171 |   \U0001f4cb PAPER — BUY 10 APOLLOHOSP
+2026-07-09 13:06:31,171 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AAPOLLOHOSP
+2026-07-09 13:06:34,787 | 
+  CIPLA — \u20b91452.5 | VWAP:\u20b91444.37 | RSI:55.53 | DOM:1.69x
+2026-07-09 13:06:34,787 |   \U0001f7e2 BUY | Entry:\u20b91452.5 SL:\u20b91444.16 TGT:\u20b91469.18 Qty:59
+2026-07-09 13:06:34,795 |   \U0001f4cb PAPER — BUY 59 CIPLA
+2026-07-09 13:06:34,795 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ACIPLA
+2026-07-09 13:06:38,222 | 
+  HCLTECH — \u20b91157.6 | VWAP:\u20b91146.13 | RSI:59.39 | DOM:2.61x
+2026-07-09 13:06:38,222 |   \U0001f7e2 BUY | Entry:\u20b91157.6 SL:\u20b91145.96 TGT:\u20b91180.88 Qty:42
+2026-07-09 13:06:38,222 |   \U0001f4cb PAPER — BUY 42 HCLTECH
+2026-07-09 13:06:38,230 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AHCLTECH
+2026-07-09 13:06:42,583 | 
+  MARICO — \u20b9855.45 | VWAP:\u20b9852.7 | RSI:58.64 | DOM:1.73x
+2026-07-09 13:06:42,592 |   \U0001f7e2 BUY | Entry:\u20b9855.45 SL:\u20b9849.53 TGT:\u20b9867.3 Qty:84
+2026-07-09 13:06:42,592 |   \U0001f4cb PAPER — BUY 84 MARICO
+2026-07-09 13:06:42,592 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AMARICO
+2026-07-09 13:06:45,151 | 
+  PERSISTENT — \u20b94839.3 | VWAP:\u20b94801.07 | RSI:64.5 | DOM:2.28x
+2026-07-09 13:06:45,151 |   \U0001f7e2 BUY | Entry:\u20b94839.3 SL:\u20b94793.13 TGT:\u20b94931.64 Qty:10
+2026-07-09 13:06:45,155 |   \U0001f4cb PAPER — BUY 10 PERSISTENT
+2026-07-09 13:06:45,155 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3APERSISTENT
+2026-07-09 13:06:50,819 |   \u2705 5 signal(s) acted on
+2026-07-09 13:11:50,896 | 
+==================================================
+2026-07-09 13:11:50,910 |   SCAN at 13:11 | P&L: \u20b90 | Positions: 16
+2026-07-09 13:11:50,912 | ==================================================
+2026-07-09 13:12:10,094 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE406A01037
+2026-07-09 13:12:22,059 | 
+  HDFCBANK — \u20b9820.9 | VWAP:\u20b9818.3 | RSI:55.59 | DOM:3.07x
+2026-07-09 13:12:22,059 |   \U0001f7e2 BUY | Entry:\u20b9820.9 SL:\u20b9818.08 TGT:\u20b9826.54 Qty:177
+2026-07-09 13:12:22,059 |   \U0001f4cb PAPER — BUY 177 HDFCBANK
+2026-07-09 13:12:22,059 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AHDFCBANK
+2026-07-09 13:12:30,616 | 
+  PNB — \u20b9103.41 | VWAP:\u20b9102.62 | RSI:63.53 | DOM:1.84x
+2026-07-09 13:12:30,616 |   \U0001f7e2 BUY | Entry:\u20b9103.41 SL:\u20b9102.55 TGT:\u20b9105.13 Qty:581
+2026-07-09 13:12:30,616 |   \U0001f4cb PAPER — BUY 581 PNB
+2026-07-09 13:12:30,619 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3APNB
+2026-07-09 13:12:35,085 | 
+  UNIONBANK — \u20b9157.5 | VWAP:\u20b9156.58 | RSI:55.1 | DOM:4.02x
+2026-07-09 13:12:35,085 |   \U0001f7e2 BUY | Entry:\u20b9157.5 SL:\u20b9156.49 TGT:\u20b9159.51 Qty:495
+2026-07-09 13:12:35,085 |   \U0001f4cb PAPER — BUY 495 UNIONBANK
+2026-07-09 13:12:35,085 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AUNIONBANK
+2026-07-09 13:12:36,147 |   \u2705 3 signal(s) acted on
+2026-07-09 13:17:36,192 | 
+==================================================
+2026-07-09 13:17:36,194 |   SCAN at 13:17 | P&L: \u20b90 | Positions: 19
+2026-07-09 13:17:36,194 | ==================================================
+2026-07-09 13:17:55,377 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE406A01037
+2026-07-09 13:17:56,539 |   \U0001f534 SL HIT — FEDERALBNK @ \u20b9329.7 | P&L: \u20b9-499
+2026-07-09 13:17:56,539 |   \U0001f4cb PAPER — SELL 306 FEDERALBNK
+2026-07-09 13:17:58,533 | 
+  ALKEM — \u20b95665.5 | VWAP:\u20b95654.33 | RSI:55.78 | DOM:1.89x
+2026-07-09 13:17:58,533 |   \U0001f7e2 BUY | Entry:\u20b95665.5 SL:\u20b95637.75 TGT:\u20b95721.0 Qty:18
+2026-07-09 13:17:58,533 |   \U0001f4cb PAPER — BUY 18 ALKEM
+2026-07-09 13:17:58,533 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AALKEM
+2026-07-09 13:18:03,971 | 
+  DABUR — \u20b9446.8 | VWAP:\u20b9444.42 | RSI:61.83 | DOM:7.18x
+2026-07-09 13:18:03,971 |   \U0001f7e2 BUY | Entry:\u20b9446.8 SL:\u20b9443.07 TGT:\u20b9454.27 Qty:134
+2026-07-09 13:18:03,971 |   \U0001f4cb PAPER — BUY 134 DABUR
+2026-07-09 13:18:03,971 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ADABUR
+2026-07-09 13:18:20,669 |   \u2705 2 signal(s) acted on
+2026-07-09 13:23:20,749 | 
+==================================================
+2026-07-09 13:23:20,777 |   SCAN at 13:23 | P&L: \u20b9-499 | Positions: 20
+2026-07-09 13:23:20,780 | ==================================================
+2026-07-09 13:23:40,110 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE406A01037
+2026-07-09 13:23:47,473 | 
+  COFORGE — \u20b91473.9 | VWAP:\u20b91460.3 | RSI:61.69 | DOM:1.97x
+2026-07-09 13:23:47,473 |   \U0001f7e2 BUY | Entry:\u20b91473.9 SL:\u20b91458.48 TGT:\u20b91504.74 Qty:32
+2026-07-09 13:23:47,475 |   \U0001f4cb PAPER — BUY 32 COFORGE
+2026-07-09 13:23:47,476 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ACOFORGE
+2026-07-09 13:23:56,666 | 
+  OFSS — \u20b911175.0 | VWAP:\u20b911063.67 | RSI:71.83 | DOM:2.94x
+2026-07-09 13:23:56,666 |   \U0001f7e2 BUY | Entry:\u20b911175.0 SL:\u20b911038.2 TGT:\u20b911448.6 Qty:3
+2026-07-09 13:23:56,670 |   \U0001f4cb PAPER — BUY 3 OFSS
+2026-07-09 13:23:56,671 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AOFSS
+2026-07-09 13:24:02,683 |   \u2705 2 signal(s) acted on
+2026-07-09 13:28:45,450 | ==================================================
+2026-07-09 13:28:45,450 |   LIVE BOT STARTING
+2026-07-09 13:28:45,450 |   Capital    : \u20b950,000
+2026-07-09 13:28:45,450 |   Mode       : PAPER TRADING
+2026-07-09 13:28:45,450 |   Strategy   : VWAP + RSI(55-75) + DOM(1.5x)
+2026-07-09 13:28:45,450 |   Scan every : 5 minutes
+2026-07-09 13:28:45,450 |   Monitor    : every 30 seconds
+2026-07-09 13:28:45,457 |   Kill switch: \u20b92000 daily loss
+2026-07-09 13:28:45,457 |   Stocks     : 92 Nifty 100 stocks
+2026-07-09 13:28:45,457 | ==================================================
+2026-07-09 13:28:45,457 | 
+  Seeding price history from 2026-07-08...
+2026-07-09 13:29:02,884 |   \u2705 Seeded 92/92 stocks
+2026-07-09 13:29:02,886 | 
+==================================================
+2026-07-09 13:29:02,886 |   SCAN at 13:29 | P&L: \u20b90 | Positions: 0
+2026-07-09 13:29:02,886 | ==================================================
+2026-07-09 13:29:07,549 | 
+  BPCL — \u20b9306.5 | VWAP:\u20b9304.88 | RSI:65.14 | DOM:16.67x
+2026-07-09 13:29:07,549 |   \U0001f7e2 BUY | Entry:\u20b9306.5 SL:\u20b9303.91 TGT:\u20b9311.69 Qty:193
+2026-07-09 13:29:07,549 |   \U0001f4cb PAPER — BUY 193 BPCL
+2026-07-09 13:29:07,549 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ABPCL
+2026-07-09 13:29:11,011 | 
+  DLF — \u20b9652.25 | VWAP:\u20b9647.88 | RSI:58.5 | DOM:1.64x
+2026-07-09 13:29:11,011 |   \U0001f7e2 BUY | Entry:\u20b9652.25 SL:\u20b9645.83 TGT:\u20b9665.09 Qty:77
+2026-07-09 13:29:11,011 |   \U0001f4cb PAPER — BUY 77 DLF
+2026-07-09 13:29:11,011 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ADLF
+2026-07-09 13:29:17,498 | 
+  MARICO — \u20b9856.9 | VWAP:\u20b9853.18 | RSI:64.31 | DOM:1.74x
+2026-07-09 13:29:17,498 |   \U0001f7e2 BUY | Entry:\u20b9856.9 SL:\u20b9850.98 TGT:\u20b9868.75 Qty:84
+2026-07-09 13:29:17,498 |   \U0001f4cb PAPER — BUY 84 MARICO
+2026-07-09 13:29:17,498 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AMARICO
+2026-07-09 13:29:20,839 | 
+  PERSISTENT — \u20b94838.3 | VWAP:\u20b94800.73 | RSI:65.05 | DOM:2.36x
+2026-07-09 13:29:20,839 |   \U0001f7e2 BUY | Entry:\u20b94838.3 SL:\u20b94792.13 TGT:\u20b94930.64 Qty:10
+2026-07-09 13:29:20,839 |   \U0001f4cb PAPER — BUY 10 PERSISTENT
+2026-07-09 13:29:20,839 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3APERSISTENT
+2026-07-09 13:29:27,635 |   \u2705 4 signal(s) acted on
+2026-07-09 13:29:27,636 | 
+  Bot running — press Ctrl+C to stop
+2026-07-09 13:34:31,349 | 
+==================================================
+2026-07-09 13:34:31,349 |   SCAN at 13:34 | P&L: \u20b90 | Positions: 4
+2026-07-09 13:34:31,349 | ==================================================
+2026-07-09 13:34:40,279 | 
+  COFORGE — \u20b91474.0 | VWAP:\u20b91460.33 | RSI:62.59 | DOM:3.53x
+2026-07-09 13:34:40,294 |   \U0001f7e2 BUY | Entry:\u20b91474.0 SL:\u20b91458.58 TGT:\u20b91504.84 Qty:32
+2026-07-09 13:34:40,294 |   \U0001f4cb PAPER — BUY 32 COFORGE
+2026-07-09 13:34:40,294 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ACOFORGE
+2026-07-09 13:34:42,261 | 
+  DIXON — \u20b913547.0 | VWAP:\u20b913433.33 | RSI:73.55 | DOM:1.53x
+2026-07-09 13:34:42,261 |   \U0001f7e2 BUY | Entry:\u20b913547.0 SL:\u20b913412.9 TGT:\u20b913815.2 Qty:3
+2026-07-09 13:34:42,261 |   \U0001f4cb PAPER — BUY 3 DIXON
+2026-07-09 13:34:42,261 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ADIXON
+2026-07-09 13:34:53,593 | 
+  PNB — \u20b9103.45 | VWAP:\u20b9102.64 | RSI:64.91 | DOM:2.34x
+2026-07-09 13:34:53,593 |   \U0001f7e2 BUY | Entry:\u20b9103.45 SL:\u20b9102.59 TGT:\u20b9105.17 Qty:581
+2026-07-09 13:34:53,593 |   \U0001f4cb PAPER — BUY 581 PNB
+2026-07-09 13:34:53,609 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3APNB
+2026-07-09 13:34:57,526 | 
+  TATACONSUM — \u20b91110.3 | VWAP:\u20b91105.4 | RSI:61.96 | DOM:1.99x
+2026-07-09 13:34:57,526 |   \U0001f7e2 BUY | Entry:\u20b91110.3 SL:\u20b91103.55 TGT:\u20b91123.8 Qty:74
+2026-07-09 13:34:57,526 |   \U0001f4cb PAPER — BUY 74 TATACONSUM
+2026-07-09 13:34:57,526 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ATATACONSUM
+2026-07-09 13:35:01,337 |   \u2705 4 signal(s) acted on
+2026-07-09 13:40:06,451 | 
+==================================================
+2026-07-09 13:40:06,451 |   SCAN at 13:40 | P&L: \u20b90 | Positions: 8
+2026-07-09 13:40:06,451 | ==================================================
+2026-07-09 13:40:09,037 | 
+  AUROPHARMA — \u20b91591.5 | VWAP:\u20b91581.47 | RSI:64.67 | DOM:1.52x
+2026-07-09 13:40:09,037 |   \U0001f7e2 BUY | Entry:\u20b91591.5 SL:\u20b91575.69 TGT:\u20b91623.12 Qty:31
+2026-07-09 13:40:09,037 |   \U0001f4cb PAPER — BUY 31 AUROPHARMA
+2026-07-09 13:40:09,037 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AAUROPHARMA
+2026-07-09 13:40:11,782 | 
+  CANBK — \u20b9124.88 | VWAP:\u20b9123.77 | RSI:57.62 | DOM:2.21x
+2026-07-09 13:40:11,782 |   \U0001f7e2 BUY | Entry:\u20b9124.88 SL:\u20b9123.85 TGT:\u20b9126.94 Qty:485
+2026-07-09 13:40:11,782 |   \U0001f4cb PAPER — BUY 485 CANBK
+2026-07-09 13:40:11,782 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ACANBK
+2026-07-09 13:40:28,171 | 
+  UNIONBANK — \u20b9157.67 | VWAP:\u20b9156.74 | RSI:57.92 | DOM:2.02x
+2026-07-09 13:40:28,171 |   \U0001f7e2 BUY | Entry:\u20b9157.67 SL:\u20b9156.57 TGT:\u20b9159.86 Qty:454
+2026-07-09 13:40:28,171 |   \U0001f4cb PAPER — BUY 454 UNIONBANK
+2026-07-09 13:40:28,184 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AUNIONBANK
+2026-07-09 13:40:29,190 |   \u2705 3 signal(s) acted on
+2026-07-09 13:42:20,694 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE029A01011
+2026-07-09 13:42:20,694 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE029A01011
+2026-07-09 13:42:20,694 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE029A01011
+2026-07-09 13:42:20,694 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE271C01023
+2026-07-09 13:42:20,694 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE271C01023
+2026-07-09 13:42:20,694 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE271C01023
+2026-07-09 13:42:20,711 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE196A01026
+2026-07-09 13:42:20,711 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE196A01026
+2026-07-09 13:42:20,714 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE196A01026
+2026-07-09 13:42:20,717 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE262H01021
+2026-07-09 13:42:20,721 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE262H01021
+2026-07-09 13:42:20,724 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE262H01021
+2026-07-09 13:42:20,726 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE591G01025
+2026-07-09 13:42:20,726 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE591G01025
+2026-07-09 13:42:20,731 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE591G01025
+2026-07-09 13:42:20,733 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE935N01020
+2026-07-09 13:42:20,735 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE935N01020
+2026-07-09 13:42:20,737 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE935N01020
+2026-07-09 13:42:20,739 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE160A01022
+2026-07-09 13:42:20,741 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE160A01022
+2026-07-09 13:42:20,743 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE160A01022
+2026-07-09 13:42:20,746 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE192A01025
+2026-07-09 13:42:20,749 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE192A01025
+2026-07-09 13:42:20,749 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE192A01025
+2026-07-09 13:42:20,754 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE406A01037
+2026-07-09 13:42:20,754 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE406A01037
+2026-07-09 13:42:20,756 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE406A01037
+2026-07-09 13:42:20,758 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE476A01022
+2026-07-09 13:42:20,759 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE476A01022
+2026-07-09 13:42:20,760 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE476A01022
+2026-07-09 13:42:20,760 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE692A01016
+2026-07-09 13:42:20,760 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE692A01016
+2026-07-09 13:42:20,764 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE692A01016
+2026-07-09 13:42:50,767 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE029A01011
+2026-07-09 13:42:50,767 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE029A01011
+2026-07-09 13:42:50,767 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE029A01011
+2026-07-09 13:42:50,771 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE271C01023
+2026-07-09 13:42:50,771 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE271C01023
+2026-07-09 13:42:50,776 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE271C01023
+2026-07-09 13:42:50,778 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE196A01026
+2026-07-09 13:42:50,778 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE196A01026
+2026-07-09 13:42:50,778 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE196A01026
+2026-07-09 13:42:50,782 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE262H01021
+2026-07-09 13:42:50,782 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE262H01021
+2026-07-09 13:42:50,785 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE262H01021
+2026-07-09 13:42:50,785 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE591G01025
+2026-07-09 13:42:50,788 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE591G01025
+2026-07-09 13:42:50,788 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE591G01025
+2026-07-09 13:42:50,790 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE935N01020
+2026-07-09 13:42:50,791 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE935N01020
+2026-07-09 13:42:50,791 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE935N01020
+2026-07-09 13:42:50,794 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE160A01022
+2026-07-09 13:42:50,794 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE160A01022
+2026-07-09 13:42:50,794 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE160A01022
+2026-07-09 13:42:50,797 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE192A01025
+2026-07-09 13:42:50,797 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE192A01025
+2026-07-09 13:42:50,799 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE192A01025
+2026-07-09 13:42:50,799 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE406A01037
+2026-07-09 13:42:50,801 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE406A01037
+2026-07-09 13:42:50,804 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE406A01037
+2026-07-09 13:42:50,805 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE476A01022
+2026-07-09 13:42:50,806 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE476A01022
+2026-07-09 13:42:50,808 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE476A01022
+2026-07-09 13:42:50,808 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE692A01016
+2026-07-09 13:42:50,808 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE692A01016
+2026-07-09 13:42:50,814 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE692A01016
+2026-07-09 19:13:45,633 | 
+==================================================
+2026-07-09 19:13:45,640 |   SCAN at 19:13 | P&L: \u20b90 | Positions: 11
+2026-07-09 19:13:45,644 | ==================================================
+2026-07-09 19:13:45,646 |   \u23f8\ufe0f  Market closed — waiting
+2026-07-09 19:14:04,793 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE029A01011
+2026-07-09 19:19:11,506 | 
+==================================================
+2026-07-09 19:19:11,508 |   SCAN at 19:19 | P&L: \u20b90 | Positions: 11
+2026-07-09 19:19:11,509 | ==================================================
+2026-07-09 19:19:11,509 |   \u23f8\ufe0f  Market closed — waiting
+2026-07-09 19:24:20,456 | 
+==================================================
+2026-07-09 19:24:20,458 |   SCAN at 19:24 | P&L: \u20b90 | Positions: 11
+2026-07-09 19:24:20,461 | ==================================================
+2026-07-09 19:24:20,461 |   \u23f8\ufe0f  Market closed — waiting
+2026-07-09 19:29:30,834 | 
+==================================================
+2026-07-09 19:29:30,834 |   SCAN at 19:29 | P&L: \u20b90 | Positions: 11
+2026-07-09 19:29:30,834 | ==================================================
+2026-07-09 19:29:30,835 |   \u23f8\ufe0f  Market closed — waiting
+2026-07-09 19:34:37,884 | 
+==================================================
+2026-07-09 19:34:37,885 |   SCAN at 19:34 | P&L: \u20b90 | Positions: 11
+2026-07-09 19:34:37,885 | ==================================================
+2026-07-09 19:34:37,885 |   \u23f8\ufe0f  Market closed — waiting
+2026-07-09 19:39:53,605 | 
+==================================================
+2026-07-09 19:39:53,606 |   SCAN at 19:39 | P&L: \u20b90 | Positions: 11
+2026-07-09 19:39:53,607 | ==================================================
+2026-07-09 19:39:53,608 |   \u23f8\ufe0f  Market closed — waiting
+2026-07-09 19:44:59,809 | 
+==================================================
+2026-07-09 19:44:59,810 |   SCAN at 19:44 | P&L: \u20b90 | Positions: 11
+2026-07-09 19:44:59,810 | ==================================================
+2026-07-09 19:44:59,810 |   \u23f8\ufe0f  Market closed — waiting
+2026-07-09 19:50:05,554 | 
+==================================================
+2026-07-09 19:50:05,555 |   SCAN at 19:50 | P&L: \u20b90 | Positions: 11
+2026-07-09 19:50:05,555 | ==================================================
+2026-07-09 19:50:05,555 |   \u23f8\ufe0f  Market closed — waiting
+2026-07-09 19:55:11,414 | 
+==================================================
+2026-07-09 19:55:11,414 |   SCAN at 19:55 | P&L: \u20b90 | Positions: 11
+2026-07-09 19:55:11,414 | ==================================================
+2026-07-09 19:55:11,416 |   \u23f8\ufe0f  Market closed — waiting
+2026-07-09 20:00:17,350 | 
+==================================================
+2026-07-09 20:00:17,350 |   SCAN at 20:00 | P&L: \u20b90 | Positions: 11
+2026-07-09 20:00:17,350 | ==================================================
+2026-07-09 20:00:17,352 |   \u23f8\ufe0f  Market closed — waiting
+2026-07-09 20:05:24,266 | 
+==================================================
+2026-07-09 20:05:24,266 |   SCAN at 20:05 | P&L: \u20b90 | Positions: 11
+2026-07-09 20:05:24,266 | ==================================================
