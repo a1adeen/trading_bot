@@ -4075,3 +4075,364 @@ HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","mess
 2026-07-09 20:05:24,266 |   SCAN at 20:05 | P&L: \u20b90 | Positions: 11
 2026-07-09 20:05:24,266 | ==================================================
 2026-07-09 20:05:24,269 |   \u23f8\ufe0f  Market closed — waiting
+2026-07-09 20:10:30,040 | 
+==================================================
+2026-07-09 20:10:30,042 |   SCAN at 20:10 | P&L: \u20b90 | Positions: 11
+2026-07-09 20:10:30,042 | ==================================================
+2026-07-09 20:10:30,044 |   \u23f8\ufe0f  Market closed — waiting
+2026-07-09 20:15:35,818 | 
+==================================================
+2026-07-09 20:15:35,820 |   SCAN at 20:15 | P&L: \u20b90 | Positions: 11
+2026-07-09 20:15:35,821 | ==================================================
+2026-07-09 20:15:35,823 |   \u23f8\ufe0f  Market closed — waiting
+2026-07-09 20:20:47,777 | 
+==================================================
+2026-07-09 20:20:47,777 |   SCAN at 20:20 | P&L: \u20b90 | Positions: 11
+2026-07-09 20:20:47,779 | ==================================================
+2026-07-09 20:20:47,779 |   \u23f8\ufe0f  Market closed — waiting
+2026-07-09 20:25:55,568 | 
+==================================================
+2026-07-09 20:25:55,568 |   SCAN at 20:25 | P&L: \u20b90 | Positions: 11
+2026-07-09 20:25:55,571 | ==================================================
+2026-07-09 20:25:55,571 |   \u23f8\ufe0f  Market closed — waiting
+2026-07-09 20:31:02,988 | 
+==================================================
+2026-07-09 20:31:02,988 |   SCAN at 20:31 | P&L: \u20b90 | Positions: 11
+2026-07-09 20:31:02,990 | ==================================================
+2026-07-09 20:31:02,990 |   \u23f8\ufe0f  Market closed — waiting
+2026-07-10 13:01:01,371 | ==================================================
+2026-07-10 13:01:01,387 |   LIVE BOT STARTING
+2026-07-10 13:01:01,389 |   Capital    : \u20b950,000
+2026-07-10 13:01:01,389 |   Mode       : PAPER TRADING
+2026-07-10 13:01:01,389 |   Strategy   : VWAP + RSI(55-75) + DOM(1.5x)
+2026-07-10 13:01:01,389 |   Scan every : 5 minutes
+2026-07-10 13:01:01,389 |   Monitor    : every 30 seconds
+2026-07-10 13:01:01,389 |   Kill switch: \u20b92000 daily loss
+2026-07-10 13:01:01,389 |   Stocks     : 92 Nifty 100 stocks
+2026-07-10 13:01:01,389 | ==================================================
+2026-07-10 13:01:01,389 | 
+  Seeding price history from 2026-07-09...
+2026-07-10 13:01:20,939 |   \u2705 Seeded 92/92 stocks
+2026-07-10 13:01:20,940 | 
+==================================================
+2026-07-10 13:01:20,940 |   SCAN at 13:01 | P&L: \u20b90 | Positions: 0
+2026-07-10 13:01:20,940 | ==================================================
+2026-07-10 13:01:21,538 | 
+  ADANIGREEN — \u20b91532.0 | VWAP:\u20b91524.83 | RSI:62.29 | DOM:2.05x
+2026-07-10 13:01:21,540 |   \U0001f7e2 BUY | Entry:\u20b91532.0 SL:\u20b91516.67 TGT:\u20b91562.66 Qty:32
+2026-07-10 13:01:21,540 |   \U0001f4cb PAPER — BUY 32 ADANIGREEN
+2026-07-10 13:01:21,540 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AADANIGREEN
+2026-07-10 13:01:21,799 | 
+  ADANIPORTS — \u20b91833.9 | VWAP:\u20b91828.97 | RSI:61.75 | DOM:1.65x
+2026-07-10 13:01:21,799 |   \U0001f7e2 BUY | Entry:\u20b91833.9 SL:\u20b91818.06 TGT:\u20b91865.58 Qty:31
+2026-07-10 13:01:21,799 |   \U0001f4cb PAPER — BUY 31 ADANIPORTS
+2026-07-10 13:01:21,806 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AADANIPORTS
+2026-07-10 13:01:22,618 | 
+  ASHOKLEY — \u20b9156.94 | VWAP:\u20b9156.85 | RSI:58.48 | DOM:1.69x
+2026-07-10 13:01:22,618 |   \U0001f7e2 BUY | Entry:\u20b9156.94 SL:\u20b9156.28 TGT:\u20b9158.26 Qty:757
+2026-07-10 13:01:22,618 |   \U0001f4cb PAPER — BUY 757 ASHOKLEY
+2026-07-10 13:01:22,632 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AASHOKLEY
+2026-07-10 13:01:27,510 | 
+  CONCOR — \u20b9468.1 | VWAP:\u20b9466.77 | RSI:68.12 | DOM:5.04x
+2026-07-10 13:01:27,510 |   \U0001f7e2 BUY | Entry:\u20b9468.1 SL:\u20b9465.43 TGT:\u20b9473.44 Qty:187
+2026-07-10 13:01:27,510 |   \U0001f4cb PAPER — BUY 187 CONCOR
+2026-07-10 13:01:27,510 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ACONCOR
+2026-07-10 13:01:29,595 | 
+  ESCORTS — \u20b92947.9 | VWAP:\u20b92936.13 | RSI:74.34 | DOM:1.70x
+2026-07-10 13:01:29,595 |   \U0001f7e2 BUY | Entry:\u20b92947.9 SL:\u20b92936.35 TGT:\u20b92971.0 Qty:43
+2026-07-10 13:01:29,595 |   \U0001f4cb PAPER — BUY 43 ESCORTS
+2026-07-10 13:01:29,595 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AESCORTS
+2026-07-10 13:01:33,098 | 
+  INDIGO — \u20b95332.5 | VWAP:\u20b95318.5 | RSI:71.99 | DOM:2.53x
+2026-07-10 13:01:33,098 |   \U0001f7e2 BUY | Entry:\u20b95332.5 SL:\u20b95301.6 TGT:\u20b95394.3 Qty:16
+2026-07-10 13:01:33,098 |   \U0001f4cb PAPER — BUY 16 INDIGO
+2026-07-10 13:01:33,098 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AINDIGO
+2026-07-10 13:01:33,936 | 
+  IRCTC — \u20b9501.65 | VWAP:\u20b9501.47 | RSI:70.37 | DOM:2.15x
+2026-07-10 13:01:33,936 |   \U0001f7e2 BUY | Entry:\u20b9501.65 SL:\u20b9499.96 TGT:\u20b9505.04 Qty:295
+2026-07-10 13:01:33,941 |   \U0001f4cb PAPER — BUY 295 IRCTC
+2026-07-10 13:01:33,941 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AIRCTC
+2026-07-10 13:01:34,739 | 
+  KOTAKBANK — \u20b9379.45 | VWAP:\u20b9379.33 | RSI:74.5 | DOM:1.77x
+2026-07-10 13:01:34,739 |   \U0001f7e2 BUY | Entry:\u20b9379.45 SL:\u20b9378.33 TGT:\u20b9381.7 Qty:446
+2026-07-10 13:01:34,739 |   \U0001f4cb PAPER — BUY 446 KOTAKBANK
+2026-07-10 13:01:34,739 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AKOTAKBANK
+2026-07-10 13:01:36,023 | 
+  MOTHERSON — \u20b9144.05 | VWAP:\u20b9144.02 | RSI:69.19 | DOM:2.27x
+2026-07-10 13:01:36,023 |   \U0001f7e2 BUY | Entry:\u20b9144.05 SL:\u20b9143.54 TGT:\u20b9145.07 Qty:980
+2026-07-10 13:01:36,039 |   \U0001f4cb PAPER — BUY 980 MOTHERSON
+2026-07-10 13:01:36,039 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AMOTHERSON
+2026-07-10 13:01:37,599 | 
+  OBEROIRLTY — \u20b91920.1 | VWAP:\u20b91899.93 | RSI:61.44 | DOM:3.45x
+2026-07-10 13:01:37,599 |   \U0001f7e2 BUY | Entry:\u20b91920.1 SL:\u20b91893.79 TGT:\u20b91972.72 Qty:19
+2026-07-10 13:01:37,599 |   \U0001f4cb PAPER — BUY 19 OBEROIRLTY
+2026-07-10 13:01:37,599 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AOBEROIRLTY
+2026-07-10 13:01:37,868 | 
+  OFSS — \u20b911517.0 | VWAP:\u20b911453.33 | RSI:68.92 | DOM:2.49x
+2026-07-10 13:01:37,868 |   \U0001f7e2 BUY | Entry:\u20b911517.0 SL:\u20b911413.5 TGT:\u20b911724.0 Qty:4
+2026-07-10 13:01:37,868 |   \U0001f4cb PAPER — BUY 4 OFSS
+2026-07-10 13:01:37,868 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AOFSS
+2026-07-10 13:01:38,700 | 
+  PERSISTENT — \u20b94982.9 | VWAP:\u20b94966.97 | RSI:71.76 | DOM:2.00x
+2026-07-10 13:01:38,700 |   \U0001f7e2 BUY | Entry:\u20b94982.9 SL:\u20b94949.3 TGT:\u20b95050.1 Qty:14
+2026-07-10 13:01:38,700 |   \U0001f4cb PAPER — BUY 14 PERSISTENT
+2026-07-10 13:01:38,700 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3APERSISTENT
+2026-07-10 13:01:44,218 | 
+  UNIONBANK — \u20b9162.04 | VWAP:\u20b9160.64 | RSI:68.44 | DOM:3.35x
+2026-07-10 13:01:44,218 |   \U0001f7e2 BUY | Entry:\u20b9162.04 SL:\u20b9160.63 TGT:\u20b9164.85 Qty:354
+2026-07-10 13:01:44,218 |   \U0001f4cb PAPER — BUY 354 UNIONBANK
+2026-07-10 13:01:44,218 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AUNIONBANK
+2026-07-10 13:01:45,191 |   \u2705 13 signal(s) acted on
+2026-07-10 13:01:45,191 | 
+  Bot running — press Ctrl+C to stop
+2026-07-10 13:05:51,974 |   \U0001f534 SL HIT — MOTHERSON @ \u20b9143.5 | P&L: \u20b9-500
+2026-07-10 13:05:51,974 |   \U0001f4cb PAPER — SELL 980 MOTHERSON
+2026-07-10 13:06:52,862 | 
+==================================================
+2026-07-10 13:06:52,862 |   SCAN at 13:06 | P&L: \u20b9-500 | Positions: 12
+2026-07-10 13:06:52,862 | ==================================================
+2026-07-10 13:07:12,429 | 
+  TATASTEEL — \u20b9191.15 | VWAP:\u20b9191.06 | RSI:72.51 | DOM:2.37x
+2026-07-10 13:07:12,429 |   \U0001f7e2 BUY | Entry:\u20b9191.15 SL:\u20b9189.78 TGT:\u20b9193.89 Qty:364
+2026-07-10 13:07:12,430 |   \U0001f4cb PAPER — BUY 364 TATASTEEL
+2026-07-10 13:07:12,430 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ATATASTEEL
+2026-07-10 13:07:15,684 |   \u2705 1 signal(s) acted on
+2026-07-10 13:08:49,631 |   \U0001f3c6 TARGET HIT — UNIONBANK @ \u20b9164.86 | P&L: \u20b9995
+2026-07-10 13:08:49,631 |   \U0001f4cb PAPER — SELL 354 UNIONBANK
+2026-07-10 13:12:23,792 | 
+==================================================
+2026-07-10 13:12:23,792 |   SCAN at 13:12 | P&L: \u20b9495 | Positions: 12
+2026-07-10 13:12:23,792 | ==================================================
+2026-07-10 13:12:24,727 | 
+  ADANIENT — \u20b93155.8 | VWAP:\u20b93146.27 | RSI:70.38 | DOM:2.60x
+2026-07-10 13:12:24,727 |   \U0001f7e2 BUY | Entry:\u20b93155.8 SL:\u20b93130.9 TGT:\u20b93205.6 Qty:20
+2026-07-10 13:12:24,727 |   \U0001f4cb PAPER — BUY 20 ADANIENT
+2026-07-10 13:12:24,727 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AADANIENT
+2026-07-10 13:12:28,563 | 
+  CANBK — \u20b9129.84 | VWAP:\u20b9128.88 | RSI:71.07 | DOM:2.48x
+2026-07-10 13:12:28,563 |   \U0001f7e2 BUY | Entry:\u20b9129.84 SL:\u20b9127.99 TGT:\u20b9133.54 Qty:270
+2026-07-10 13:12:28,563 |   \U0001f4cb PAPER — BUY 270 CANBK
+2026-07-10 13:12:28,563 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ACANBK
+2026-07-10 13:12:38,637 | 
+  ONGC — \u20b9244.49 | VWAP:\u20b9244.38 | RSI:59.69 | DOM:9.64x
+2026-07-10 13:12:38,637 |   \U0001f7e2 BUY | Entry:\u20b9244.49 SL:\u20b9243.94 TGT:\u20b9245.59 Qty:909
+2026-07-10 13:12:38,637 |   \U0001f4cb PAPER — BUY 909 ONGC
+2026-07-10 13:12:38,640 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AONGC
+2026-07-10 13:12:44,096 | 
+  UNIONBANK — \u20b9163.2 | VWAP:\u20b9162.1 | RSI:72.13 | DOM:1.83x
+2026-07-10 13:12:44,096 |   \U0001f7e2 BUY | Entry:\u20b9163.2 SL:\u20b9160.83 TGT:\u20b9167.94 Qty:210
+2026-07-10 13:12:44,096 |   \U0001f4cb PAPER — BUY 210 UNIONBANK
+2026-07-10 13:12:44,096 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AUNIONBANK
+2026-07-10 13:12:45,073 |   \u2705 4 signal(s) acted on
+2026-07-10 13:17:54,031 | 
+==================================================
+2026-07-10 13:17:54,031 |   SCAN at 13:17 | P&L: \u20b9495 | Positions: 16
+2026-07-10 13:17:54,032 | ==================================================
+2026-07-10 13:18:03,718 | 
+  HEROMOTOCO — \u20b94930.0 | VWAP:\u20b94928.7 | RSI:65.39 | DOM:2.51x
+2026-07-10 13:18:03,718 |   \U0001f7e2 BUY | Entry:\u20b94930.0 SL:\u20b94906.03 TGT:\u20b94977.94 Qty:20
+2026-07-10 13:18:03,718 |   \U0001f4cb PAPER — BUY 20 HEROMOTOCO
+2026-07-10 13:18:03,719 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AHEROMOTOCO
+2026-07-10 13:18:10,478 | 
+  SBIN — \u20b91039.4 | VWAP:\u20b91036.9 | RSI:60.95 | DOM:1.59x
+2026-07-10 13:18:10,479 |   \U0001f7e2 BUY | Entry:\u20b91039.4 SL:\u20b91032.11 TGT:\u20b91053.98 Qty:68
+2026-07-10 13:18:10,479 |   \U0001f4cb PAPER — BUY 68 SBIN
+2026-07-10 13:18:10,479 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ASBIN
+2026-07-10 13:18:14,522 |   \u2705 2 signal(s) acted on
+2026-07-10 13:22:54,092 |   \U0001f534 SL HIT — CONCOR @ \u20b9465.4 | P&L: \u20b9-499
+2026-07-10 13:22:54,092 |   \U0001f4cb PAPER — SELL 187 CONCOR
+2026-07-10 13:23:24,819 | 
+==================================================
+2026-07-10 13:23:24,819 |   SCAN at 13:23 | P&L: \u20b9-4 | Positions: 17
+2026-07-10 13:23:24,819 | ==================================================
+2026-07-10 13:23:44,809 |   \u2b1c No signals this scan
+2026-07-10 13:28:53,880 | 
+==================================================
+2026-07-10 13:28:53,881 |   SCAN at 13:28 | P&L: \u20b9-4 | Positions: 17
+2026-07-10 13:28:53,883 | ==================================================
+2026-07-10 13:29:06,629 | 
+  LT — \u20b93939.0 | VWAP:\u20b93929.63 | RSI:72.53 | DOM:3.18x
+2026-07-10 13:29:06,631 |   \U0001f7e2 BUY | Entry:\u20b93939.0 SL:\u20b93927.03 TGT:\u20b93962.94 Qty:41
+2026-07-10 13:29:06,634 |   \U0001f4cb PAPER — BUY 41 LT
+2026-07-10 13:29:06,635 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ALT
+2026-07-10 13:29:10,792 | 
+  SBILIFE — \u20b91847.8 | VWAP:\u20b91844.8 | RSI:61.24 | DOM:2.83x
+2026-07-10 13:29:10,794 |   \U0001f7e2 BUY | Entry:\u20b91847.8 SL:\u20b91840.24 TGT:\u20b91862.92 Qty:66
+2026-07-10 13:29:10,794 |   \U0001f4cb PAPER — BUY 66 SBILIFE
+2026-07-10 13:29:10,795 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ASBILIFE
+2026-07-10 13:29:14,798 |   \u2705 2 signal(s) acted on
+2026-07-10 13:31:50,254 |   \U0001f534 SL HIT — INDIGO @ \u20b95300.0 | P&L: \u20b9-494
+2026-07-10 13:31:50,254 |   \U0001f4cb PAPER — SELL 16 INDIGO
+2026-07-10 13:34:25,096 | 
+==================================================
+2026-07-10 13:34:25,097 |   SCAN at 13:34 | P&L: \u20b9-499 | Positions: 18
+2026-07-10 13:34:25,097 | ==================================================
+2026-07-10 13:34:27,871 | 
+  BAJFINANCE — \u20b91014.9 | VWAP:\u20b91013.9 | RSI:59.32 | DOM:8.28x
+2026-07-10 13:34:27,871 |   \U0001f7e2 BUY | Entry:\u20b91014.9 SL:\u20b91009.38 TGT:\u20b91025.94 Qty:90
+2026-07-10 13:34:27,874 |   \U0001f4cb PAPER — BUY 90 BAJFINANCE
+2026-07-10 13:34:27,874 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ABAJFINANCE
+2026-07-10 13:34:31,175 | 
+  CONCOR — \u20b9466.55 | VWAP:\u20b9466.25 | RSI:61.72 | DOM:1.96x
+2026-07-10 13:34:31,177 |   \U0001f7e2 BUY | Entry:\u20b9466.55 SL:\u20b9463.88 TGT:\u20b9471.89 Qty:187
+2026-07-10 13:34:31,179 |   \U0001f4cb PAPER — BUY 187 CONCOR
+2026-07-10 13:34:31,179 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ACONCOR
+2026-07-10 13:34:40,228 | 
+  PNB — \u20b9105.74 | VWAP:\u20b9105.67 | RSI:57.41 | DOM:5.42x
+2026-07-10 13:34:40,229 |   \U0001f7e2 BUY | Entry:\u20b9105.74 SL:\u20b9104.59 TGT:\u20b9108.04 Qty:434
+2026-07-10 13:34:40,230 |   \U0001f4cb PAPER — BUY 434 PNB
+2026-07-10 13:34:40,232 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3APNB
+2026-07-10 13:34:41,292 | 
+  SHREECEM — \u20b926610.0 | VWAP:\u20b926606.67 | RSI:55.63 | DOM:1.93x
+2026-07-10 13:34:41,293 |   \U0001f7e2 BUY | Entry:\u20b926610.0 SL:\u20b926484.0 TGT:\u20b926862.0 Qty:3
+2026-07-10 13:34:41,293 |   \U0001f4cb PAPER — BUY 3 SHREECEM
+2026-07-10 13:34:41,294 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ASHREECEM
+2026-07-10 13:34:45,095 |   \u2705 4 signal(s) acted on
+2026-07-10 13:39:57,222 | 
+==================================================
+2026-07-10 13:39:57,222 |   SCAN at 13:39 | P&L: \u20b9-499 | Positions: 22
+2026-07-10 13:39:57,224 | ==================================================
+2026-07-10 13:40:09,800 | 
+  MARUTI — \u20b913901.0 | VWAP:\u20b913888.0 | RSI:64.52 | DOM:2.19x
+2026-07-10 13:40:09,801 |   \U0001f7e2 BUY | Entry:\u20b913901.0 SL:\u20b913837.7 TGT:\u20b914027.6 Qty:7
+2026-07-10 13:40:09,802 |   \U0001f4cb PAPER — BUY 7 MARUTI
+2026-07-10 13:40:09,802 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AMARUTI
+2026-07-10 13:40:16,472 |   \u2705 1 signal(s) acted on
+2026-07-10 13:45:30,586 | 
+==================================================
+2026-07-10 13:45:30,586 |   SCAN at 13:45 | P&L: \u20b9-499 | Positions: 23
+2026-07-10 13:45:30,587 | ==================================================
+2026-07-10 13:45:50,981 |   \u2b1c No signals this scan
+2026-07-10 13:51:03,654 | 
+==================================================
+2026-07-10 13:51:03,657 |   SCAN at 13:51 | P&L: \u20b9-499 | Positions: 23
+2026-07-10 13:51:03,658 | ==================================================
+2026-07-10 13:51:06,523 | 
+  BAJAJFINSV — \u20b91914.2 | VWAP:\u20b91907.87 | RSI:56.88 | DOM:17.89x
+2026-07-10 13:51:06,527 |   \U0001f7e2 BUY | Entry:\u20b91914.2 SL:\u20b91907.42 TGT:\u20b91927.76 Qty:73
+2026-07-10 13:51:06,528 |   \U0001f4cb PAPER — BUY 73 BAJAJFINSV
+2026-07-10 13:51:06,530 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ABAJAJFINSV
+2026-07-10 13:51:22,988 |   \u2705 1 signal(s) acted on
+2026-07-10 13:56:37,821 | 
+==================================================
+2026-07-10 13:56:37,831 |   SCAN at 13:56 | P&L: \u20b9-499 | Positions: 24
+2026-07-10 13:56:37,831 | ==================================================
+2026-07-10 13:56:42,583 | 
+  BRITANNIA — \u20b95368.5 | VWAP:\u20b95365.5 | RSI:63.11 | DOM:1.74x
+2026-07-10 13:56:42,583 |   \U0001f7e2 BUY | Entry:\u20b95368.5 SL:\u20b95343.9 TGT:\u20b95417.7 Qty:20
+2026-07-10 13:56:42,587 |   \U0001f4cb PAPER — BUY 20 BRITANNIA
+2026-07-10 13:56:42,589 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ABRITANNIA
+2026-07-10 13:56:48,579 | 
+  IDFCFIRSTB — \u20b980.85 | VWAP:\u20b980.67 | RSI:58.11 | DOM:1.96x
+2026-07-10 13:56:48,581 |   \U0001f7e2 BUY | Entry:\u20b980.85 SL:\u20b980.38 TGT:\u20b981.8 Qty:1063
+2026-07-10 13:56:48,581 |   \U0001f4cb PAPER — BUY 1063 IDFCFIRSTB
+2026-07-10 13:56:48,581 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AIDFCFIRSTB
+2026-07-10 13:56:57,072 |   \u2705 2 signal(s) acted on
+2026-07-10 14:02:14,051 | 
+==================================================
+2026-07-10 14:02:14,051 |   SCAN at 14:02 | P&L: \u20b9-499 | Positions: 26
+2026-07-10 14:02:14,051 | ==================================================
+2026-07-10 14:02:18,097 | 
+  BIOCON — \u20b9413.5 | VWAP:\u20b9411.93 | RSI:56.07 | DOM:3.93x
+2026-07-10 14:02:18,097 |   \U0001f7e2 BUY | Entry:\u20b9413.5 SL:\u20b9409.21 TGT:\u20b9422.08 Qty:116
+2026-07-10 14:02:18,105 |   \U0001f4cb PAPER — BUY 116 BIOCON
+2026-07-10 14:02:18,106 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ABIOCON
+2026-07-10 14:02:21,483 | 
+  DLF — \u20b9684.95 | VWAP:\u20b9677.17 | RSI:72.41 | DOM:4.82x
+2026-07-10 14:02:21,488 |   \U0001f7e2 BUY | Entry:\u20b9684.95 SL:\u20b9673.71 TGT:\u20b9707.42 Qty:44
+2026-07-10 14:02:21,488 |   \U0001f4cb PAPER — BUY 44 DLF
+2026-07-10 14:02:21,488 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ADLF
+2026-07-10 14:02:29,286 | 
+  RELIANCE — \u20b91303.1 | VWAP:\u20b91298.63 | RSI:57.39 | DOM:1.55x
+2026-07-10 14:02:29,295 |   \U0001f7e2 BUY | Entry:\u20b91303.1 SL:\u20b91297.94 TGT:\u20b91313.42 Qty:96
+2026-07-10 14:02:29,295 |   \U0001f4cb PAPER — BUY 96 RELIANCE
+2026-07-10 14:02:29,295 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ARELIANCE
+2026-07-10 14:02:33,539 |   \u2705 3 signal(s) acted on
+2026-07-10 14:07:06,723 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE364U01010
+2026-07-10 14:07:17,813 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE364U01010
+2026-07-10 14:07:50,757 | 
+==================================================
+2026-07-10 14:07:50,757 |   SCAN at 14:07 | P&L: \u20b9-499 | Positions: 29
+2026-07-10 14:07:50,757 | ==================================================
+2026-07-10 14:08:03,543 | 
+  MUTHOOTFIN — \u20b93120.5 | VWAP:\u20b93119.77 | RSI:71.85 | DOM:7.48x
+2026-07-10 14:08:03,543 |   \U0001f7e2 BUY | Entry:\u20b93120.5 SL:\u20b93103.46 TGT:\u20b93154.58 Qty:29
+2026-07-10 14:08:03,544 |   \U0001f4cb PAPER — BUY 29 MUTHOOTFIN
+2026-07-10 14:08:03,544 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AMUTHOOTFIN
+2026-07-10 14:08:09,593 |   \u2705 1 signal(s) acted on
+2026-07-10 14:13:26,783 | 
+==================================================
+2026-07-10 14:13:26,784 |   SCAN at 14:13 | P&L: \u20b9-499 | Positions: 30
+2026-07-10 14:13:26,785 | ==================================================
+2026-07-10 14:13:35,873 | 
+  HDFCLIFE — \u20b9568.5 | VWAP:\u20b9564.15 | RSI:73.24 | DOM:2.53x
+2026-07-10 14:13:35,876 |   \U0001f7e2 BUY | Entry:\u20b9568.5 SL:\u20b9563.71 TGT:\u20b9578.07 Qty:104
+2026-07-10 14:13:35,876 |   \U0001f4cb PAPER — BUY 104 HDFCLIFE
+2026-07-10 14:13:35,876 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AHDFCLIFE
+2026-07-10 14:13:44,977 |   \u2705 1 signal(s) acted on
+2026-07-10 14:16:23,591 |   \U0001f3c6 TARGET HIT — IRCTC @ \u20b9505.5 | P&L: \u20b91000
+2026-07-10 14:16:23,598 |   \U0001f4cb PAPER — SELL 295 IRCTC
+2026-07-10 14:19:01,113 | 
+==================================================
+2026-07-10 14:19:01,113 |   SCAN at 14:19 | P&L: \u20b9501 | Positions: 30
+2026-07-10 14:19:01,113 | ==================================================
+2026-07-10 14:19:18,742 |   \u2b1c No signals this scan
+2026-07-10 14:24:37,315 | 
+==================================================
+2026-07-10 14:24:37,315 |   SCAN at 14:24 | P&L: \u20b9501 | Positions: 30
+2026-07-10 14:24:37,315 | ==================================================
+2026-07-10 14:24:56,211 |   \u2b1c No signals this scan
+2026-07-10 14:30:15,358 | 
+==================================================
+2026-07-10 14:30:15,358 |   SCAN at 14:30 | P&L: \u20b9501 | Positions: 30
+2026-07-10 14:30:15,358 | ==================================================
+2026-07-10 14:30:24,357 |   \u2b1c No signals this scan
+2026-07-10 14:35:47,429 | 
+==================================================
+2026-07-10 14:35:47,429 |   SCAN at 14:35 | P&L: \u20b9501 | Positions: 30
+2026-07-10 14:35:47,429 | ==================================================
+2026-07-10 14:36:05,326 | 
+  TORNTPHARM — \u20b94881.2 | VWAP:\u20b94856.67 | RSI:59.18 | DOM:15.48x
+2026-07-10 14:36:05,326 |   \U0001f7e2 BUY | Entry:\u20b94881.2 SL:\u20b94841.84 TGT:\u20b94959.92 Qty:12
+2026-07-10 14:36:05,333 |   \U0001f4cb PAPER — BUY 12 TORNTPHARM
+2026-07-10 14:36:05,333 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ATORNTPHARM
+2026-07-10 14:36:07,127 |   \u2705 1 signal(s) acted on
+2026-07-10 14:41:27,221 | 
+==================================================
+2026-07-10 14:41:27,222 |   SCAN at 14:41 | P&L: \u20b9501 | Positions: 31
+2026-07-10 14:41:27,222 | ==================================================
+2026-07-10 14:41:50,041 |   \u2b1c No signals this scan
+2026-07-10 14:47:08,744 | 
+==================================================
+2026-07-10 14:47:08,744 |   SCAN at 14:47 | P&L: \u20b9501 | Positions: 31
+2026-07-10 14:47:08,744 | ==================================================
+2026-07-10 14:47:16,480 | 
+  GRASIM — \u20b93224.6 | VWAP:\u20b93224.2 | RSI:55.63 | DOM:2.28x
+2026-07-10 14:47:16,480 |   \U0001f7e2 BUY | Entry:\u20b93224.6 SL:\u20b93211.4 TGT:\u20b93251.0 Qty:37
+2026-07-10 14:47:16,480 |   \U0001f4cb PAPER — BUY 37 GRASIM
+2026-07-10 14:47:16,480 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3AGRASIM
+2026-07-10 14:47:22,063 | 
+  POWERGRID — \u20b9283.4 | VWAP:\u20b9282.85 | RSI:64.3 | DOM:1.96x
+2026-07-10 14:47:22,064 |   \U0001f7e2 BUY | Entry:\u20b9283.4 SL:\u20b9282.67 TGT:\u20b9284.87 Qty:684
+2026-07-10 14:47:22,064 |   \U0001f4cb PAPER — BUY 684 POWERGRID
+2026-07-10 14:47:22,064 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3APOWERGRID
+2026-07-10 14:47:25,837 |   \u2705 2 signal(s) acted on
+2026-07-10 14:49:01,437 |   \U0001f3c6 TARGET HIT — PERSISTENT @ \u20b95052.0 | P&L: \u20b9941
+2026-07-10 14:49:01,437 |   \U0001f4cb PAPER — SELL 14 PERSISTENT
+2026-07-10 14:52:11,787 |   \U0001f534 SL HIT — KOTAKBANK @ \u20b9377.9 | P&L: \u20b9-500
+2026-07-10 14:52:11,787 |   \U0001f4cb PAPER — SELL 446 KOTAKBANK
+2026-07-10 14:52:43,081 | 
+==================================================
+2026-07-10 14:52:43,082 |   SCAN at 14:52 | P&L: \u20b9943 | Positions: 31
+2026-07-10 14:52:43,082 | ==================================================
+2026-07-10 14:52:57,023 | 
+  SIEMENS — \u20b93516.7 | VWAP:\u20b93515.27 | RSI:64.3 | DOM:5.38x
+2026-07-10 14:52:57,023 |   \U0001f7e2 BUY | Entry:\u20b93516.7 SL:\u20b93500.23 TGT:\u20b93549.64 Qty:30
+2026-07-10 14:52:57,024 |   \U0001f4cb PAPER — BUY 30 SIEMENS
+2026-07-10 14:52:57,024 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ASIEMENS
+2026-07-10 14:52:58,601 | 
+  TITAN — \u20b94584.3 | VWAP:\u20b94582.6 | RSI:58.48 | DOM:5.86x
+2026-07-10 14:52:58,601 |   \U0001f7e2 BUY | Entry:\u20b94584.3 SL:\u20b94571.67 TGT:\u20b94609.56 Qty:39
+2026-07-10 14:52:58,602 |   \U0001f4cb PAPER — BUY 39 TITAN
+2026-07-10 14:52:58,602 |   \U0001f4c8 Chart: https://in.tradingview.com/chart/?symbol=NSE%3ATITAN
+2026-07-10 14:53:00,364 |   \u2705 2 signal(s) acted on

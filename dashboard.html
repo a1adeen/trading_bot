@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Live P&L Dashboard</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:#0a0a0a;color:#fff;padding:24px;min-height:100vh}
+  .topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+  .title{font-size:17px;font-weight:500;color:#888;display:flex;align-items:center;gap:10px}
+  .dot{width:8px;height:8px;border-radius:50%;background:#22c55e;animation:blink 1.5s infinite}
+  @keyframes blink{0%,100%{opacity:1}50%{opacity:0.2}}
+  .btn{background:#1c1c1c;border:1px solid #2a2a2a;color:#888;padding:6px 14px;border-radius:8px;font-size:12px;cursor:pointer}
+  .btn:hover{background:#222;color:#fff}
+  .summary{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:20px}
+  .card{background:#141414;border:1px solid #1e1e1e;border-radius:12px;padding:16px}
+  .clabel{font-size:11px;color:#444;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
+  .cval{font-size:24px;font-weight:600;color:#fff}
+  .cval.green{color:#22c55e}
+  .cval.red{color:#ef4444}
+  .cval.small{font-size:16px;margin-top:4px}
+  .table-wrap{background:#111;border:1px solid #1e1e1e;border-radius:12px;overflow:hidden}
+  table{width:100%;border-collapse:collapse}
+  thead tr{background:#161616;border-bottom:1px solid #1e1e1e}
+  th{padding:10px 16px;font-size:11px;font-weight:500;color:#444;text-align:right;text-transform:uppercase;letter-spacing:.5px;white-space:nowrap}
+  th:first-child{text-align:left}
+  td{padding:14px 16px;font-size:13px;text-align:right;border-bottom:1px solid #161616;color:#bbb;vertical-align:middle}
+  td:first-child{text-align:left}
+  tbody tr:last-child td{border-bottom:none}
+  tbody tr:hover td{background:#141414}
+  .sym{font-size:14px;font-weight:600;color:#fff}
+  .sub{font-size:11px;color:#333;margin-top:4px;line-height:1.6}
+  .pnl{font-size:14px;font-weight:600}
+  .green{color:#22c55e}
+  .red{color:#ef4444}
+  .badge{display:inline-block;font-size:11px;font-weight:500;padding:2px 8px;border-radius:20px}
+  .badge.up{background:rgba(34,197,94,.1);color:#22c55e}
+  .badge.dn{background:rgba(239,68,68,.1);color:#ef4444}
+  .bar-wrap{width:100px;height:4px;background:#1e1e1e;border-radius:2px;margin-bottom:4px}
+  .bar-fill{height:4px;border-radius:2px;transition:width .6s}
+  .bar-label{font-size:10px;color:#333}
+  .dist{font-size:11px}
+  .dist.red{color:#ef4444}
+  .dist.green{color:#22c55e}
+  .empty{text-align:center;color:#333;padding:3rem;font-size:14px}
+  .footer{margin-top:12px;font-size:11px;color:#2a2a2a;text-align:right}
+  .err{text-align:center;color:#ef4444;padding:2rem;font-size:13px}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="title"><div class="dot"></div>Live P&L Dashboard</div>
+  <div style="display:flex;gap:8px;align-items:center">
+    <span style="font-size:12px;color:#333" id="upd">--</span>
+    <button class="btn" onclick="load()">Refresh</button>
+  </div>
+</div>
+
+<div class="summary">
+  <div class="card">
+    <div class="clabel">Total P&L</div>
+    <div class="cval" id="s-total">Rs.0</div>
+  </div>
+  <div class="card">
+    <div class="clabel">Positions</div>
+    <div class="cval" id="s-count">0</div>
+  </div>
+  <div class="card">
+    <div class="clabel">Winners</div>
+    <div class="cval green" id="s-win">0</div>
+  </div>
+  <div class="card">
+    <div class="clabel">Losers</div>
+    <div class="cval red" id="s-loss">0</div>
+  </div>
+  <div class="card">
+    <div class="clabel">Win rate</div>
+    <div class="cval" id="s-rate">—</div>
+  </div>
+</div>
+
+<div class="table-wrap">
+  <table>
+    <thead>
+      <tr>
+        <th>Stock</th>
+        <th>Entry</th>
+        <th>LTP</th>
+        <th>P&L</th>
+        <th>Change</th>
+        <th>Dist to SL</th>
+        <th>Dist to TGT</th>
+        <th>Progress</th>
+      </tr>
+    </thead>
+    <tbody id="tbody">
+      <tr><td colspan="8" class="empty">Loading...</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="footer" id="footer">Auto-refreshing every 5 seconds</div>
+
+<script>
+async function load() {
+  try {
+    const r    = await fetch("/api/pnl");
+    const data = await r.json();
+    const pos  = data.positions;
+    const tot  = data.total_pnl;
+
+    document.getElementById("upd").textContent =
+      "Updated: " + new Date().toLocaleTimeString("en-IN");
+
+    const te = document.getElementById("s-total");
+    te.textContent = (tot >= 0 ? "+" : "") + "Rs." + Math.abs(tot).toFixed(2);
+    te.className   = "cval " + (tot >= 0 ? "green" : "red");
+
+    document.getElementById("s-count").textContent = data.count;
+    document.getElementById("s-win").textContent   = data.winners;
+    document.getElementById("s-loss").textContent  = data.losers;
+    document.getElementById("s-rate").textContent  =
+      data.count > 0
+        ? Math.round(data.winners / data.count * 100) + "%"
+        : "—";
+
+    const tbody = document.getElementById("tbody");
+
+    if (!pos.length) {
+      tbody.innerHTML = '<tr><td colspan="8" class="empty">No open positions — bot is scanning</td></tr>';
+      return;
+    }
+
+    tbody.innerHTML = pos.map(p => {
+      const up       = p.pnl >= 0;
+      const pnlTxt   = (up ? "+" : "") + "Rs." + Math.abs(p.pnl).toFixed(2);
+      const pctTxt   = (up ? "+" : "") + p.pct.toFixed(2) + "%";
+      const fillW    = Math.max(0, Math.min(100, p.progress));
+      const fillClr  = up ? "#22c55e" : "#ef4444";
+      const slDist   = p.sl_dist.toFixed(2);
+      const tgtDist  = p.tgt_dist.toFixed(2);
+      const slClr    = p.sl_dist < 0 ? "red" : "green";
+      const tgtClr   = p.tgt_dist > 0 ? "green" : "red";
+
+      return `
+        <tr>
+          <td>
+            <div class="sym">${p.symbol}</div>
+            <div class="sub">
+              Qty: ${p.qty}<br>
+              SL: Rs.${p.sl} &nbsp; TGT: Rs.${p.target}
+            </div>
+          </td>
+          <td>Rs.${p.entry.toFixed(2)}</td>
+          <td><strong style="color:#fff">Rs.${p.ltp.toFixed(2)}</strong></td>
+          <td class="pnl ${up?"green":"red"}">${pnlTxt}</td>
+          <td><span class="badge ${up?"up":"dn"}">${pctTxt}</span></td>
+          <td class="dist ${slClr}">Rs.${slDist}</td>
+          <td class="dist ${tgtClr}">Rs.${tgtDist}</td>
+          <td>
+            <div class="bar-wrap">
+              <div class="bar-fill" style="width:${fillW}%;background:${fillClr}"></div>
+            </div>
+            <div class="bar-label">${Math.round(fillW)}% to TGT</div>
+          </td>
+        </tr>
+      `;
+    }).join("");
+
+  } catch(e) {
+    document.getElementById("tbody").innerHTML =
+      '<tr><td colspan="8" class="err">Connection error — is pnl_server.py running?</td></tr>';
+  }
+}
+
+load();
+setInterval(load, 5000);
+</script>
+</body>
+</html>

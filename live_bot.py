@@ -218,6 +218,10 @@ def monitor_positions():
             del open_positions[symbol]
 
 # ─── MAIN SCAN ────────────────────────────────────────
+def save_positions():
+    """Save all open positions to file for dashboard."""
+    with open("positions.json", "w") as f:
+        json.dump(open_positions, f, indent=2)
 def run_scan():
     global daily_pnl
 
