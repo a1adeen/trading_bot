@@ -4486,3 +4486,723 @@ HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1020","mess
 2026-07-10 15:26:25,963 |   SCAN at 15:26 | P&L: \u20b9-38 | Positions: 30
 2026-07-10 15:26:25,963 | ==================================================
 2026-07-10 15:26:25,963 |   \u23f8\ufe0f  Market closed — waiting
+2026-07-11 13:19:52,486 | ==================================================
+2026-07-11 13:19:52,486 |   LIVE BOT v2 STARTING
+2026-07-11 13:19:52,486 |   Capital      : Rs.50,000
+2026-07-11 13:19:52,486 |   Risk/trade   : Rs.500 (1%)
+2026-07-11 13:19:52,486 |   Mode         : PAPER TRADING
+2026-07-11 13:19:52,486 |   Strategy     : VWAP + RSI(58-72) + DOM(2x) + Vol(500k)
+2026-07-11 13:19:52,486 |   Scan every   : 5 minutes
+2026-07-11 13:19:52,486 |   Monitor      : every 30 seconds
+2026-07-11 13:19:52,502 |   Kill switch  : Rs.2000 daily loss
+2026-07-11 13:19:52,502 |   Stocks       : 92 Nifty 100 stocks
+2026-07-11 13:19:52,502 | ==================================================
+2026-07-11 13:19:52,502 | 
+  Seeding price history from 2026-07-10...
+2026-07-11 13:20:12,801 |   Seeded 92/92 stocks
+2026-07-11 13:20:12,801 | 
+==================================================
+2026-07-11 13:20:12,801 |   SCAN at 13:20 | P&L: Rs.0 | Open: 0
+2026-07-11 13:20:12,801 | ==================================================
+2026-07-11 13:20:17,732 | 
+  Scanned: 92 | Signals: 0 | Skipped: 0
+2026-07-11 13:20:17,732 | 
+  Bot running — press Ctrl+C to stop
+2026-07-14 11:22:37,057 | ==================================================
+2026-07-14 11:22:37,080 |   LIVE BOT v2 STARTING
+2026-07-14 11:22:37,111 |   Capital      : Rs.50,000
+2026-07-14 11:22:37,391 |   Risk/trade   : Rs.500 (1%)
+2026-07-14 11:22:37,483 |   Mode         : PAPER TRADING
+2026-07-14 11:22:37,509 |   Strategy     : VWAP + RSI(58-72) + DOM(2x) + Vol(500k)
+2026-07-14 11:22:37,528 |   Scan every   : 5 minutes
+2026-07-14 11:22:37,560 |   Monitor      : every 30 seconds
+2026-07-14 11:22:37,561 |   Kill switch  : Rs.2000 daily loss
+2026-07-14 11:22:37,575 |   Stocks       : 92 Nifty 100 stocks
+2026-07-14 11:22:37,577 | ==================================================
+2026-07-14 11:22:37,578 | 
+  Seeding price history from 2026-07-13...
+2026-07-14 11:23:05,548 |   Seeded 92/92 stocks
+2026-07-14 11:23:05,563 | 
+==================================================
+2026-07-14 11:23:05,568 |   SCAN at 11:23 | P&L: Rs.0 | Open: 0
+2026-07-14 11:23:05,571 | ==================================================
+2026-07-14 11:23:39,452 | 
+  Scanned: 92 | Signals: 0 | Skipped: 92
+2026-07-14 11:23:39,458 | 
+  Bot running — press Ctrl+C to stop
+2026-07-14 11:28:39,501 | 
+==================================================
+2026-07-14 11:28:39,503 |   SCAN at 11:28 | P&L: Rs.0 | Open: 0
+2026-07-14 11:28:39,504 | ==================================================
+2026-07-14 11:29:01,089 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE358A01014
+2026-07-14 11:29:03,760 | 
+  ADANIENT
+2026-07-14 11:29:03,761 |   Price: Rs.3208.0 | VWAP: Rs.3190.9 | RSI: 65.11 | DOM: 5.65x | Vol: 879,742
+2026-07-14 11:29:03,762 |   BUY | Entry: Rs.3208.0 | SL: Rs.3185.59 | TGT: Rs.3252.82 | Qty: 22
+2026-07-14 11:29:03,763 |   PAPER — BUY 22 ADANIENT
+2026-07-14 11:29:03,765 |   Chart: https://in.tradingview.com/chart/?symbol=NSE%3AADANIENT
+2026-07-14 11:29:30,217 | 
+  Scanned: 92 | Signals: 1 | Skipped: 91
+2026-07-14 11:34:30,959 | 
+==================================================
+2026-07-14 11:34:30,960 |   SCAN at 11:34 | P&L: Rs.0 | Open: 1
+2026-07-14 11:34:30,961 | ==================================================
+2026-07-14 11:34:57,229 | 
+  Scanned: 92 | Signals: 0 | Skipped: 91
+2026-07-14 11:37:16,616 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:37:16,626 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:37:16,629 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:37:46,639 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:37:46,644 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:37:46,691 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:38:16,699 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:38:16,699 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:38:16,699 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:38:46,708 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:38:46,708 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:38:46,713 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:39:16,717 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:39:16,720 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:39:16,722 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:39:46,739 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:39:46,739 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:39:46,745 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:40:16,748 | 
+==================================================
+2026-07-14 11:40:16,748 |   SCAN at 11:40 | P&L: Rs.0 | Open: 1
+2026-07-14 11:40:16,748 | ==================================================
+2026-07-14 11:40:16,748 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:40:16,753 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:40:16,754 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:40:16,759 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE358A01014
+2026-07-14 11:40:16,761 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE358A01014
+2026-07-14 11:40:16,763 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE358A01014
+2026-07-14 11:40:16,763 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE364U01010
+2026-07-14 11:40:16,769 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE364U01010
+2026-07-14 11:40:16,771 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE364U01010
+2026-07-14 11:40:16,777 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE742F01042
+2026-07-14 11:40:16,780 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE742F01042
+2026-07-14 11:40:16,780 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE742F01042
+2026-07-14 11:40:16,786 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE540L01014
+2026-07-14 11:40:16,788 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE540L01014
+2026-07-14 11:40:16,788 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE540L01014
+2026-07-14 11:40:16,788 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE437A01024
+2026-07-14 11:40:16,794 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE437A01024
+2026-07-14 11:40:16,796 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE437A01024
+2026-07-14 11:40:16,803 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE208A01029
+2026-07-14 11:40:16,804 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE208A01029
+2026-07-14 11:40:16,804 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE208A01029
+2026-07-14 11:40:16,811 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE021A01026
+2026-07-14 11:40:16,813 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE021A01026
+2026-07-14 11:40:16,813 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE021A01026
+2026-07-14 11:40:16,813 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE406A01037
+2026-07-14 11:40:16,819 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE406A01037
+2026-07-14 11:40:16,821 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE406A01037
+2026-07-14 11:40:16,821 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE238A01034
+2026-07-14 11:40:16,827 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE238A01034
+2026-07-14 11:40:16,830 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE238A01034
+2026-07-14 11:40:16,834 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE918I01026
+2026-07-14 11:40:16,835 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE918I01026
+2026-07-14 11:40:16,838 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE918I01026
+2026-07-14 11:40:16,838 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE296A01032
+2026-07-14 11:40:16,844 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE296A01032
+2026-07-14 11:40:16,848 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE296A01032
+2026-07-14 11:40:16,852 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE028A01039
+2026-07-14 11:40:16,852 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE028A01039
+2026-07-14 11:40:16,855 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE028A01039
+2026-07-14 11:40:16,860 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE463A01038
+2026-07-14 11:40:16,863 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE463A01038
+2026-07-14 11:40:16,863 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE463A01038
+2026-07-14 11:40:16,868 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE397D01024
+2026-07-14 11:40:16,871 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE397D01024
+2026-07-14 11:40:16,871 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE397D01024
+2026-07-14 11:40:16,877 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE376G01013
+2026-07-14 11:40:16,877 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE376G01013
+2026-07-14 11:40:16,881 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE376G01013
+2026-07-14 11:40:16,884 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE323A01026
+2026-07-14 11:40:16,884 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE323A01026
+2026-07-14 11:40:16,888 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE323A01026
+2026-07-14 11:40:16,963 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE029A01011
+2026-07-14 11:40:16,965 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE029A01011
+2026-07-14 11:40:16,965 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE029A01011
+2026-07-14 11:40:16,965 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE216A01030
+2026-07-14 11:40:16,973 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE216A01030
+2026-07-14 11:40:16,973 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE216A01030
+2026-07-14 11:40:16,980 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE476A01022
+2026-07-14 11:40:16,981 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE476A01022
+2026-07-14 11:40:16,986 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE476A01022
+2026-07-14 11:40:16,990 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE121A01024
+2026-07-14 11:40:16,990 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE121A01024
+2026-07-14 11:40:16,995 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE121A01024
+2026-07-14 11:40:17,000 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE059A01026
+2026-07-14 11:40:17,003 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE059A01026
+2026-07-14 11:40:17,006 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE059A01026
+2026-07-14 11:40:17,006 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE522F01014
+2026-07-14 11:40:17,014 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE522F01014
+2026-07-14 11:40:17,016 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE522F01014
+2026-07-14 11:40:17,020 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE591G01025
+2026-07-14 11:40:17,023 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE591G01025
+2026-07-14 11:40:17,023 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE591G01025
+2026-07-14 11:40:17,030 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE259A01022
+2026-07-14 11:40:17,033 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE259A01022
+2026-07-14 11:40:17,033 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE259A01022
+2026-07-14 11:40:17,036 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE111A01025
+2026-07-14 11:40:17,038 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE111A01025
+2026-07-14 11:40:17,040 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE111A01025
+2026-07-14 11:40:17,046 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE298A01020
+2026-07-14 11:40:17,046 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE298A01020
+2026-07-14 11:40:17,050 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE298A01020
+2026-07-14 11:40:17,054 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE016A01026
+2026-07-14 11:40:17,054 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE016A01026
+2026-07-14 11:40:17,054 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE016A01026
+2026-07-14 11:40:17,064 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE361B01024
+2026-07-14 11:40:17,064 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE361B01024
+2026-07-14 11:40:17,064 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE361B01024
+2026-07-14 11:40:17,069 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE935N01020
+2026-07-14 11:40:17,073 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE935N01020
+2026-07-14 11:40:17,075 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE935N01020
+2026-07-14 11:40:17,079 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE271C01023
+2026-07-14 11:40:17,081 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE271C01023
+2026-07-14 11:40:17,084 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE271C01023
+2026-07-14 11:40:17,085 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE089A01031
+2026-07-14 11:40:17,088 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE089A01031
+2026-07-14 11:40:17,088 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE089A01031
+2026-07-14 11:40:17,094 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE066A01021
+2026-07-14 11:40:17,096 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE066A01021
+2026-07-14 11:40:17,096 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE066A01021
+2026-07-14 11:40:17,105 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE042A01014
+2026-07-14 11:40:17,105 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE042A01014
+2026-07-14 11:40:17,110 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE042A01014
+2026-07-14 11:40:17,113 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE171A01029
+2026-07-14 11:40:17,113 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE171A01029
+2026-07-14 11:40:17,118 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE171A01029
+2026-07-14 11:40:17,121 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE102D01028
+2026-07-14 11:40:17,121 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE102D01028
+2026-07-14 11:40:17,126 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE102D01028
+2026-07-14 11:40:17,130 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE047A01021
+2026-07-14 11:40:17,130 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE047A01021
+2026-07-14 11:40:17,134 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE047A01021
+2026-07-14 11:40:17,137 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE176B01034
+2026-07-14 11:40:17,140 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE176B01034
+2026-07-14 11:40:17,143 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE176B01034
+2026-07-14 11:40:17,146 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE860A01027
+2026-07-14 11:40:17,146 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE860A01027
+2026-07-14 11:40:17,151 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE860A01027
+2026-07-14 11:40:17,154 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE040A01034
+2026-07-14 11:40:17,154 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE040A01034
+2026-07-14 11:40:17,159 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE040A01034
+2026-07-14 11:40:17,163 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE795G01014
+2026-07-14 11:40:17,163 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE795G01014
+2026-07-14 11:40:17,163 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE795G01014
+2026-07-14 11:40:17,167 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE158A01026
+2026-07-14 11:40:17,171 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE158A01026
+2026-07-14 11:40:17,171 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE158A01026
+2026-07-14 11:40:17,176 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE038A01020
+2026-07-14 11:40:17,180 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE038A01020
+2026-07-14 11:40:17,180 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE038A01020
+2026-07-14 11:40:17,184 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE030A01027
+2026-07-14 11:40:17,188 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE030A01027
+2026-07-14 11:40:17,190 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE030A01027
+2026-07-14 11:40:17,192 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE090A01021
+2026-07-14 11:40:17,192 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE090A01021
+2026-07-14 11:40:17,199 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE090A01021
+2026-07-14 11:40:17,201 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE092T01019
+2026-07-14 11:40:17,204 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE092T01019
+2026-07-14 11:40:17,207 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE092T01019
+2026-07-14 11:40:17,209 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE646L01027
+2026-07-14 11:40:17,209 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE646L01027
+2026-07-14 11:40:17,213 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE646L01027
+2026-07-14 11:40:17,217 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE095A01012
+2026-07-14 11:40:17,221 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE095A01012
+2026-07-14 11:40:17,223 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE095A01012
+2026-07-14 11:40:17,225 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE571A01038
+2026-07-14 11:40:17,229 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE571A01038
+2026-07-14 11:40:17,230 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE571A01038
+2026-07-14 11:40:17,234 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE335Y01020
+2026-07-14 11:40:17,238 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE335Y01020
+2026-07-14 11:40:17,238 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE335Y01020
+2026-07-14 11:40:17,242 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE154A01025
+2026-07-14 11:40:17,246 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE154A01025
+2026-07-14 11:40:17,246 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE154A01025
+2026-07-14 11:40:17,250 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE019A01038
+2026-07-14 11:40:17,254 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE019A01038
+2026-07-14 11:40:17,256 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE019A01038
+2026-07-14 11:40:17,258 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE237A01036
+2026-07-14 11:40:17,261 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE237A01036
+2026-07-14 11:40:17,264 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE237A01036
+2026-07-14 11:40:17,268 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE018A01030
+2026-07-14 11:40:17,271 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE018A01030
+2026-07-14 11:40:17,271 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE018A01030
+2026-07-14 11:40:17,275 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE326A01037
+2026-07-14 11:40:17,279 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE326A01037
+2026-07-14 11:40:17,279 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE326A01037
+2026-07-14 11:40:17,283 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE196A01026
+2026-07-14 11:40:17,288 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE196A01026
+2026-07-14 11:40:17,290 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE196A01026
+2026-07-14 11:40:17,294 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE585B01010
+2026-07-14 11:40:17,296 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE585B01010
+2026-07-14 11:40:17,298 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE585B01010
+2026-07-14 11:40:17,298 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE775A01035
+2026-07-14 11:40:17,304 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE775A01035
+2026-07-14 11:40:17,307 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE775A01035
+2026-07-14 11:40:17,307 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE356A01018
+2026-07-14 11:40:17,307 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE356A01018
+2026-07-14 11:40:17,315 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE356A01018
+2026-07-14 11:40:17,315 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE414G01012
+2026-07-14 11:40:17,321 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE414G01012
+2026-07-14 11:40:17,323 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE414G01012
+2026-07-14 11:40:17,326 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE663F01032
+2026-07-14 11:40:17,330 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE663F01032
+2026-07-14 11:40:17,332 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE663F01032
+2026-07-14 11:40:17,332 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE239A01024
+2026-07-14 11:40:17,338 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE239A01024
+2026-07-14 11:40:17,340 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE239A01024
+2026-07-14 11:40:17,340 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE733E01010
+2026-07-14 11:40:17,346 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE733E01010
+2026-07-14 11:40:17,348 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE733E01010
+2026-07-14 11:40:17,348 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE093I01010
+2026-07-14 11:40:17,354 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE093I01010
+2026-07-14 11:40:17,356 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE093I01010
+2026-07-14 11:40:17,356 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE881D01027
+2026-07-14 11:40:17,364 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE881D01027
+2026-07-14 11:40:17,364 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE881D01027
+2026-07-14 11:40:17,364 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE213A01029
+2026-07-14 11:40:17,372 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE213A01029
+2026-07-14 11:40:17,372 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE213A01029
+2026-07-14 11:40:17,372 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE761H01022
+2026-07-14 11:40:17,379 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE761H01022
+2026-07-14 11:40:17,381 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE761H01022
+2026-07-14 11:40:17,381 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE262H01021
+2026-07-14 11:40:17,381 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE262H01021
+2026-07-14 11:40:17,389 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE262H01021
+2026-07-14 11:40:17,392 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE318A01026
+2026-07-14 11:40:17,394 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE318A01026
+2026-07-14 11:40:17,397 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE318A01026
+2026-07-14 11:40:17,397 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE160A01022
+2026-07-14 11:40:17,397 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE160A01022
+2026-07-14 11:40:17,406 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE160A01022
+2026-07-14 11:40:17,406 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE752E01010
+2026-07-14 11:40:17,406 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE752E01010
+2026-07-14 11:40:17,414 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE752E01010
+2026-07-14 11:40:17,414 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE002A01018
+2026-07-14 11:40:17,420 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE002A01018
+2026-07-14 11:40:17,423 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE002A01018
+2026-07-14 11:40:17,423 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE114A01011
+2026-07-14 11:40:17,423 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE114A01011
+2026-07-14 11:40:17,430 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE114A01011
+2026-07-14 11:40:17,430 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE123W01016
+2026-07-14 11:40:17,437 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE123W01016
+2026-07-14 11:40:17,438 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE123W01016
+2026-07-14 11:40:17,438 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE062A01020
+2026-07-14 11:40:17,438 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE062A01020
+2026-07-14 11:40:17,446 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE062A01020
+2026-07-14 11:40:17,449 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE070A01015
+2026-07-14 11:40:17,449 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE070A01015
+2026-07-14 11:40:17,455 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE070A01015
+2026-07-14 11:40:17,455 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE003A01024
+2026-07-14 11:40:17,455 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE003A01024
+2026-07-14 11:40:17,463 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE003A01024
+2026-07-14 11:40:17,463 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE044A01036
+2026-07-14 11:40:17,463 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE044A01036
+2026-07-14 11:40:17,471 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE044A01036
+2026-07-14 11:40:17,471 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE192A01025
+2026-07-14 11:40:17,471 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE192A01025
+2026-07-14 11:40:17,480 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE192A01025
+2026-07-14 11:40:17,480 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE245A01021
+2026-07-14 11:40:17,480 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE245A01021
+2026-07-14 11:40:17,487 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE245A01021
+2026-07-14 11:40:17,491 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE081A01020
+2026-07-14 11:40:17,496 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE081A01020
+2026-07-14 11:40:17,499 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE081A01020
+2026-07-14 11:40:17,499 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE467B01029
+2026-07-14 11:40:17,504 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE467B01029
+2026-07-14 11:40:17,507 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE467B01029
+2026-07-14 11:40:17,507 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE669C01036
+2026-07-14 11:40:17,513 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE669C01036
+2026-07-14 11:40:17,513 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE669C01036
+2026-07-14 11:40:17,516 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE280A01028
+2026-07-14 11:40:17,521 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE280A01028
+2026-07-14 11:40:17,521 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE280A01028
+2026-07-14 11:40:17,521 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE685A01028
+2026-07-14 11:40:17,521 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE685A01028
+2026-07-14 11:40:17,530 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE685A01028
+2026-07-14 11:40:17,530 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE813H01021
+2026-07-14 11:40:17,538 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE813H01021
+2026-07-14 11:40:17,538 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE813H01021
+2026-07-14 11:40:17,538 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE849A01020
+2026-07-14 11:40:17,538 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE849A01020
+2026-07-14 11:40:17,546 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE849A01020
+2026-07-14 11:40:17,550 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE686F01025
+2026-07-14 11:40:17,552 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE686F01025
+2026-07-14 11:40:17,555 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE686F01025
+2026-07-14 11:40:17,555 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE692A01016
+2026-07-14 11:40:17,555 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE692A01016
+2026-07-14 11:40:17,563 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE692A01016
+2026-07-14 11:40:17,566 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE205A01025
+2026-07-14 11:40:17,568 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE205A01025
+2026-07-14 11:40:17,570 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE205A01025
+2026-07-14 11:40:17,573 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE226A01021
+2026-07-14 11:40:17,573 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE226A01021
+2026-07-14 11:40:17,579 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE226A01021
+2026-07-14 11:40:17,579 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE075A01022
+2026-07-14 11:40:17,579 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE075A01022
+2026-07-14 11:40:17,586 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE075A01022
+2026-07-14 11:40:17,589 | 
+  Scanned: 92 | Signals: 0 | Skipped: 0
+2026-07-14 11:40:17,589 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:40:17,589 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:40:17,596 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:40:47,613 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:40:47,613 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:40:47,613 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:41:17,621 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:41:17,621 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:41:17,621 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:41:47,631 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:41:47,633 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:41:47,634 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:42:17,639 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:42:17,644 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:42:17,644 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.upstox.com', port=443): Failed to resolve 'api.upstox.com' ([Errno 11001] getaddrinfo failed)")': /v2/market-quote/quotes?symbol=NSE_EQ%7CINE423A01024
+2026-07-14 11:59:25,340 | 
+==================================================
+2026-07-14 11:59:25,343 |   SCAN at 11:59 | P&L: Rs.0 | Open: 1
+2026-07-14 11:59:25,343 | ==================================================
+2026-07-14 11:59:26,194 | 
+  ADANIGREEN
+2026-07-14 11:59:26,194 |   Price: Rs.1601.1 | VWAP: Rs.1588.53 | RSI: 67.15 | DOM: 16.14x | Vol: 3,297,303
+2026-07-14 11:59:26,194 |   BUY | Entry: Rs.1601.1 | SL: Rs.1571.55 | TGT: Rs.1660.2 | Qty: 16
+2026-07-14 11:59:26,194 |   PAPER — BUY 16 ADANIGREEN
+2026-07-14 11:59:26,194 |   Chart: https://in.tradingview.com/chart/?symbol=NSE%3AADANIGREEN
+2026-07-14 11:59:44,388 | ==================================================
+2026-07-14 11:59:44,393 |   LIVE BOT v2 STARTING
+2026-07-14 11:59:44,393 |   Capital      : Rs.50,000
+2026-07-14 11:59:44,393 |   Risk/trade   : Rs.500 (1%)
+2026-07-14 11:59:44,393 |   Mode         : PAPER TRADING
+2026-07-14 11:59:44,393 |   Strategy     : VWAP + RSI(58-72) + DOM(2x) + Vol(500k)
+2026-07-14 11:59:44,393 |   Scan every   : 5 minutes
+2026-07-14 11:59:44,393 |   Monitor      : every 30 seconds
+2026-07-14 11:59:44,393 |   Kill switch  : Rs.2000 daily loss
+2026-07-14 11:59:44,393 |   Stocks       : 92 Nifty 100 stocks
+2026-07-14 11:59:44,393 | ==================================================
+2026-07-14 11:59:44,393 | 
+  Seeding price history from 2026-07-13...
+2026-07-14 12:00:01,479 |   Seeded 92/92 stocks
+2026-07-14 12:00:01,479 | 
+==================================================
+2026-07-14 12:00:01,479 |   SCAN at 12:00 | P&L: Rs.0 | Open: 0
+2026-07-14 12:00:01,479 | ==================================================
+2026-07-14 12:00:02,025 | 
+  ADANIENT
+2026-07-14 12:00:02,025 |   Price: Rs.3189.3 | VWAP: Rs.3184.67 | RSI: 62.11 | DOM: 6.49x | Vol: 1,015,745
+2026-07-14 12:00:02,025 |   BUY | Entry: Rs.3189.3 | SL: Rs.3166.89 | TGT: Rs.3234.12 | Qty: 22
+2026-07-14 12:00:02,025 |   PAPER — BUY 22 ADANIENT
+2026-07-14 12:00:02,025 |   Chart: https://in.tradingview.com/chart/?symbol=NSE%3AADANIENT
+2026-07-14 12:00:25,616 | 
+  Scanned: 92 | Signals: 1 | Skipped: 91
+2026-07-14 12:00:25,616 | 
+  Bot running — press Ctrl+C to stop
+2026-07-14 12:05:26,999 | 
+==================================================
+2026-07-14 12:05:26,999 |   SCAN at 12:05 | P&L: Rs.0 | Open: 1
+2026-07-14 12:05:26,999 | ==================================================
+2026-07-14 12:05:27,623 | 
+  ADANIPORTS
+2026-07-14 12:05:27,623 |   Price: Rs.1826.9 | VWAP: Rs.1825.47 | RSI: 70.75 | DOM: 3.04x | Vol: 894,376
+2026-07-14 12:05:27,623 |   BUY | Entry: Rs.1826.9 | SL: Rs.1817.21 | TGT: Rs.1846.28 | Qty: 51
+2026-07-14 12:05:27,623 |   PAPER — BUY 51 ADANIPORTS
+2026-07-14 12:05:27,623 |   Chart: https://in.tradingview.com/chart/?symbol=NSE%3AADANIPORTS
+2026-07-14 12:05:51,588 | 
+  Scanned: 92 | Signals: 1 | Skipped: 90
+2026-07-14 12:10:53,741 | 
+==================================================
+2026-07-14 12:10:53,741 |   SCAN at 12:10 | P&L: Rs.0 | Open: 2
+2026-07-14 12:10:53,744 | ==================================================
+2026-07-14 12:11:17,372 | 
+  Scanned: 92 | Signals: 0 | Skipped: 90
+2026-07-14 12:16:18,522 | 
+==================================================
+2026-07-14 12:16:18,522 |   SCAN at 12:16 | P&L: Rs.0 | Open: 2
+2026-07-14 12:16:18,522 | ==================================================
+2026-07-14 12:16:42,554 | 
+  Scanned: 92 | Signals: 0 | Skipped: 90
+2026-07-14 12:21:44,090 | 
+==================================================
+2026-07-14 12:21:44,090 |   SCAN at 12:21 | P&L: Rs.0 | Open: 2
+2026-07-14 12:21:44,090 | ==================================================
+2026-07-14 12:22:07,702 | 
+  Scanned: 92 | Signals: 0 | Skipped: 90
+2026-07-14 12:27:08,768 | 
+==================================================
+2026-07-14 12:27:08,768 |   SCAN at 12:27 | P&L: Rs.0 | Open: 2
+2026-07-14 12:27:08,768 | ==================================================
+2026-07-14 12:27:15,178 | 
+  CONCOR
+2026-07-14 12:27:15,178 |   Price: Rs.489.35 | VWAP: Rs.483.15 | RSI: 58.69 | DOM: 4.46x | Vol: 7,621,510
+2026-07-14 12:27:15,178 |   BUY | Entry: Rs.489.35 | SL: Rs.482.18 | TGT: Rs.503.69 | Qty: 69
+2026-07-14 12:27:15,184 |   PAPER — BUY 69 CONCOR
+2026-07-14 12:27:15,184 |   Chart: https://in.tradingview.com/chart/?symbol=NSE%3ACONCOR
+2026-07-14 12:27:35,217 | 
+  Scanned: 92 | Signals: 1 | Skipped: 89
+2026-07-14 12:32:37,610 | 
+==================================================
+2026-07-14 12:32:37,611 |   SCAN at 12:32 | P&L: Rs.0 | Open: 3
+2026-07-14 12:32:37,612 | ==================================================
+2026-07-14 12:32:48,727 | 
+  HINDALCO
+2026-07-14 12:32:48,728 |   Price: Rs.981.65 | VWAP: Rs.981.22 | RSI: 68.8 | DOM: 7.87x | Vol: 5,074,636
+2026-07-14 12:32:48,729 |   BUY | Entry: Rs.981.65 | SL: Rs.971.45 | TGT: Rs.1002.05 | Qty: 49
+2026-07-14 12:32:48,729 |   PAPER — BUY 49 HINDALCO
+2026-07-14 12:32:48,729 |   Chart: https://in.tradingview.com/chart/?symbol=NSE%3AHINDALCO
+2026-07-14 12:32:58,400 | 
+  SUNPHARMA
+2026-07-14 12:32:58,400 |   Price: Rs.1945.0 | VWAP: Rs.1934.93 | RSI: 70.06 | DOM: 3.85x | Vol: 1,295,401
+2026-07-14 12:32:58,401 |   BUY | Entry: Rs.1945.0 | SL: Rs.1933.06 | TGT: Rs.1968.88 | Qty: 41
+2026-07-14 12:32:58,401 |   PAPER — BUY 41 SUNPHARMA
+2026-07-14 12:32:58,401 |   Chart: https://in.tradingview.com/chart/?symbol=NSE%3ASUNPHARMA
+2026-07-14 12:33:02,596 | 
+  Scanned: 92 | Signals: 2 | Skipped: 87
+2026-07-14 12:38:05,895 | 
+==================================================
+2026-07-14 12:38:05,895 |   SCAN at 12:38 | P&L: Rs.0 | Open: 5
+2026-07-14 12:38:05,896 | ==================================================
+2026-07-14 12:38:30,493 | 
+  Scanned: 92 | Signals: 0 | Skipped: 87
+2026-07-14 12:43:36,360 | 
+==================================================
+2026-07-14 12:43:36,361 |   SCAN at 12:43 | P&L: Rs.0 | Open: 5
+2026-07-14 12:43:36,361 | ==================================================
+2026-07-14 12:43:59,659 | 
+  Scanned: 92 | Signals: 0 | Skipped: 87
+2026-07-14 12:49:05,452 | 
+==================================================
+2026-07-14 12:49:05,453 |   SCAN at 12:49 | P&L: Rs.0 | Open: 5
+2026-07-14 12:49:05,453 | ==================================================
+2026-07-14 12:49:27,920 | 
+  TATASTEEL
+2026-07-14 12:49:27,921 |   Price: Rs.188.75 | VWAP: Rs.188.6 | RSI: 60.43 | DOM: 3.68x | Vol: 12,351,822
+2026-07-14 12:49:27,921 |   BUY | Entry: Rs.188.75 | SL: Rs.187.65 | TGT: Rs.190.94 | Qty: 454
+2026-07-14 12:49:27,921 |   PAPER — BUY 454 TATASTEEL
+2026-07-14 12:49:27,921 |   Chart: https://in.tradingview.com/chart/?symbol=NSE%3ATATASTEEL
+2026-07-14 12:49:31,164 | 
+  Scanned: 92 | Signals: 1 | Skipped: 86
+2026-07-14 12:54:37,076 | 
+==================================================
+2026-07-14 12:54:37,076 |   SCAN at 12:54 | P&L: Rs.0 | Open: 6
+2026-07-14 12:54:37,076 | ==================================================
+2026-07-14 12:54:41,033 | 
+  BIOCON
+2026-07-14 12:54:41,033 |   Price: Rs.437.8 | VWAP: Rs.434.83 | RSI: 66.79 | DOM: 3.21x | Vol: 35,005,110
+2026-07-14 12:54:41,033 |   BUY | Entry: Rs.437.8 | SL: Rs.431.11 | TGT: Rs.451.18 | Qty: 74
+2026-07-14 12:54:41,033 |   PAPER — BUY 74 BIOCON
+2026-07-14 12:54:41,033 |   Chart: https://in.tradingview.com/chart/?symbol=NSE%3ABIOCON
+2026-07-14 12:54:42,605 | 
+  CIPLA
+2026-07-14 12:54:42,605 |   Price: Rs.1450.0 | VWAP: Rs.1443.27 | RSI: 71.73 | DOM: 2.15x | Vol: 621,473
+2026-07-14 12:54:42,605 |   BUY | Entry: Rs.1450.0 | SL: Rs.1441.24 | TGT: Rs.1467.52 | Qty: 57
+2026-07-14 12:54:42,605 |   PAPER — BUY 57 CIPLA
+2026-07-14 12:54:42,605 |   Chart: https://in.tradingview.com/chart/?symbol=NSE%3ACIPLA
+2026-07-14 12:55:00,268 | 
+  Scanned: 92 | Signals: 2 | Skipped: 84
+2026-07-14 13:00:06,419 | 
+==================================================
+2026-07-14 13:00:06,420 |   SCAN at 13:00 | P&L: Rs.0 | Open: 8
+2026-07-14 13:00:06,420 | ==================================================
+2026-07-14 13:00:29,752 | 
+  Scanned: 92 | Signals: 0 | Skipped: 84
+2026-07-14 13:05:34,644 | 
+==================================================
+2026-07-14 13:05:34,644 |   SCAN at 13:05 | P&L: Rs.0 | Open: 8
+2026-07-14 13:05:34,646 | ==================================================
+2026-07-14 13:05:57,613 | 
+  Scanned: 92 | Signals: 0 | Skipped: 84
+2026-07-14 13:11:02,715 | 
+==================================================
+2026-07-14 13:11:02,717 |   SCAN at 13:11 | P&L: Rs.0 | Open: 8
+2026-07-14 13:11:02,717 | ==================================================
+2026-07-14 13:11:03,467 | 
+  ADANIGREEN
+2026-07-14 13:11:03,467 |   Price: Rs.1606.6 | VWAP: Rs.1590.37 | RSI: 70.33 | DOM: 4.55x | Vol: 3,769,304
+2026-07-14 13:11:03,476 |   BUY | Entry: Rs.1606.6 | SL: Rs.1577.05 | TGT: Rs.1665.7 | Qty: 16
+2026-07-14 13:11:03,476 |   PAPER — BUY 16 ADANIGREEN
+2026-07-14 13:11:03,476 |   Chart: https://in.tradingview.com/chart/?symbol=NSE%3AADANIGREEN
+2026-07-14 13:11:09,492 | 
+  DIVISLAB
+2026-07-14 13:11:09,501 |   Price: Rs.7126.0 | VWAP: Rs.7064.67 | RSI: 62.83 | DOM: 5.52x | Vol: 762,688
+2026-07-14 13:11:09,501 |   BUY | Entry: Rs.7126.0 | SL: Rs.7051.0 | TGT: Rs.7276.0 | Qty: 6
+2026-07-14 13:11:09,504 |   PAPER — BUY 6 DIVISLAB
+2026-07-14 13:11:09,504 |   Chart: https://in.tradingview.com/chart/?symbol=NSE%3ADIVISLAB
+2026-07-14 13:11:25,758 | 
+  Scanned: 92 | Signals: 2 | Skipped: 82
+2026-07-14 13:16:32,667 | 
+==================================================
+2026-07-14 13:16:32,667 |   SCAN at 13:16 | P&L: Rs.0 | Open: 10
+2026-07-14 13:16:32,667 | ==================================================
+2026-07-14 13:16:53,661 | 
+  UNIONBANK
+2026-07-14 13:16:53,661 |   Price: Rs.170.04 | VWAP: Rs.169.55 | RSI: 59.96 | DOM: 26.71x | Vol: 8,961,321
+2026-07-14 13:16:53,661 |   BUY | Entry: Rs.170.04 | SL: Rs.168.77 | TGT: Rs.172.58 | Qty: 393
+2026-07-14 13:16:53,661 |   PAPER — BUY 393 UNIONBANK
+2026-07-14 13:16:53,661 |   Chart: https://in.tradingview.com/chart/?symbol=NSE%3AUNIONBANK
+2026-07-14 13:16:54,710 | 
+  Scanned: 92 | Signals: 1 | Skipped: 81
+2026-07-14 13:22:00,738 | 
+==================================================
+2026-07-14 13:22:00,738 |   SCAN at 13:22 | P&L: Rs.0 | Open: 11
+2026-07-14 13:22:00,738 | ==================================================
+2026-07-14 13:22:22,721 | 
+  Scanned: 92 | Signals: 0 | Skipped: 81
+2026-07-14 13:25:26,498 |   SL HIT — ADANIPORTS @ Rs.1817.2 | P&L: Rs.-494
+2026-07-14 13:25:26,507 |   PAPER — SELL 51 ADANIPORTS
+2026-07-14 13:27:28,614 | 
+==================================================
+2026-07-14 13:27:28,614 |   SCAN at 13:27 | P&L: Rs.-494 | Open: 10
+2026-07-14 13:27:28,614 | ==================================================
+2026-07-14 13:27:32,662 | 
+  BHARTIARTL
+2026-07-14 13:27:32,662 |   Price: Rs.1935.3 | VWAP: Rs.1920.47 | RSI: 58.45 | DOM: 4.60x | Vol: 4,358,808
+2026-07-14 13:27:32,671 |   BUY | Entry: Rs.1935.3 | SL: Rs.1918.47 | TGT: Rs.1968.96 | Qty: 29
+2026-07-14 13:27:32,671 |   PAPER — BUY 29 BHARTIARTL
+2026-07-14 13:27:32,671 |   Chart: https://in.tradingview.com/chart/?symbol=NSE%3ABHARTIARTL
+2026-07-14 13:27:50,831 | 
+  Scanned: 92 | Signals: 1 | Skipped: 81
+2026-07-14 13:27:50,831 |   Closed: 1 | Wins: 0 | Losses: 1 | Win rate: 0.0% | P&L: Rs.-494
+2026-07-14 13:32:56,787 | 
+==================================================
+2026-07-14 13:32:56,787 |   SCAN at 13:32 | P&L: Rs.-494 | Open: 11
+2026-07-14 13:32:56,787 | ==================================================
+2026-07-14 13:33:18,828 | 
+  Scanned: 92 | Signals: 0 | Skipped: 81
+2026-07-14 13:33:18,830 |   Closed: 1 | Wins: 0 | Losses: 1 | Win rate: 0.0% | P&L: Rs.-494
+2026-07-14 13:38:24,861 | 
+==================================================
+2026-07-14 13:38:24,861 |   SCAN at 13:38 | P&L: Rs.-494 | Open: 11
+2026-07-14 13:38:24,861 | ==================================================
+2026-07-14 13:38:41,743 | 
+  POWERGRID
+2026-07-14 13:38:41,743 |   Price: Rs.284.45 | VWAP: Rs.284.05 | RSI: 69.36 | DOM: 3.15x | Vol: 4,183,718
+2026-07-14 13:38:41,743 |   BUY | Entry: Rs.284.45 | SL: Rs.283.52 | TGT: Rs.286.31 | Qty: 537
+2026-07-14 13:38:41,743 |   PAPER — BUY 537 POWERGRID
+2026-07-14 13:38:41,743 |   Chart: https://in.tradingview.com/chart/?symbol=NSE%3APOWERGRID
+2026-07-14 13:38:46,648 | 
+  Scanned: 92 | Signals: 1 | Skipped: 80
+2026-07-14 13:38:46,648 |   Closed: 1 | Wins: 0 | Losses: 1 | Win rate: 0.0% | P&L: Rs.-494
+2026-07-14 13:43:54,207 | 
+==================================================
+2026-07-14 13:43:54,207 |   SCAN at 13:43 | P&L: Rs.-494 | Open: 12
+2026-07-14 13:43:54,207 | ==================================================
+2026-07-14 13:44:16,397 | 
+  Scanned: 92 | Signals: 0 | Skipped: 80
+2026-07-14 13:44:16,397 |   Closed: 1 | Wins: 0 | Losses: 1 | Win rate: 0.0% | P&L: Rs.-494
+2026-07-14 13:49:22,943 | 
+==================================================
+2026-07-14 13:49:22,943 |   SCAN at 13:49 | P&L: Rs.-494 | Open: 12
+2026-07-14 13:49:22,943 | ==================================================
+2026-07-14 13:49:27,002 | 
+  BPCL
+2026-07-14 13:49:27,002 |   Price: Rs.305.55 | VWAP: Rs.304.5 | RSI: 60.14 | DOM: 8.69x | Vol: 7,046,257
+2026-07-14 13:49:27,002 |   BUY | Entry: Rs.305.55 | SL: Rs.304.4 | TGT: Rs.307.86 | Qty: 434
+2026-07-14 13:49:27,002 |   PAPER — BUY 434 BPCL
+2026-07-14 13:49:27,002 |   Chart: https://in.tradingview.com/chart/?symbol=NSE%3ABPCL
+2026-07-14 13:49:44,432 | 
+  Scanned: 92 | Signals: 1 | Skipped: 79
+2026-07-14 13:49:44,432 |   Closed: 1 | Wins: 0 | Losses: 1 | Win rate: 0.0% | P&L: Rs.-494
+2026-07-14 13:53:19,839 |   SL HIT — CIPLA @ Rs.1440.4 | P&L: Rs.-499
+2026-07-14 13:53:19,839 |   PAPER — SELL 57 CIPLA
+2026-07-14 13:54:51,491 | 
+==================================================
+2026-07-14 13:54:51,491 |   SCAN at 13:54 | P&L: Rs.-994 | Open: 12
+2026-07-14 13:54:51,491 | ==================================================
+2026-07-14 13:55:01,426 | 
+  HINDUNILVR
+2026-07-14 13:55:01,426 |   Price: Rs.2133.4 | VWAP: Rs.2131.8 | RSI: 62.89 | DOM: 2.50x | Vol: 1,145,467
+2026-07-14 13:55:01,426 |   BUY | Entry: Rs.2133.4 | SL: Rs.2125.0 | TGT: Rs.2150.2 | Qty: 59
+2026-07-14 13:55:01,438 |   PAPER — BUY 59 HINDUNILVR
+2026-07-14 13:55:01,439 |   Chart: https://in.tradingview.com/chart/?symbol=NSE%3AHINDUNILVR
+2026-07-14 13:55:13,387 | 
+  Scanned: 92 | Signals: 1 | Skipped: 79
+2026-07-14 13:55:13,387 |   Closed: 2 | Wins: 0 | Losses: 2 | Win rate: 0.0% | P&L: Rs.-994
+2026-07-14 14:00:21,951 | 
+==================================================
+2026-07-14 14:00:21,951 |   SCAN at 14:00 | P&L: Rs.-994 | Open: 13
+2026-07-14 14:00:21,951 | ==================================================
+2026-07-14 14:00:30,494 | 
+  HAVELLS
+2026-07-14 14:00:30,494 |   Price: Rs.1181.1 | VWAP: Rs.1178.7 | RSI: 59.8 | DOM: 7.15x | Vol: 846,485
+2026-07-14 14:00:30,494 |   BUY | Entry: Rs.1181.1 | SL: Rs.1174.98 | TGT: Rs.1193.34 | Qty: 81
+2026-07-14 14:00:30,494 |   PAPER — BUY 81 HAVELLS
+2026-07-14 14:00:30,494 |   Chart: https://in.tradingview.com/chart/?symbol=NSE%3AHAVELLS
+2026-07-14 14:00:43,441 | 
+  Scanned: 92 | Signals: 1 | Skipped: 78
+2026-07-14 14:00:43,441 |   Closed: 2 | Wins: 0 | Losses: 2 | Win rate: 0.0% | P&L: Rs.-994
+2026-07-14 14:05:56,296 | 
+==================================================
+2026-07-14 14:05:56,296 |   SCAN at 14:05 | P&L: Rs.-994 | Open: 14
+2026-07-14 14:05:56,296 | ==================================================
+2026-07-14 14:05:59,650 | 
+  BAJFINANCE
+2026-07-14 14:05:59,650 |   Price: Rs.1010.4 | VWAP: Rs.1009.2 | RSI: 60.83 | DOM: 2.65x | Vol: 4,352,978
+2026-07-14 14:05:59,650 |   BUY | Entry: Rs.1010.4 | SL: Rs.1002.36 | TGT: Rs.1026.48 | Qty: 62
+2026-07-14 14:05:59,650 |   PAPER — BUY 62 BAJFINANCE
+2026-07-14 14:05:59,650 |   Chart: https://in.tradingview.com/chart/?symbol=NSE%3ABAJFINANCE
+2026-07-14 14:06:17,859 | 
+  Scanned: 92 | Signals: 1 | Skipped: 77
+2026-07-14 14:06:17,859 |   Closed: 2 | Wins: 0 | Losses: 2 | Win rate: 0.0% | P&L: Rs.-994
+2026-07-14 14:11:26,457 | 
+==================================================
+2026-07-14 14:11:26,457 |   SCAN at 14:11 | P&L: Rs.-994 | Open: 15
+2026-07-14 14:11:26,457 | ==================================================
+2026-07-14 14:11:47,300 | 
+  Scanned: 92 | Signals: 0 | Skipped: 77
+2026-07-14 14:11:47,300 |   Closed: 2 | Wins: 0 | Losses: 2 | Win rate: 0.0% | P&L: Rs.-994
+2026-07-14 14:16:56,565 | 
+==================================================
+2026-07-14 14:16:56,565 |   SCAN at 14:16 | P&L: Rs.-994 | Open: 15
+2026-07-14 14:16:56,565 | ==================================================
+2026-07-14 14:17:15,783 | 
+  TATAPOWER
+2026-07-14 14:17:15,783 |   Price: Rs.377.25 | VWAP: Rs.376.93 | RSI: 66.54 | DOM: 2.59x | Vol: 2,008,323
+2026-07-14 14:17:15,783 |   BUY | Entry: Rs.377.25 | SL: Rs.375.92 | TGT: Rs.379.92 | Qty: 375
+2026-07-14 14:17:15,783 |   PAPER — BUY 375 TATAPOWER
+2026-07-14 14:17:15,783 |   Chart: https://in.tradingview.com/chart/?symbol=NSE%3ATATAPOWER
+2026-07-14 14:17:18,743 | 
+  Scanned: 92 | Signals: 1 | Skipped: 76
+2026-07-14 14:17:18,743 |   Closed: 2 | Wins: 0 | Losses: 2 | Win rate: 0.0% | P&L: Rs.-994
+2026-07-14 14:18:21,543 |   SL HIT — HINDUNILVR @ Rs.2121.2 | P&L: Rs.-496
+2026-07-14 14:18:21,549 |   PAPER — SELL 59 HINDUNILVR
+2026-07-14 14:22:29,334 | 
+==================================================
+2026-07-14 14:22:29,334 |   SCAN at 14:22 | P&L: Rs.-1489 | Open: 15
+2026-07-14 14:22:29,334 | ==================================================
+2026-07-14 14:22:52,589 | 
+  Scanned: 92 | Signals: 0 | Skipped: 77
+2026-07-14 14:22:52,589 |   Closed: 3 | Wins: 0 | Losses: 3 | Win rate: 0.0% | P&L: Rs.-1489
+2026-07-14 14:28:07,609 | 
+==================================================
+2026-07-14 14:28:07,609 |   SCAN at 14:28 | P&L: Rs.-1489 | Open: 15
+2026-07-14 14:28:07,609 | ==================================================
+2026-07-14 14:28:10,326 | 
+  AXISBANK
+2026-07-14 14:28:10,326 |   Price: Rs.1315.6 | VWAP: Rs.1312.0 | RSI: 62.47 | DOM: 2.53x | Vol: 3,032,582
+2026-07-14 14:28:10,326 |   BUY | Entry: Rs.1315.6 | SL: Rs.1308.64 | TGT: Rs.1329.52 | Qty: 71
+2026-07-14 14:28:10,326 |   PAPER — BUY 71 AXISBANK
+2026-07-14 14:28:10,326 |   Chart: https://in.tradingview.com/chart/?symbol=NSE%3AAXISBANK
+2026-07-14 14:28:30,601 | 
+  Scanned: 92 | Signals: 1 | Skipped: 76
+2026-07-14 14:28:30,601 |   Closed: 3 | Wins: 0 | Losses: 3 | Win rate: 0.0% | P&L: Rs.-1489
+2026-07-14 14:33:41,119 | 
+==================================================
+2026-07-14 14:33:41,119 |   SCAN at 14:33 | P&L: Rs.-1489 | Open: 16
+2026-07-14 14:33:41,119 | ==================================================
+2026-07-14 14:34:02,208 | 
+  Scanned: 92 | Signals: 0 | Skipped: 76
+2026-07-14 14:34:02,208 |   Closed: 3 | Wins: 0 | Losses: 3 | Win rate: 0.0% | P&L: Rs.-1489
+2026-07-14 14:34:02,571 |   SL HIT — TATASTEEL @ Rs.187.65 | P&L: Rs.-499
+2026-07-14 14:34:02,579 |   PAPER — SELL 454 TATASTEEL
+2026-07-14 14:39:13,576 | 
+==================================================
+2026-07-14 14:39:13,576 |   SCAN at 14:39 | P&L: Rs.-1989 | Open: 15
+2026-07-14 14:39:13,576 | ==================================================
+2026-07-14 14:39:36,689 | 
+  Scanned: 92 | Signals: 0 | Skipped: 77
+2026-07-14 14:39:36,689 |   Closed: 4 | Wins: 0 | Losses: 4 | Win rate: 0.0% | P&L: Rs.-1989
