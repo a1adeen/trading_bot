@@ -1,0 +1,331 @@
+{
+  "account": {
+    "balance": 55941.44999999999,
+    "daily_pnl": -3058.1000000000026,
+    "total_pnl": 5941.450000000002,
+    "trades_today": 37,
+    "wins_today": 8,
+    "losses_today": 29,
+    "date": "2026-07-16"
+  },
+  "open_positions": {
+    "ABBOTINDIA": {
+      "entry": 27730.0,
+      "sl": 27657.5,
+      "target": 27947.5,
+      "sl_pts": 72.5,
+      "tgt_pts": 217.5,
+      "qty": 8,
+      "pattern": "Ascending Triangle forming \u2014 resistance at Rs.27570.00",
+      "confidence": 79
+    },
+    "ALKEM": {
+      "entry": 5664.0,
+      "sl": 5645.75,
+      "target": 5718.75,
+      "sl_pts": 18.25,
+      "tgt_pts": 54.75,
+      "qty": 32,
+      "pattern": "Hammer forming \u2014 price bouncing from low",
+      "confidence": 70
+    }
+  },
+  "closed_trades": [
+    {
+      "symbol": "ADANIPORTS",
+      "entry": 1832.8,
+      "exit": 1847.7,
+      "pnl": 1766.3999999999999,
+      "result": "TARGET",
+      "time": "12:32"
+    },
+    {
+      "symbol": "ADANIPORTS",
+      "entry": 1832.8,
+      "exit": 1843.0,
+      "pnl": 1814.3999999999999,
+      "result": "TARGET",
+      "time": "12:37"
+    },
+    {
+      "symbol": "ADANIENT",
+      "entry": 3157.9,
+      "exit": 3148.0,
+      "pnl": -587.25,
+      "result": "SL",
+      "time": "12:39"
+    },
+    {
+      "symbol": "BAJAJFINSV",
+      "entry": 1850.8,
+      "exit": 1847.5,
+      "pnl": -587.6,
+      "result": "SL",
+      "time": "12:39"
+    },
+    {
+      "symbol": "ADANIENT",
+      "entry": 3157.9,
+      "exit": 3150.0,
+      "pnl": -609.0,
+      "result": "SL",
+      "time": "12:42"
+    },
+    {
+      "symbol": "ADANIPORTS",
+      "entry": 1832.8,
+      "exit": 1842.7,
+      "pnl": 1833.6,
+      "result": "TARGET",
+      "time": "12:42"
+    },
+    {
+      "symbol": "BAJAJFINSV",
+      "entry": 1850.8,
+      "exit": 1847.0,
+      "pnl": -613.6,
+      "result": "SL",
+      "time": "12:42"
+    },
+    {
+      "symbol": "ADANIPORTS",
+      "entry": 1832.8,
+      "exit": 1842.8,
+      "pnl": 1852.8,
+      "result": "TARGET",
+      "time": "12:47"
+    },
+    {
+      "symbol": "BAJAJFINSV",
+      "entry": 1850.8,
+      "exit": 1844.2,
+      "pnl": -618.8000000000001,
+      "result": "SL",
+      "time": "12:47"
+    },
+    {
+      "symbol": "ADANIPORTS",
+      "entry": 1832.8,
+      "exit": 1842.6,
+      "pnl": 1891.1999999999998,
+      "result": "TARGET",
+      "time": "12:53"
+    },
+    {
+      "symbol": "BAJAJFINSV",
+      "entry": 1850.8,
+      "exit": 1842.9,
+      "pnl": -631.8000000000001,
+      "result": "SL",
+      "time": "12:53"
+    },
+    {
+      "symbol": "ADANIPORTS",
+      "entry": 1832.8,
+      "exit": 1842.5,
+      "pnl": 1929.6,
+      "result": "TARGET",
+      "time": "12:58"
+    },
+    {
+      "symbol": "BAJAJFINSV",
+      "entry": 1850.8,
+      "exit": 1840.8,
+      "pnl": -644.8000000000001,
+      "result": "SL",
+      "time": "12:58"
+    },
+    {
+      "symbol": "ADANIENT",
+      "entry": 3157.9,
+      "exit": 3150.3,
+      "pnl": -616.25,
+      "result": "SL",
+      "time": "12:59"
+    },
+    {
+      "symbol": "ADANIPORTS",
+      "entry": 1832.8,
+      "exit": 1844.1,
+      "pnl": 1948.8,
+      "result": "TARGET",
+      "time": "13:03"
+    },
+    {
+      "symbol": "BAJAJFINSV",
+      "entry": 1850.8,
+      "exit": 1839.6,
+      "pnl": -650.0,
+      "result": "SL",
+      "time": "13:03"
+    },
+    {
+      "symbol": "ADANIPORTS",
+      "entry": 1832.8,
+      "exit": 1844.6,
+      "pnl": 1987.1999999999998,
+      "result": "TARGET",
+      "time": "13:08"
+    },
+    {
+      "symbol": "BAJAJFINSV",
+      "entry": 1850.8,
+      "exit": 1839.3,
+      "pnl": -663.0,
+      "result": "SL",
+      "time": "13:08"
+    },
+    {
+      "symbol": "BAJAJFINSV",
+      "entry": 1850.8,
+      "exit": 1838.3,
+      "pnl": -676.0,
+      "result": "SL",
+      "time": "13:13"
+    },
+    {
+      "symbol": "BAJAJFINSV",
+      "entry": 1850.8,
+      "exit": 1838.3,
+      "pnl": -670.8000000000001,
+      "result": "SL",
+      "time": "13:18"
+    },
+    {
+      "symbol": "BAJAJFINSV",
+      "entry": 1850.8,
+      "exit": 1839.7,
+      "pnl": -663.0,
+      "result": "SL",
+      "time": "13:23"
+    },
+    {
+      "symbol": "BAJAJFINSV",
+      "entry": 1850.8,
+      "exit": 1838.7,
+      "pnl": -657.8000000000001,
+      "result": "SL",
+      "time": "13:28"
+    },
+    {
+      "symbol": "ADANIENT",
+      "entry": 3157.9,
+      "exit": 3150.3,
+      "pnl": -645.25,
+      "result": "SL",
+      "time": "13:29"
+    },
+    {
+      "symbol": "ADANIENT",
+      "entry": 3157.9,
+      "exit": 3148.9,
+      "pnl": -638.0,
+      "result": "SL",
+      "time": "13:33"
+    },
+    {
+      "symbol": "BAJAJFINSV",
+      "entry": 1850.8,
+      "exit": 1835.9,
+      "pnl": -644.8000000000001,
+      "result": "SL",
+      "time": "13:33"
+    },
+    {
+      "symbol": "ADANIENT",
+      "entry": 3157.9,
+      "exit": 3143.5,
+      "pnl": -630.75,
+      "result": "SL",
+      "time": "13:38"
+    },
+    {
+      "symbol": "BAJAJFINSV",
+      "entry": 1850.8,
+      "exit": 1831.8,
+      "pnl": -631.8000000000001,
+      "result": "SL",
+      "time": "13:38"
+    },
+    {
+      "symbol": "ADANIPORTS",
+      "entry": 1832.8,
+      "exit": 1826.0,
+      "pnl": -675.2,
+      "result": "SL",
+      "time": "13:40"
+    },
+    {
+      "symbol": "ADANIENT",
+      "entry": 3157.9,
+      "exit": 3143.8,
+      "pnl": -609.0,
+      "result": "SL",
+      "time": "13:43"
+    },
+    {
+      "symbol": "ADANIPORTS",
+      "entry": 1832.8,
+      "exit": 1825.8,
+      "pnl": -611.2,
+      "result": "SL",
+      "time": "13:43"
+    },
+    {
+      "symbol": "BAJAJFINSV",
+      "entry": 1850.8,
+      "exit": 1830.0,
+      "pnl": -611.0,
+      "result": "SL",
+      "time": "13:43"
+    },
+    {
+      "symbol": "ADANIENT",
+      "entry": 3157.9,
+      "exit": 3145.9,
+      "pnl": -587.25,
+      "result": "SL",
+      "time": "13:48"
+    },
+    {
+      "symbol": "ADANIPORTS",
+      "entry": 1832.8,
+      "exit": 1827.0,
+      "pnl": -592.0,
+      "result": "SL",
+      "time": "13:48"
+    },
+    {
+      "symbol": "BAJAJFINSV",
+      "entry": 1850.8,
+      "exit": 1832.0,
+      "pnl": -592.8000000000001,
+      "result": "SL",
+      "time": "13:48"
+    },
+    {
+      "symbol": "ADANIENT",
+      "entry": 3157.9,
+      "exit": 3147.0,
+      "pnl": -572.75,
+      "result": "SL",
+      "time": "13:53"
+    },
+    {
+      "symbol": "ADANIPORTS",
+      "entry": 1832.8,
+      "exit": 1827.0,
+      "pnl": -576.0,
+      "result": "SL",
+      "time": "13:53"
+    },
+    {
+      "symbol": "BAJAJFINSV",
+      "entry": 1850.8,
+      "exit": 1832.8,
+      "pnl": -574.6,
+      "result": "SL",
+      "time": "13:53"
+    }
+  ]
+}

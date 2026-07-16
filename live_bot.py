@@ -215,11 +215,28 @@ def success_alert(symbol, entry, exit_price, pnl):
     print("\033[1m" + f"  Profit : Rs.{pnl:.0f}" + "\033[0m")
     print("\033[1m" + f"  Today  : Rs.{daily_pnl:.0f}" + "\033[0m")
     print("\033[1m" + "=" * 50 + "\033[0m")
-    os.system(f'msg * "TARGET HIT: {symbol} +Rs.{pnl:.0f}"')
+    # Windows toast notification
+    try:
+        from plyer import notification
+        notification.notify(
+            title=f"TARGET HIT — {symbol}",
+            message=f"Profit: Rs.{pnl:.0f}",
+            timeout=10
+        )
+    except:
+        pass
 
-# ─── SL ALERT ─────────────────────────────────────────
 def sl_alert(symbol, pnl):
-    os.system(f'msg * "SL HIT: {symbol} -Rs.{abs(pnl):.0f}"')
+    print(f"  SL HIT — {symbol} | Loss: Rs.{abs(pnl):.0f}")
+    try:
+        from plyer import notification
+        notification.notify(
+            title=f"SL HIT — {symbol}",
+            message=f"Loss: Rs.{abs(pnl):.0f}",
+            timeout=10
+        )
+    except:
+        pass
 
 # ─── MONITOR OPEN POSITIONS ───────────────────────────
 def monitor_positions():
@@ -338,10 +355,15 @@ def run_scan():
                 "above_vwap" : int(price > vwap),
                 "volume"     : quote["volume"]
             }) + "\n")
+            
+            if signal == "BUY":
+            # Max 5 positions at a time
+             if len(open_positions) >= 5:
+                continue
 
         if signal == "BUY":
-            sl_pts  = round(atr * 0.3, 2) if atr > 0 else 5
-            tgt_pts = round(atr * 0.6, 2) if atr > 0 else 10
+            sl_pts  = round(atr * 0.5, 2) if atr > 0 else 8
+            tgt_pts = round(atr * 1.5, 2) if atr > 0 else 24
             risk    = CAPITAL * RISK_PCT
             qty     = max(1, int(risk / sl_pts)) if sl_pts > 0 else 1
 

@@ -1,122 +1,42 @@
 {
-  "ADANIENT": {
-    "entry": 3189.3,
-    "sl": 3166.89,
-    "target": 3234.12,
-    "sl_pts": 22.41,
-    "tgt_pts": 44.82,
-    "qty": 22
-  },
-  "CONCOR": {
-    "entry": 489.35,
-    "sl": 482.18,
-    "target": 503.69,
-    "sl_pts": 7.17,
-    "tgt_pts": 14.34,
-    "qty": 69
-  },
-  "HINDALCO": {
-    "entry": 981.65,
-    "sl": 971.45,
-    "target": 1002.05,
-    "sl_pts": 10.2,
-    "tgt_pts": 20.4,
-    "qty": 49
-  },
-  "SUNPHARMA": {
-    "entry": 1945.0,
-    "sl": 1933.06,
-    "target": 1968.88,
-    "sl_pts": 11.94,
-    "tgt_pts": 23.88,
-    "qty": 41
+  "TITAN": {
+    "entry": 4632.6,
+    "sl": 4588.2,
+    "target": 4765.8,
+    "sl_pts": 44.4,
+    "tgt_pts": 133.2,
+    "qty": 11
   },
   "BIOCON": {
-    "entry": 437.8,
-    "sl": 431.11,
-    "target": 451.18,
-    "sl_pts": 6.69,
-    "tgt_pts": 13.38,
-    "qty": 74
+    "entry": 441.65,
+    "sl": 435.08,
+    "target": 461.37,
+    "sl_pts": 6.57,
+    "tgt_pts": 19.72,
+    "qty": 76
   },
-  "ADANIGREEN": {
-    "entry": 1606.6,
-    "sl": 1577.05,
-    "target": 1665.7,
-    "sl_pts": 29.55,
-    "tgt_pts": 59.1,
-    "qty": 16
+  "TCS": {
+    "entry": 2215.8,
+    "sl": 2194.0,
+    "target": 2281.2,
+    "sl_pts": 21.8,
+    "tgt_pts": 65.4,
+    "qty": 22
   },
-  "DIVISLAB": {
-    "entry": 7126.0,
-    "sl": 7051.0,
-    "target": 7276.0,
-    "sl_pts": 75.0,
-    "tgt_pts": 150.0,
-    "qty": 6
+  "ITC": {
+    "entry": 280.0,
+    "sl": 277.78,
+    "target": 286.67,
+    "sl_pts": 2.22,
+    "tgt_pts": 6.67,
+    "qty": 225
   },
-  "UNIONBANK": {
-    "entry": 170.04,
-    "sl": 168.77,
-    "target": 172.58,
-    "sl_pts": 1.27,
-    "tgt_pts": 2.54,
-    "qty": 393
-  },
-  "BHARTIARTL": {
-    "entry": 1935.3,
-    "sl": 1918.47,
-    "target": 1968.96,
-    "sl_pts": 16.83,
-    "tgt_pts": 33.66,
-    "qty": 29
-  },
-  "POWERGRID": {
-    "entry": 284.45,
-    "sl": 283.52,
-    "target": 286.31,
-    "sl_pts": 0.93,
-    "tgt_pts": 1.86,
-    "qty": 537
-  },
-  "BPCL": {
-    "entry": 305.55,
-    "sl": 304.4,
-    "target": 307.86,
-    "sl_pts": 1.15,
-    "tgt_pts": 2.31,
-    "qty": 434
-  },
-  "HAVELLS": {
-    "entry": 1181.1,
-    "sl": 1174.98,
-    "target": 1193.34,
-    "sl_pts": 6.12,
-    "tgt_pts": 12.24,
-    "qty": 81
-  },
-  "BAJFINANCE": {
-    "entry": 1010.4,
-    "sl": 1002.36,
-    "target": 1026.48,
-    "sl_pts": 8.04,
-    "tgt_pts": 16.08,
-    "qty": 62
-  },
-  "TATAPOWER": {
-    "entry": 377.25,
-    "sl": 375.92,
-    "target": 379.92,
-    "sl_pts": 1.33,
-    "tgt_pts": 2.67,
-    "qty": 375
-  },
-  "AXISBANK": {
-    "entry": 1315.6,
-    "sl": 1308.64,
-    "target": 1329.52,
-    "sl_pts": 6.96,
-    "tgt_pts": 13.92,
+  "RELIANCE": {
+    "entry": 1305.4,
+    "sl": 1298.45,
+    "target": 1326.25,
+    "sl_pts": 6.95,
+    "tgt_pts": 20.85,
     "qty": 71
   }
 }
